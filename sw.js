@@ -1,5 +1,5 @@
 // Lexikon service worker: la app funciona sin conexión y se actualiza sola cuando hay red.
-const CACHE = "lexikon-v2";
+const CACHE = "lexikon-v3";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {

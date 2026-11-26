@@ -157,6 +157,8 @@ svg text{font-family:"IBM Plex Sans",sans-serif}
 // Aukerakoa: CSV gisa argitaratutako Google Sheet baten URLa. Zutabeak:
 // level,area,lemma,eu,es,example,upgrade_from,trap
 const SHEET_CSV_URL = "";
+// URL del Apps Script de seguimiento (vacío = la opción "Connect to my class" no aparece)
+const CLASS_ENDPOINT = "";
 const NEW_DEFAULT = 8, MAX_REVIEWS = 25, GROUP = 4;
 const INTERVALS = [0,1,2,4,8,16,40]; // egunak kutxa bakoitzeko (1..6)
 const STORE_KEY = "lexikon-v1";
@@ -1971,6 +1973,7 @@ function renderEx(it,kind,q){
 }
 function endSession(){
   const dr=dayRec();const wasDone=dr.done;if(SES.mode==="daily")dr.done=true;save();
+  if(SES.mode==="daily")maybeSync(true);
   const mins=Math.max(1,Math.round((Date.now()-SES.start)/60000));const c=counts();
   const unlocked=SES.mode==="daily"&&!wasDone;
   shell(`<div class="wrap"><div class="card hero" style="margin-top:20px"><div class="small" style="opacity:.75">${SES.mode==="daily"?"Today's session":esc(SES.label||"Practice")}</div>
@@ -2146,6 +2149,8 @@ function viewSettings(){
    <div class="card"><div class="small mut" style="margin-bottom:8px">New words per day</div>
     <div class="seg">${[4,8,12].map(n=>`<button data-n="${n}" class="${S.newPerDay===n?"on":""}">${n}</button>`).join("")}</div>
     <p class="small mut" style="margin-top:8px">More isn't better: with 8 a day you'll see your whole level in a term.</p></div>
+   ${CLASS_ENDPOINT?`<div class="card"><h3>Connect to my class</h3>${S.classCode?`<p class="small">Connected: <b>${esc(S.classCode)}</b>${S.lastSync?` · last update ${new Date(S.lastSync).toLocaleDateString()}`:""}</p><button class="btn ghost" id="disc">Disconnect</button>`:`<p class="small mut">Your teacher will give you a code. Optional: without a code the app works exactly the same.</p><input class="inp" id="cc" maxlength="9" placeholder="4A-XXXX" autocapitalize="characters" autocomplete="off" style="text-transform:uppercase"><div class="small" id="ccmsg" style="min-height:18px;margin-top:4px"></div><button class="btn dark" id="ccgo">Connect</button>`}
+    <p class="small mut" style="margin-top:10px">What your teacher sees: your code, your level, the days you practise, how many words you've learnt, your Gap 20 marks and your game records. Never your name in the app, and never what you write.</p></div>`:""}
    <div class="card"><h3>Backup</h3><p class="small mut">Your progress lives only in this browser. If you clear your data or change phones, you'll lose it. Copy this code and keep it somewhere safe (for example, email it to yourself).</p>
     <button class="btn ghost" id="ex">Copy my code</button>
     <textarea class="inp" id="imp" placeholder="Paste a code here to restore your progress" style="min-height:70px"></textarea>
@@ -2154,6 +2159,13 @@ function viewSettings(){
    <button class="btn ghost" id="rs" style="border-color:var(--bad);color:var(--bad)">Delete everything and start again</button>
    <p class="small mut" style="margin-top:14px;text-align:center">${ITEMS.length} items · ${TRAPS.length} traps · ${GAPS.length} mock tasks</p>
   </div>`);
+  if($("#disc"))$("#disc").onclick=()=>{if(confirm("Disconnect from your class?")){S.classCode="";S.classGroup="";S.lastSync=0;save();viewSettings()}};
+  if($("#ccgo"))$("#ccgo").onclick=()=>{const v=$("#cc").value.trim().toUpperCase();const msg=$("#ccmsg");
+    if(!/^[A-Z0-9]{1,4}-[A-Z0-9]{4}$/.test(v)){msg.style.color="var(--bad)";msg.textContent="Codes look like 4A-K7QX";return}
+    msg.style.color="var(--mut)";msg.textContent="Checking…";
+    jsonp("check",{code:v}).then(r=>{if(r&&r.ok){S.classCode=v;S.classGroup=r.group||"";S.lastSync=0;save();maybeSync(true).then(()=>{toast("Connected to your class");viewSettings()})}
+      else{msg.style.color="var(--bad)";msg.textContent="That code doesn't exist. Check it with your teacher."}})
+    .catch(()=>{msg.style.color="var(--bad)";msg.textContent="No connection. Try again later."})};
   $("#svn").onclick=()=>{S.name=$("#nm").value.trim().slice(0,20);save();toast("Saved")};
   document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{if(b.dataset.r===S.route)return;S.route=b.dataset.r;save();if(S.route==="B2"&&!S.diag)startDiag();else viewSettings()});
   document.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{S.newPerDay=+b.dataset.n;save();viewSettings()});
@@ -2163,6 +2175,36 @@ function viewSettings(){
     try{await navigator.clipboard.writeText(code);toast("Code copied")}catch(e){$("#imp").value=code;toast("Copy the code in the box")}};
   $("#im").onclick=()=>{const v=$("#imp").value.trim();try{if(!v.startsWith("LXK1:"))throw 0;const o=JSON.parse(decodeURIComponent(escape(atob(v.slice(5)))));if(!o.items)throw 0;S=Object.assign(fresh(),o);save();toast("Progress restored");go("home")}catch(e){toast("That code isn't valid")}};
   $("#rs").onclick=()=>{if(confirm("Are you sure? All your progress will be deleted.")){S=fresh();save();go("home")}};
+}
+
+
+/* ======================= CLASS SYNC (opcional) =======================
+   Solo se envía: el código de clase y datos agregados. Nunca nombres ni textos escritos. */
+let JSONP_N=0;
+function jsonp(action,data){
+  return new Promise((resolve,reject)=>{
+    const cb="__lxk"+(++JSONP_N);const sc=document.createElement("script");
+    const t=setTimeout(()=>{cleanup();reject(new Error("timeout"))},15000);
+    function cleanup(){clearTimeout(t);try{delete window[cb]}catch(e){window[cb]=undefined}sc.remove()}
+    window[cb]=r=>{cleanup();resolve(r)};
+    sc.onerror=()=>{cleanup();reject(new Error("network"))};
+    sc.src=CLASS_ENDPOINT+"?callback="+cb+"&a="+action+"&d="+encodeURIComponent(JSON.stringify(data));
+    document.head.appendChild(sc);
+  });
+}
+function syncPayload(){
+  const c=counts();const days=Object.keys(S.days).filter(d=>S.days[d].n>0).sort();
+  const m=S.mocks;const g=S.games||{};
+  return {code:S.classCode,level:S.route,lastActive:days[days.length-1]||"",days7:weekDays().filter(d=>d.on).length,daysTotal:days.length,
+    sessions:Object.values(S.days).filter(d=>d.done).length,seen:c.seen,writing:c.prod,mastered:c.mast,total:c.total,
+    mocks:m.length,mockLast:m.length?m[m.length-1].score:null,mockAvg:m.length?m.reduce((a,b)=>a+b.score,0)/m.length:null,
+    med:S.med.length,speak:S.speak,rain:g.rain||0,makedo:g.makedo||0,wotd:g.wotdWins||0,onlyOfi:!!S.onlyOfi};
+}
+function maybeSync(force){
+  if(!CLASS_ENDPOINT||!S.classCode||!navigator.onLine)return Promise.resolve(false);
+  if(!force&&S.lastSync&&Date.now()-S.lastSync<3*3600e3)return Promise.resolve(false);
+  return jsonp("sync",syncPayload()).then(r=>{if(r&&r.ok){S.lastSync=Date.now();save();return true}
+    if(r&&r.error==="unknown"){S.classCode="";S.classGroup="";save()}return false}).catch(()=>false);
 }
 
 /* ======================= BOOT ======================= */
@@ -2176,6 +2218,7 @@ function viewSettings(){
   }
   if(canSpeak){try{speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{VOICE=pickVoice()}}catch(e){}}
   render();
+  setTimeout(()=>maybeSync(false),1500);
 })();
 
 </script>
