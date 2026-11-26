@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Lexikon">
-<title>Lexikon · Hiztegia B1/B2 EOIDNA</title>
+<title>Lexikon · Vocabulary B1/B2 EOIDNA</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="icons/icon-192.png">
@@ -132,6 +132,14 @@ textarea.inp{min-height:180px;font-size:1rem;line-height:1.5}
 .route b{font-family:"DM Serif Display",serif;font-size:1.6rem;font-weight:400}
 .spk{font-size:1.3rem;padding:4px 8px;border-radius:10px;background:var(--line);line-height:1;flex-shrink:0}
 .tag.ofi{background:#16302b;color:#fff}
+.door{display:flex;align-items:center;gap:14px;width:100%;text-align:left;border-radius:16px;padding:16px;margin-bottom:10px}
+.door .dic{font-size:1.6rem;width:36px;text-align:center}
+.door>span:nth-child(2){flex:1}
+.door b{display:block;font-family:DM Serif Display,serif;font-weight:400;font-size:1.35rem}
+.door small{font-size:.82rem}
+.door>span:last-child{font-size:1.6rem}
+.shake{animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 svg text{font-family:"IBM Plex Sans",sans-serif}
 </style>
 </head>
@@ -182,22 +190,22 @@ B1|tech|save|guardar (archivo)|[Save] your work every ten minutes.|||gorde (fitx
 B1|tech|connection|conexión|The [connection] is very slow today.|||konexioa|B1
 B1|tech|user|usuario/a|The app has millions of [users].|||erabiltzailea|
 B1|tech|go online|conectarse|I usually [go online] after dinner.|||konektatu|
-B1|tech|technology|tecnología|[Technology] changes very fast.||Orokorrean ari zarenean, 'the' gabe: Technology changes...|teknologia|
+B1|tech|technology|tecnología|[Technology] changes very fast.||No 'the' when you speak in general: Technology changes...|teknologia|
 B1|tech|useful|útil|This app is really [useful] for studying.|good||erabilgarria|
 B1|tech|discover|descubrir|Scientists have [discovered] a new planet.|found||aurkitu|B2
 B2|tech|privacy|privacidad|Many apps don't respect your [privacy].|||pribatutasuna|
-B2|tech|misinformation|desinformación|[Misinformation] spreads fast on social media.|False information|Zenbakaitza: inoiz ez 'a misinformation'|desinformazioa|
+B2|tech|misinformation|desinformación|[Misinformation] spreads fast on social media.|False information|Uncountable: never 'a misinformation'|desinformazioa|
 B2|tech|go viral|hacerse viral|Her video [went viral] overnight.|became very popular||biral bihurtu|
 B2|tech|cyberbullying|ciberacoso|[Cyberbullying] can affect a teenager's mental health.|||ziberjazarpena|
 B2|tech|screen time|tiempo de pantalla|Teenagers should limit their [screen time].|||pantaila-denbora|B2
-B2|tech|be addicted to|estar enganchado a|Some teens [are addicted to] their phones.|can't stop using|addicted TO + izena edo -ing|-ren menpe egon, engantxatuta egon|
+B2|tech|be addicted to|estar enganchado a|Some teens [are addicted to] their phones.|can't stop using|addicted TO + noun or -ing|-ren menpe egon, engantxatuta egon|
 B2|tech|artificial intelligence|inteligencia artificial|[Artificial intelligence] is changing education.|||adimen artifiziala|
 B2|tech|data|datos|Companies collect huge amounts of personal [data].|||datuak|B2
 B2|tech|breakthrough|gran avance|The vaccine was a major scientific [breakthrough].|step||aurrerapen handia|
 B2|tech|cutting-edge|de vanguardia|The lab uses [cutting-edge] technology.|very modern||abangoardiakoa, punta-puntakoa|
 B2|tech|user-friendly|fácil de usar|The new app is very [user-friendly].|easy to use||erabiltzeko erraza|
 B2|tech|keep up with|estar al día de|It's hard to [keep up with] new technology.|||egunean egon|
-B2|tech|rely on|depender de, confiar en|We [rely on] our phones for everything.|need|rely ON, inoiz ez 'rely of'|-ren menpe egon, -ri fidatu|
+B2|tech|rely on|depender de, confiar en|We [rely on] our phones for everything.|need|rely ON, never 'rely of'|-ren menpe egon, -ri fidatu|
 B2|tech|drawback|inconveniente|The main [drawback] of smartphones is distraction.|bad thing||eragozpena|
 B2|tech|benefit|beneficio, ventaja|One [benefit] of online classes is flexibility.|good thing||onura, abantaila|
 B2|tech|hack into|piratear (una cuenta)|Someone [hacked into] my account.|||(kontu bat) pirateatu|
@@ -207,15 +215,15 @@ B2|tech|fake|falso, trucado|That photo is obviously [fake].|||faltsua|
 B2|tech|algorithm|algoritmo|The [algorithm] decides what videos you see.|||algoritmoa|
 B2|tech|harmful|perjudicial|Too much screen time can be [harmful].|bad||kaltegarria|
 B2|tech|beneficial|beneficioso|Technology can be [beneficial] for learning.|good||onuragarria|
-B2|tech|research|investigación|[Research] shows that sleep improves memory.||Zenbakaitza: inoiz ez 'researches'|ikerketa|B2
+B2|tech|research|investigación|[Research] shows that sleep improves memory.||Uncountable: never 'researches'|ikerketa|B2
 B2|tech|carry out|llevar a cabo|Scientists [carried out] a new study.|did||burutu, egin|B2
-B2|tech|evidence|pruebas, evidencia|There is no [evidence] that this works.||Zenbakaitza: 'a piece of evidence', ez 'an evidence'|frogak, ebidentzia|
-B2|tech|access|acceder a|You can [access] the course from any device.||Aditz gisa 'to' gabe: access the course|sartu, atzitu|
+B2|tech|evidence|pruebas, evidencia|There is no [evidence] that this works.||Uncountable: 'a piece of evidence', not 'an evidence'|frogak, ebidentzia|
+B2|tech|access|acceder a|You can [access] the course from any device.||As a verb, no 'to': access the course|sartu, atzitu|
 B2|tech|outdated|desfasado|My laptop is completely [outdated].|old||zaharkitua|
 B2|tech|digital footprint|huella digital|Everything you post becomes part of your [digital footprint].|||aztarna digitala|
 B2|tech|scroll through|hacer scroll por|I [scrolled through] my feed for an hour.|||korritu, scroll egin|
 B2|tech|unplug|desconectar(se)|It's healthy to [unplug] for a few hours a day.|stop using technology||deskonektatu|
-B2|tech|spread|difundir(se)|Rumours [spread] quickly online.||Irregularra: spread - spread - spread|zabaldu, hedatu|
+B2|tech|spread|difundir(se)|Rumours [spread] quickly online.||Irregular: spread - spread - spread|zabaldu, hedatu|
 B1|ocio|hang out|pasar el rato|We usually [hang out] at the park.|||denbora pasa (lagunekin)|B2
 B1|ocio|hobby|afición|Painting is my favourite [hobby].|||zaletasuna|B1
 B1|ocio|take up|empezar (una afición)|I [took up] the guitar last year.|started||(zaletasun bat) hasi|B2
@@ -226,20 +234,20 @@ B1|ocio|spare time|tiempo libre|What do you do in your [spare time]?|free time||
 B1|ocio|board game|juego de mesa|We played a [board game] all afternoon.|||mahai-jokoa|
 B1|ocio|team|equipo|She plays in the school basketball [team].|||taldea|B1
 B1|ocio|match|partido|We won the [match] 3-1.|||partida, partidua|B2
-B1|ocio|practise|entrenar, practicar|I [practise] the piano every day.||Ingeles britainiarrean: practise (aditza), practice (izena)|entrenatu, praktikatu|B2
-B1|ocio|join|apuntarse a, unirse|I [joined] a drama club.||join preposiziorik gabe: join a club|izena eman, batu|B1
+B1|ocio|practise|entrenar, practicar|I [practise] the piano every day.||British English: practise (verb), practice (noun)|entrenatu, praktikatu|B2
+B1|ocio|join|apuntarse a, unirse|I [joined] a drama club.||No preposition: join a club|izena eman, batu|B1
 B1|ocio|member|socio/a, miembro|You must be a [member] to use the gym.|||bazkidea, kidea|B1
 B1|ocio|ticket|entrada|The [tickets] for the festival sold out.|||sarrera|B1
-B1|ocio|series|serie|I'm watching a Korean [series].||Singularra eta plurala berdinak: one series, two series|telesaila|B1
+B1|ocio|series|serie|I'm watching a Korean [series].||Same in singular and plural: one series, two series|telesaila|B1
 B1|ocio|episode|episodio|I watched three [episodes] in a row.|||atala|B2
 B1|ocio|character|personaje|My favourite [character] is the villain.|||pertsonaia|B1
-B1|ocio|exciting|emocionante|The final was really [exciting].|good|exciting (zerbait) / excited (pertsona)|zirraragarria|
-B1|ocio|boring|aburrido (algo)|The film was so [boring] I fell asleep.||boring (zerbait) / bored (pertsona)|aspergarria|
-B1|ocio|relax|relajarse|I [relax] by listening to music.||'myself' gabe: I relax|lasaitu, erlaxatu|
+B1|ocio|exciting|emocionante|The final was really [exciting].|good|exciting (a thing) / excited (a person)|zirraragarria|
+B1|ocio|boring|aburrido (algo)|The film was so [boring] I fell asleep.||boring (a thing) / bored (a person)|aspergarria|
+B1|ocio|relax|relajarse|I [relax] by listening to music.||No 'myself': I relax|lasaitu, erlaxatu|
 B1|ocio|chill out|relajarse (informal)|Let's just [chill out] at home tonight.|||lasai egon|
 B1|ocio|competition|competición, concurso|She won a dance [competition].|||lehiaketa|B2
-B1|ocio|win|ganar (competición)|Who [won] the race?||win (lehiaketa) / earn (dirua) / beat (norbait)|irabazi|B1
-B1|ocio|lose|perder (partido)|We [lost] the final.||lose (partida, objektua) / miss (trena, aukera)|galdu|B1
+B1|ocio|win|ganar (competición)|Who [won] the race?||win (a competition) / earn (money) / beat (someone)|irabazi|B1
+B1|ocio|lose|perder (partido)|We [lost] the final.||lose (a match, an object) / miss (a train, a chance)|galdu|B1
 B1|ocio|train|entrenar|The team [trains] twice a week.|||entrenatu|B1
 B1|ocio|coach|entrenador/a|Our [coach] is very strict.|||entrenatzailea|B1
 B1|ocio|fan|aficionado/a, fan|He's a huge [fan] of Osasuna.|||zalea|
@@ -249,9 +257,9 @@ B1|ocio|draw|dibujar|I love to [draw] cartoons.|||marraztu|B1
 B2|ocio|binge-watch|ver de un tirón|We [binge-watched] the whole series.|||segidan ikusi|B2
 B2|ocio|streaming platform|plataforma de streaming|Most teens use a [streaming platform] every day.|||streaming plataforma|
 B2|ocio|give up|dejar (una actividad)|I [gave up] football when I was fourteen.|stopped playing|give up + -ing: give up smoking|(jarduera bat) utzi|B2
-B2|ocio|be keen on|tener interés en|She [is keen on] photography.|likes|keen ON + izena edo -ing|-z interesatuta egon|
+B2|ocio|be keen on|tener interés en|She [is keen on] photography.|likes|keen ON + noun or -ing|-z interesatuta egon|
 B2|ocio|amateur|aficionado (no profesional)|He plays in an [amateur] league.|||amateurra, zalea|
-B2|ocio|spectator|espectador/a (deporte)|Thousands of [spectators] watched the final.||spectators (kirola) / audience (kontzertua, zinema)|ikuslea (kirola)|
+B2|ocio|spectator|espectador/a (deporte)|Thousands of [spectators] watched the final.||spectators (sport) / audience (concert, cinema)|ikuslea (kirola)|
 B2|ocio|audience|público|The [audience] loved the show.|||ikusleak, entzuleak|B2
 B2|ocio|venue|recinto, sala|The [venue] holds 2,000 people.|||aretoa, lekua|B2
 B2|ocio|sold out|agotado|The concert was [sold out] in minutes.|||agortuta|B2
@@ -264,11 +272,11 @@ B2|ocio|challenging|exigente, que supone un reto|Climbing is [challenging] but f
 B2|ocio|rewarding|gratificante|Volunteering is a very [rewarding] experience.|nice||atsegingarria, asebetegarria|
 B2|ocio|thrilling|apasionante|The ending was [thrilling].|exciting||zirraragarria|
 B2|ocio|gripping|que engancha|It's a [gripping] novel; I couldn't stop reading.|good||harrapatzen zaituena|
-B2|ocio|plot|argumento, trama|The [plot] was hard to follow.||plot = trama; argument = eztabaida (discusión)|argumentua, trama|B2
+B2|ocio|plot|argumento, trama|The [plot] was hard to follow.||plot = trama / argumentua; argument = a fight (eztabaida / discusión)|argumentua, trama|B2
 B2|ocio|review|reseña, crítica|The film got great [reviews].|||kritika, iruzkina|B2
-B2|ocio|critic|crítico/a (persona)|Most [critics] hated the movie.||critic (pertsona) / criticism (kritika)|kritikaria|
+B2|ocio|critic|crítico/a (persona)|Most [critics] hated the movie.||critic (a person) / criticism (what they say)|kritikaria|
 B2|ocio|release|estrenar, lanzar|The band [released] a new album.|||kaleratu, estreinatu|B2
-B2|ocio|live|en directo|I've never seen them play [live].||Adjektibo edo adberbio gisa /laɪv/ ahoskatzen da|zuzenean|B2
+B2|ocio|live|en directo|I've never seen them play [live].||As an adjective or adverb, pronounced /laɪv/|zuzenean|B2
 B1|ocio|entertainment|entretenimiento|Video games are a huge [entertainment] industry.|||entretenimendua|B1
 B2|ocio|take part in|participar en|Over 200 students [took part in] the race.|were in||parte hartu|B2
 B2|ocio|volunteer|hacer voluntariado|She [volunteers] at an animal shelter.|||boluntario aritu|B2
@@ -280,21 +288,21 @@ B1|lengua|translate|traducir|Can you [translate] this sentence?|||itzuli|B1
 B1|lengua|fluent|con fluidez|She is [fluent] in three languages.||fluent IN a language|jarioz, erraz|B2
 B1|lengua|accent|acento|He has a strong Scottish [accent].|||azentua|B1
 B1|lengua|pronounce|pronunciar|How do you [pronounce] this word?|||ahoskatu|B1
-B1|lengua|mistake|error|I made a lot of [mistakes] in my essay.||MAKE a mistake, inoiz ez 'do'|akatsa|B1
+B1|lengua|mistake|error|I made a lot of [mistakes] in my essay.||MAKE a mistake, never 'do'|akatsa|B1
 B1|lengua|meaning|significado|What's the [meaning] of this word?|||esanahia|
 B1|lengua|look up|buscar (en el diccionario)|[Look up] new words in the dictionary.|||(hiztegian) bilatu|B2
 B1|lengua|misunderstand|entender mal|Sorry, I [misunderstood] the question.|||gaizki ulertu|B1
 B1|lengua|foreign|extranjero|Learning a [foreign] language is useful.|||atzerriko|B1
 B1|lengua|native speaker|hablante nativo|I practise with a [native speaker] online.|||jatorrizko hiztuna|B2
 B1|lengua|improve|mejorar|I want to [improve] my English.|||hobetu|B2
-B1|lengua|vocabulary|vocabulario|Reading helps you learn new [vocabulary].||Zenbakaitza: inoiz ez 'vocabularies'|hiztegia|
+B1|lengua|vocabulary|vocabulario|Reading helps you learn new [vocabulary].||Uncountable: never 'vocabularies'|hiztegia|
 B1|lengua|spell|deletrear, escribir|How do you [spell] your surname?|||letraz letra esan, idatzi|B1
 B1|lengua|message|mensaje|I sent her a [message].|||mezua|B1
 B1|lengua|reply|responder|She never [replied] to my email.||reply TO someone|erantzun|
 B1|lengua|chat|charlar|We [chatted] for hours.|talked||berriketan aritu|
-B1|lengua|argue|discutir (pelear)|My brother and I [argue] all the time.||argue = liskarrean eztabaidatu (discutir); discuss = gai bat jorratu (debatir)|eztabaidatu (liskarrean)|
-B1|lengua|discuss|hablar de, debatir|We [discussed] the problem in class.||discuss 'about' gabe|eztabaidatu, gai bati buruz hitz egin|
-B1|lengua|explain|explicar|Can you [explain] it again?||explain something TO someone, inoiz ez 'explain me'|azaldu|B1
+B1|lengua|argue|discutir (pelear)|My brother and I [argue] all the time.||argue = have a fight (liskar / discutir); discuss = talk about a topic (eztabaidatu / debatir)|eztabaidatu (liskarrean)|
+B1|lengua|discuss|hablar de, debatir|We [discussed] the problem in class.||No 'about': discuss the problem|eztabaidatu, gai bati buruz hitz egin|
+B1|lengua|explain|explicar|Can you [explain] it again?||explain something TO someone, never 'explain me'|azaldu|B1
 B1|lengua|repeat|repetir|Could you [repeat] that, please?|||errepikatu|
 B1|lengua|speak up|hablar más alto|Please [speak up]; I can't hear you.|||ozenago hitz egin|B2
 B1|lengua|gesture|gesto|He made a rude [gesture].|||keinua|
@@ -313,7 +321,7 @@ B2|lengua|make yourself understood|hacerse entender|I can [make myself understoo
 B2|lengua|word of mouth|boca a boca|The café became popular by [word of mouth].|||ahoz aho|
 B2|lengua|articulate|que se expresa con claridad|He's very [articulate] for his age.|||argi adierazten dena|
 B2|lengua|jargon|jerga técnica|The report is full of medical [jargon].|||jerga teknikoa|
-B2|lengua|slang|argot|Teenagers use a lot of [slang].||Zenbakaitza: ez 'slangs'|argota|
+B2|lengua|slang|argot|Teenagers use a lot of [slang].||Uncountable: not 'slangs'|argota|
 B2|lengua|misleading|engañoso|The headline was very [misleading].|false||engainagarria|
 B2|lengua|clarify|aclarar|Could you [clarify] what you mean?|explain||argitu|
 B2|lengua|convey|transmitir|The poster [conveys] a clear message.|shows||transmititu, helarazi|
@@ -323,7 +331,7 @@ B1|lengua|interpret|interpretar|People [interpret] the data differently.|||inter
 B2|lengua|persuade|persuadir|I [persuaded] my parents to let me go.|got|persuade someone TO do something|konbentzitu|B2
 B2|lengua|point out|señalar, hacer notar|She [pointed out] that the bus was late.|said||adierazi, ohartarazi|B2
 B2|lengua|bring up|sacar (un tema)|Don't [bring up] politics at dinner.|talk about||(gai bat) atera|B2
-B2|lengua|raise an issue|plantear un tema|Students [raised the issue] of homework.||raise (zerbait igo) / rise (bere kabuz igo)|gai bat planteatu|
+B2|lengua|raise an issue|plantear un tema|Students [raised the issue] of homework.||raise (you raise something) / rise (it goes up by itself)|gai bat planteatu|
 B2|lengua|gossip|cotillear|They [gossip] about everyone.|||esamesak egin|
 B2|lengua|spread a rumour|difundir un rumor|Someone [spread a rumour] about him.|||zurrumurru bat zabaldu|
 B2|lengua|tone|tono|I didn't like the [tone] of his message.|||tonua|
@@ -338,7 +346,7 @@ B2|lengua|interrupt|interrumpir|Sorry to [interrupt], but I have a question.|||e
 B2|lengua|formal|formal|Use a [formal] style in a letter of complaint.|||formala|
 B1|clima|pollution|contaminación|Air [pollution] is a big problem in cities.|||kutsadura|B2
 B1|clima|recycle|reciclar|We [recycle] plastic and glass.|||birziklatu|B2
-B1|clima|rubbish|basura|Don't leave [rubbish] on the beach.||Zenbakaitza: ez 'a rubbish'|zaborra|B2
+B1|clima|rubbish|basura|Don't leave [rubbish] on the beach.||Uncountable: not 'a rubbish'|zaborra|B2
 B1|clima|environment|medio ambiente|We must protect the [environment].|||ingurumena|B2
 B1|clima|heatwave|ola de calor|Spain had a terrible [heatwave] in July.|||bero-bolada|
 B1|clima|flood|inundación|The [flood] destroyed many houses.|||uholdea|
@@ -350,30 +358,30 @@ B1|clima|save|ahorrar|[Save] energy by turning off the lights.|||aurreztu|B2
 B1|clima|plastic bag|bolsa de plástico|Bring your own bag instead of a [plastic bag].|||plastikozko poltsa|
 B1|clima|energy|energía|Solar [energy] is clean.|||energia|B2
 B1|clima|wildlife|fauna|The park protects local [wildlife].|||fauna|
-B1|clima|nature|naturaleza|I love spending time in [nature].||'the' gabe: in nature|natura|
+B1|clima|nature|naturaleza|I love spending time in [nature].||No 'the': in nature|natura|
 B1|clima|forest|bosque|The Irati [forest] is huge.|||basoa|B1
 B1|clima|fire|incendio|A forest [fire] burned 500 hectares.|||sutea|B1
 B1|clima|dry|seco|It has been a very [dry] summer.|||lehorra|
 B1|clima|melt|derretirse|The ice is [melting] fast.|||urtu|
 B1|clima|planet|planeta|We only have one [planet].|||planeta|
 B1|clima|protect|proteger|Laws [protect] endangered animals.|||babestu|
-B1|clima|damage|dañar|Plastic [damages] marine life.||damage (gauzak, natura) / hurt (pertsonak)|kaltetu|
+B1|clima|damage|dañar|Plastic [damages] marine life.||damage (things, nature) / hurt (people)|kaltetu|
 B1|clima|litter|basura (tirada en la calle)|Don't drop [litter] in the street.|||kalean botatako zaborra|B2
 B1|clima|bin|cubo de basura|Put it in the recycling [bin].|||zakarrontzia|B2
 B1|clima|clean up|limpiar|Volunteers [cleaned up] the river.|||garbitu|
 B1|clima|global warming|calentamiento global|[Global warming] is causing extreme weather.|||berotze globala|B2
-B1|clima|weather|tiempo (meteorológico)|The [weather] was awful.||Zenbakaitza: inoiz ez 'a weather'|eguraldia|B1
-B1|clima|climate|clima|Navarra has a varied [climate].||climate (epe luzean) / weather (gaur)|klima|B1
+B1|clima|weather|tiempo (meteorológico)|The [weather] was awful.||Uncountable: never 'a weather'|eguraldia|B1
+B1|clima|climate|clima|Navarra has a varied [climate].||climate (long term) / weather (today)|klima|B1
 B1|clima|reuse|reutilizar|[Reuse] your water bottle.|||berrerabili|B2
 B1|clima|organic|ecológico|They only buy [organic] food.|||ekologikoa|
 B2|clima|climate change|cambio climático|[Climate change] affects everyone.|||klima-aldaketa|
 B2|clima|drought|sequía|The [drought] ruined the harvest.|||lehortea|
 B2|clima|renewable energy|energía renovable|Navarra produces a lot of [renewable energy].|||energia berriztagarria|
-B2|clima|endangered species|especie en peligro|The brown bear is an [endangered species].||species: singularra eta plurala berdinak|desagertzeko arriskuan dagoen espeziea|B2
+B2|clima|endangered species|especie en peligro|The brown bear is an [endangered species].||species: same in singular and plural|desagertzeko arriskuan dagoen espeziea|B2
 B2|clima|deforestation|deforestación|[Deforestation] destroys habitats.|||baso-soiltzea|
 B2|clima|carbon footprint|huella de carbono|Flying increases your [carbon footprint].|||karbono-aztarna|
 B2|clima|sustainable|sostenible|We need a more [sustainable] lifestyle.|||jasangarria|
-B2|clima|raise awareness|concienciar|The campaign aims to [raise awareness of] plastic waste.|tell people about|raise (zerbait igo) / rise (bere kabuz igo): RAISE awareness|kontzientziatu, sentsibilizatu|
+B2|clima|raise awareness|concienciar|The campaign aims to [raise awareness of] plastic waste.|tell people about|raise (you raise something) / rise (it goes up by itself): RAISE awareness|kontzientziatu, sentsibilizatu|
 B2|clima|cut down on|reducir (consumo)|We should [cut down on] plastic.|use less||murriztu|B2
 B2|clima|emissions|emisiones|Cars produce a lot of [emissions].|||isurketak|
 B2|clima|greenhouse gases|gases de efecto invernadero|[Greenhouse gases] trap heat.|||berotegi-efektuko gasak|
@@ -388,15 +396,15 @@ B2|clima|threat|amenaza|Climate change is a serious [threat].|danger||mehatxua|B
 B2|clima|threaten|amenazar|Rising seas [threaten] coastal towns.|||mehatxatu|
 B2|clima|shortage|escasez|There is a water [shortage] in summer.|problem||eskasia|
 B2|clima|consumption|consumo|Energy [consumption] has risen.|||kontsumoa|
-B2|clima|contaminate|contaminar (con una sustancia)|Chemicals [contaminated] the river.||pollute (orokorra) / contaminate (substantzia jakin bat)|kutsatu (substantzia batekin)|
+B2|clima|contaminate|contaminar (con una sustancia)|Chemicals [contaminated] the river.||pollute (general) / contaminate (with a specific substance)|kutsatu (substantzia batekin)|
 B2|clima|wildfire|incendio forestal|[Wildfires] are becoming more frequent.|||baso-sutea|
 B2|clima|extreme weather|fenómenos meteorológicos extremos|[Extreme weather] is more common now.|||muturreko eguraldia|
 B2|clima|rising sea levels|subida del nivel del mar|[Rising sea levels] threaten small islands.|||itsas mailaren igoera|
-B2|clima|make a difference|marcar la diferencia|Small actions can [make a difference].|help|MAKE a difference, inoiz ez 'do'|aldea egin|
+B2|clima|make a difference|marcar la diferencia|Small actions can [make a difference].|help|MAKE a difference, never 'do'|aldea egin|
 B2|clima|dispose of|deshacerse de|[Dispose of] batteries properly.|Throw away||-z desegin, bota|
 B2|clima|packaging|embalaje, envases|There's too much [packaging] in supermarkets.|||ontziak, bilgarriak|
 B2|clima|conservation|conservación|Wildlife [conservation] needs more funding.|||kontserbazioa|
-B1|transporte|miss|perder (tren, bus)|Hurry or we'll [miss] the bus.||miss (garraioa) / lose (objektua)|galdu (trena, autobusa)|B1
+B1|transporte|miss|perder (tren, bus)|Hurry or we'll [miss] the bus.||miss (transport) / lose (an object)|galdu (trena, autobusa)|B1
 B1|transporte|catch|coger (transporte)|I [catch] the bus at eight.|||hartu (garraioa)|B1
 B1|transporte|platform|andén|The train leaves from [platform] 3.|||nasa|B1
 B1|transporte|delay|retraso|There was a two-hour [delay].|||atzerapena|B1
@@ -404,17 +412,17 @@ B1|transporte|timetable|horario|Check the train [timetable].|||ordutegia|B1
 B1|transporte|return ticket|billete de ida y vuelta|A [return ticket] to Bilbao, please.|||joan-etorriko txartela|B2
 B1|transporte|single ticket|billete de ida|I bought a [single ticket].|||joaneko txartela|B1
 B1|transporte|traffic jam|atasco|We were stuck in a [traffic jam].|||auto-ilara, trafiko-buxadura|B2
-B1|transporte|get on|subir (a bus, tren)|[Get on] the bus at the front.||get on (autobusa, trena) / get into (autoa)|igo (autobusera, trenera)|B1
+B1|transporte|get on|subir (a bus, tren)|[Get on] the bus at the front.||get on (a bus, a train) / get into (a car)|igo (autobusera, trenera)|B1
 B1|transporte|get off|bajar (de bus, tren)|[Get off] at the next stop.|||jaitsi (autobusetik, trenetik)|
 B1|transporte|stop|parada|The bus [stop] is near my house.|||geltokia|B1
 B1|transporte|station|estación|Meet me at the train [station].|||geltokia, estazioa|B1
 B1|transporte|crowded|abarrotado|The metro is always [crowded].|full||jendez beteta|
 B1|transporte|driver|conductor/a|The bus [driver] was very friendly.|||gidaria|B1
 B1|transporte|passenger|pasajero/a|The plane had 200 [passengers].|||bidaiaria|B1
-B1|transporte|journey|trayecto, viaje|The [journey] takes two hours.||journey (ibilbidea) / trip (egonaldidun bidaia) / travel (aditza)|bidaia, ibilbidea|B1
+B1|transporte|journey|trayecto, viaje|The [journey] takes two hours.||journey (the travelling) / trip (going and staying) / travel (verb)|bidaia, ibilbidea|B1
 B1|transporte|ride|montar (bici, moto)|I [ride] my bike to school.|||gidatu (bizikleta, motoa)|B1
-B1|transporte|on foot|a pie|I go to school [on foot].||ON foot, baina BY bus|oinez|
-B1|transporte|by bus|en autobús|I go to school [by bus].||BY bus, 'the' gabe|autobusez|
+B1|transporte|on foot|a pie|I go to school [on foot].||ON foot, but BY bus|oinez|
+B1|transporte|by bus|en autobús|I go to school [by bus].||BY bus, no 'the'|autobusez|
 B1|transporte|helmet|casco|Always wear a [helmet].|||kaskoa|
 B1|transporte|cycle lane|carril bici|Pamplona has many [cycle lanes].|||bidegorria|
 B1|transporte|underground|metro (Londres)|London has a huge [underground].|||metroa (Londres)|B1
@@ -429,7 +437,7 @@ B1|transporte|motorway|autopista|Take the [motorway] to Zaragoza.|||autobidea|B2
 B2|transporte|commute|desplazarse (a diario)|I [commute] an hour every day.|travel||egunero joan-etorriak egin|B2
 B2|transporte|commuter|persona que se desplaza a diario|The train was full of [commuters].|||egunero joan-etorriak egiten dituena|
 B2|transporte|congestion|congestión|Traffic [congestion] is worse in winter.|||buxadura|
-B1|transporte|public transport|transporte público|[Public transport] should be free for students.||Zenbakaitza: inoiz ez 'public transports'|garraio publikoa|B1
+B1|transporte|public transport|transporte público|[Public transport] should be free for students.||Uncountable: never 'public transports'|garraio publikoa|B1
 B2|transporte|rush hour|hora punta|Avoid the metro during [rush hour].|||puntako ordua|
 B2|transporte|pedestrian|peatón|This street is for [pedestrians] only.|||oinezkoa|
 B2|transporte|pedestrianised|peatonal|The old town is [pedestrianised].|||oinezkoentzakoa|
@@ -441,7 +449,7 @@ B2|transporte|run out of|quedarse sin|We [ran out of] petrol on the motorway.|||
 B2|transporte|break down|averiarse|The bus [broke down] on the way.|||matxuratu|B2
 B1|transporte|cancel|cancelar|Our flight was [cancelled].|||bertan behera utzi|B1
 B2|transporte|reliable|fiable|The train service isn't very [reliable].|good||fidagarria|
-B2|transporte|convenient|práctico, cómodo|The metro is very [convenient].|practical|convenient = praktikoa (práctico); komenigarria (conveniente) = advisable|praktikoa, erosoa|
+B2|transporte|convenient|práctico, cómodo|The metro is very [convenient].|practical|convenient = praktikoa / práctico; 'conveniente' = advisable|praktikoa, erosoa|
 B2|transporte|inconvenience|molestia|We apologise for the [inconvenience].|||eragozpena|
 B2|transporte|infrastructure|infraestructura|The city needs better [infrastructure].|||azpiegitura|B2
 B2|transporte|route|ruta, línea|This bus [route] goes to the university.|||ibilbidea, linea|
@@ -456,19 +464,19 @@ B2|transporte|take off|despegar|The plane [took off] late.|||aireratu|B2
 B2|transporte|land|aterrizar|We [landed] in Dublin at six.|||lurreratu|B2
 B1|transporte|boarding pass|tarjeta de embarque|Show your [boarding pass] at the gate.|||hegazkinera igotzeko txartela|B1
 B2|transporte|self-driving|autónomo (coche)|[Self-driving] cars could reduce accidents.|||autonomoa (autoa)|
-B1|viajes|luggage|equipaje|How much [luggage] can I take?||Zenbakaitza: inoiz ez 'luggages'|ekipajea|B1
-B1|viajes|abroad|en el extranjero|I've never been [abroad].||'to' gabe: go abroad|atzerrian|B2
+B1|viajes|luggage|equipaje|How much [luggage] can I take?||Uncountable: never 'luggages'|ekipajea|B1
+B1|viajes|abroad|en el extranjero|I've never been [abroad].||No 'to': go abroad|atzerrian|B2
 B1|viajes|sightseeing|turismo (ver monumentos)|We went [sightseeing] in Rome.|||turismoa egin (monumentuak ikusi)|
-B1|viajes|accommodation|alojamiento|[Accommodation] in London is expensive.||Bi 'c' eta bi 'm'|ostatua|B1
+B1|viajes|accommodation|alojamiento|[Accommodation] in London is expensive.||Double c and double m|ostatua|B1
 B1|viajes|guidebook|guía de viaje|Check the [guidebook] for restaurants.|||bidaia-gida|
 B1|viajes|souvenir|recuerdo|I bought a [souvenir] for my sister.|||oroigarria|
 B1|viajes|tourist|turista|The city is full of [tourists].|||turista|B1
 B1|viajes|passport|pasaporte|Don't forget your [passport].|||pasaportea|B1
 B1|viajes|suitcase|maleta|My [suitcase] is too heavy.|||maleta|B1
 B1|viajes|pack|hacer la maleta|I haven't [packed] yet.|||maleta egin|
-B1|viajes|trip|viaje|We went on a school [trip] to London.||GO ON a trip; travel aditza da|bidaia, txangoa|B1
+B1|viajes|trip|viaje|We went on a school [trip] to London.||GO ON a trip; travel is a verb|bidaia, txangoa|B1
 B1|viajes|travel|viajar|I'd love to [travel] around Asia.|||bidaiatu|B1
-B1|viajes|campsite|camping|We stayed at a [campsite] by the lake.||camping (jarduera) / campsite (lekua)|kanpina|B1
+B1|viajes|campsite|camping|We stayed at a [campsite] by the lake.||camping (the activity) / campsite (the place)|kanpina|B1
 B1|viajes|hostel|albergue|Youth [hostels] are cheap.|||aterpetxea|B1
 B1|viajes|check in|registrarse|We [checked in] at 3 pm.|||erregistratu|B1
 B1|viajes|check out|dejar el hotel|You must [check out] before 11.|||hoteletik irten|B1
@@ -502,7 +510,7 @@ B2|viajes|explore|explorar|We spent a week [exploring] Scotland.|||esploratu|
 B2|viajes|get away|escaparse (unos días)|We need to [get away] for a weekend.|||ihes egin (egun batzuetarako)|B2
 B2|viajes|landmark|monumento emblemático|The Eiffel Tower is a famous [landmark].|||monumentu enblematikoa|B2
 B2|viajes|heritage site|sitio patrimonio|It's a UNESCO World [Heritage Site].|||ondare-gunea|B2
-B2|viajes|local customs|costumbres locales|Respect [local customs] when you travel.||custom (ohitura) / customs (aduana)|bertako ohiturak|
+B2|viajes|local customs|costumbres locales|Respect [local customs] when you travel.||custom (a tradition) / customs (at the border)|bertako ohiturak|
 B2|viajes|culture shock|choque cultural|I experienced [culture shock] in Japan.|||kultura-talka|
 B2|viajes|eco-tourism|ecoturismo|[Eco-tourism] supports local communities.|||ekoturismoa|
 B2|viajes|off-season|temporada baja|It's cheaper to travel [off-season].|||denboraldi baxua|
@@ -516,11 +524,11 @@ B2|viajes|remote|remoto, aislado|They live in a [remote] village.|small||urrunek
 B2|viajes|make the most of|aprovechar al máximo|[Make the most of] your time abroad.|Enjoy||ahalik eta probetxu handiena atera|
 B2|viajes|broaden your horizons|ampliar horizontes|Travelling [broadens your horizons].|teaches you things||ikuspegia zabaldu|
 B2|viajes|look around|echar un vistazo|We [looked around] the market.|||begiratu bat eman|
-B1|conn|however|sin embargo|The hotel was cheap. [However], it was dirty.|But|Komen artean edo puntuaren ondoren: '. However,'|hala ere|
-B1|conn|although|aunque|[Although] it was raining, we went out.||although + esaldi osoa / despite + izena edo -ing|nahiz eta|
-B1|conn|because of|debido a|The match was cancelled [because of] the rain.||because + esaldia / because of + izena|-gatik, -en ondorioz|
+B1|conn|however|sin embargo|The hotel was cheap. [However], it was dirty.|But|Between commas or after a full stop: '. However,'|hala ere|
+B1|conn|although|aunque|[Although] it was raining, we went out.||although + full clause / despite + noun or -ing|nahiz eta|
+B1|conn|because of|debido a|The match was cancelled [because of] the rain.||because + clause / because of + noun|-gatik, -en ondorioz|
 B1|conn|so|así que|I was tired, [so] I went to bed.|||beraz|
-B1|conn|also|también|She [also] plays the guitar.||also aditz nagusiaren aurretik doa|ere|B1
+B1|conn|also|también|She [also] plays the guitar.||also goes before the main verb|ere|B1
 B1|conn|as well|también (al final)|I like jazz [as well].|||ere (amaieran)|
 B1|conn|first of all|en primer lugar|[First of all], let me introduce myself.|First||lehenik eta behin|
 B1|conn|then|luego, después|[Then] we had lunch.|||gero|
@@ -530,12 +538,12 @@ B1|conn|in addition|además|[In addition], the course is free.|Also||gainera|
 B1|conn|on the one hand|por un lado|[On the one hand], phones are useful.|||alde batetik|
 B1|conn|on the other hand|por otro lado|[On the other hand], they are addictive.|But||bestetik|
 B1|conn|in conclusion|en conclusión|[In conclusion], I think uniforms are a good idea.|||ondorioz, amaitzeko|
-B1|conn|unless|a menos que|You'll fail [unless] you study.||unless = if not (ez darama beste ezeztapenik)|ez bada|
+B1|conn|unless|a menos que|You'll fail [unless] you study.||unless = if not (no other negative)|ez bada|
 B1|conn|while|mientras|I listen to music [while] I study.|||bitartean|
 B1|conn|as a result|como resultado|He didn't study. [As a result], he failed.|So||horren ondorioz|
 B2|conn|whereas|mientras que (contraste)|I love cities, [whereas] my sister prefers the countryside.|but||aldiz, berriz|
-B2|conn|despite|a pesar de|[Despite] the rain, we enjoyed the trip.||Inoiz ez 'despite of'|-n arren|
-B2|conn|in spite of|a pesar de|[In spite of] being tired, she kept going.||in spite OF + izena edo -ing|-n arren|
+B2|conn|despite|a pesar de|[Despite] the rain, we enjoyed the trip.||Never 'despite of'|-n arren|
+B2|conn|in spite of|a pesar de|[In spite of] being tired, she kept going.||in spite OF + noun or -ing|-n arren|
 B2|conn|nevertheless|no obstante|It was expensive. [Nevertheless], it was worth it.|But||hala eta guztiz ere|
 B2|conn|moreover|además|[Moreover], it's bad for the environment.|Also||gainera|
 B2|conn|furthermore|además (formal)|[Furthermore], the city has great transport.|Also||gainera (formala)|
@@ -549,17 +557,17 @@ B2|conn|on the contrary|al contrario|It wasn't boring; [on the contrary], it was
 B2|conn|all in all|en resumen|[All in all], it was a great experience.|In conclusion||laburbilduz|
 B2|conn|as a matter of fact|de hecho|[As a matter of fact], I've never been there.|Actually||izan ere|
 B2|conn|not only... but also|no solo... sino también|It's [not only] cheap but also healthy.|||ez bakarrik... baita... ere|
-B1|opin|in my opinion|en mi opinión|[In my opinion], homework is useful.||Inoiz ez 'In my opinion, I think' (errepikakorra)|nire ustez|
-B1|opin|I agree with|estoy de acuerdo con|[I agree with] you.||Inoiz ez 'I am agree'|ados nago -rekin|
+B1|opin|in my opinion|en mi opinión|[In my opinion], homework is useful.||Never 'In my opinion, I think' (repetitive)|nire ustez|
+B1|opin|I agree with|estoy de acuerdo con|[I agree with] you.||Never 'I am agree'|ados nago -rekin|
 B1|opin|I disagree|no estoy de acuerdo|[I disagree] with that idea.|||ez nago ados|
 B1|opin|I'm not sure|no estoy seguro|[I'm not sure] it's a good idea.|||ez nago ziur|
 B1|opin|I believe|creo|[I believe] everyone should recycle.|I think||uste dut|
-B1|opin|it depends on|depende de|[It depends on] the weather.||depend ON, inoiz ez 'of'|-ren araberakoa da|
+B1|opin|it depends on|depende de|[It depends on] the weather.||depend ON, never 'of'|-ren araberakoa da|
 B1|opin|personally|personalmente|[Personally], I prefer the countryside.|||nik neuk, pertsonalki|
 B1|opin|the problem is that|el problema es que|[The problem is that] it's too expensive.|||arazoa da...|
 B1|opin|what about|¿y qué tal...?|[What about] going by train?||what about + -ing|eta zer moduz...?|
 B1|opin|I see your point|entiendo lo que dices|[I see your point], but I don't agree.|||ulertzen dizut|
-B2|opin|from my point of view|desde mi punto de vista|[From my point of view], it's unfair.||FROM my point of view, ez 'in'|nire ikuspuntutik|
+B2|opin|from my point of view|desde mi punto de vista|[From my point of view], it's unfair.||FROM my point of view, not 'in'|nire ikuspuntutik|
 B2|opin|I'd argue that|yo diría que|[I'd argue that] schools should start later.|I think||esango nuke...|
 B2|opin|to some extent|hasta cierto punto|I agree [to some extent].|a bit||neurri batean|
 B2|opin|as far as I'm concerned|en lo que a mí respecta|[As far as I'm concerned], it's a waste of time.|||niri dagokidanez|
@@ -583,14 +591,14 @@ B1|func|Why don't we|¿por qué no...?|[Why don't we] meet at six?|||zergatik ez
 B1|func|How about|¿qué tal si...?|[How about] going to the cinema?||how about + -ing|zer iruditzen... -tzea?|
 B1|func|I'd like to|me gustaría|[I'd like to] join the club.|I want to||gustatuko litzaidake|
 B1|func|Best wishes|un saludo|[Best wishes], Ane|||ondo izan|
-B1|func|Dear Sir or Madam|Estimado/a señor/a|[Dear Sir or Madam], I am writing to complain.||Izena ez dakizunean; amaitu 'Yours faithfully'-rekin|Jaun/Andre agurgarria|
+B1|func|Dear Sir or Madam|Estimado/a señor/a|[Dear Sir or Madam], I am writing to complain.||When you don't know the name; finish with 'Yours faithfully'|Jaun/Andre agurgarria|
 B1|func|Yours faithfully|atentamente (sin nombre)|[Yours faithfully], Mikel Garcia|||adeitasunez (izena jakin gabe)|
 B1|func|Sorry, I didn't catch that|perdona, no lo he pillado|[Sorry, I didn't catch that]. Can you repeat it?|||barkatu, ez dut harrapatu|
 B1|func|What do you think|¿qué opinas?|[What do you think] about it?|||zer iruditzen zaizu?|
 B1|func|Shall we|¿...? (propuesta)|[Shall we] start?|||...-ko dugu? (proposamena)|
 B1|func|I'm afraid|me temo que|[I'm afraid] I can't come.|||beldur naiz..., sentitzen dut baina|
 B2|func|I would be grateful if you could|le agradecería que|[I would be grateful if you could] send me more information.|Can you||eskertuko nizuke...|
-B2|func|according to|según|[According to] the leaflet, the museum opens at ten.||according TO, inoiz ez 'according with'|-ren arabera|
+B2|func|according to|según|[According to] the leaflet, the museum opens at ten.||according TO, never 'according with'|-ren arabera|
 B2|func|the main point is|lo principal es|[The main point is] that it's free.|||gakoa da...|
 B2|func|in other words|es decir|[In other words], we need to book early.|||beste era batera esanda|
 B2|func|what this means is|lo que esto significa es|[What this means is] that you can't park there.|||horrek esan nahi du...|
@@ -601,7 +609,7 @@ B2|func|basically|básicamente|[Basically], you need two photos and your ID.|||f
 B2|func|to put it simply|dicho de forma sencilla|[To put it simply], recycling saves money.|||modu errazean esanda|
 B2|func|I was wondering if you could|me preguntaba si podría|[I was wondering if you could] help me.|Can you||galdetzen nuen ea... ahal zenukeen|
 B2|func|I'm writing to complain about|le escribo para quejarme de|[I'm writing to complain about] the service.||complain ABOUT|-ri buruz kexatzeko idazten dizut|
-B2|func|I'd recommend -ing|te recomendaría|[I'd recommend taking] the train.|You should take|recommend + -ing edo + that|gomendatuko nizuke|
+B2|func|I'd recommend -ing|te recomendaría|[I'd recommend taking] the train.|You should take|recommend + -ing or + that|gomendatuko nizuke|
 B2|func|it might be a good idea to|puede que sea buena idea|[It might be a good idea to] book in advance.|You should||ideia ona izan liteke...|
 B2|func|as you can see|como puedes ver|[As you can see], the graph shows a rise.|||ikus dezakezunez|
 B2|func|to sum up|para resumir|[To sum up], there are pros and cons.|||laburbilduz|
@@ -609,30 +617,30 @@ B2|func|Let's move on to|pasemos a|[Let's move on to] the next question.|||pasa 
 B2|func|Would you mind|¿te importaría?|[Would you mind] opening the window?||would you mind + -ing|axola al zaizu...?|
 B2|func|Kind regards|saludos cordiales|[Kind regards], Leire|||agur bero bat|
 B1|wf|unhappy|infeliz|She felt [unhappy] at her new school.||un- + happy|zorigaiztokoa, triste|
-B1|wf|impossible|imposible|It's [impossible] to sleep with this noise.||im- p, m eta b aurretik|ezinezkoa|
+B1|wf|impossible|imposible|It's [impossible] to sleep with this noise.||im- before p, m and b|ezinezkoa|
 B1|wf|dislike|no gustar|I [dislike] crowded places.||dis- + like|ez gustatu|B1
-B1|wf|careful|cuidadoso|Be [careful] with that knife.||-ful = betea (l BAKARRAREKIN)|kontuz ibiltzen dena|
-B1|wf|careless|descuidado|It was a [careless] mistake.||-less = gabe|arduragabea, axolagabea|
-B1|wf|useless|inútil|This charger is [useless].||-less = gabe|alferrikakoa|
+B1|wf|careful|cuidadoso|Be [careful] with that knife.||-ful = full of (only ONE l)|kontuz ibiltzen dena|
+B1|wf|careless|descuidado|It was a [careless] mistake.||-less = without|arduragabea, axolagabea|
+B1|wf|useless|inútil|This charger is [useless].||-less = without|alferrikakoa|
 B1|wf|homeless|sin hogar|There are many [homeless] people in big cities.|||etxegabea|
 B1|wf|friendship|amistad|Their [friendship] lasted years.||-ship|adiskidetasuna|B2
-B1|wf|happiness|felicidad|Money doesn't buy [happiness].||-ness; y > i bihurtzen da|zoriontasuna|
+B1|wf|happiness|felicidad|Money doesn't buy [happiness].||-ness; y changes to i|zoriontasuna|
 B1|wf|improvement|mejora|There's been a big [improvement].||-ment|hobekuntza|
 B1|wf|enjoyable|agradable, divertido|It was an [enjoyable] trip.||-able|atsegina|
 B1|wf|unfriendly|antipático|The staff were [unfriendly].|||jatorra ez dena|
-B1|wf|rewrite|reescribir|[Rewrite] the paragraph.||re- = berriro|berridatzi|
-B2|wf|misunderstanding|malentendido|It was all a [misunderstanding].||mis- = gaizki|gaizki-ulertua|
-B2|wf|irresponsible|irresponsable|That was [irresponsible] of you.||ir- r aurretik|arduragabea|
-B2|wf|illegal|ilegal|It's [illegal] to drive without a licence.||il- l aurretik|legez kanpokoa|B2
+B1|wf|rewrite|reescribir|[Rewrite] the paragraph.||re- = again|berridatzi|
+B2|wf|misunderstanding|malentendido|It was all a [misunderstanding].||mis- = wrongly|gaizki-ulertua|
+B2|wf|irresponsible|irresponsable|That was [irresponsible] of you.||ir- before r|arduragabea|
+B2|wf|illegal|ilegal|It's [illegal] to drive without a licence.||il- before l|legez kanpokoa|B2
 B2|wf|disadvantage|desventaja|One [disadvantage] is the cost.|||desabantaila|
 B2|wf|reliability|fiabilidad|The [reliability] of the trains has improved.||reliable → reliability (-ity)|fidagarritasuna|
 B2|wf|responsibility|responsabilidad|It's your [responsibility].|||erantzukizuna|B2
 B2|wf|awareness|conciencia, concienciación|We need more [awareness] of mental health.||aware → awareness (-ness)|kontzientzia|
 B2|wf|achievement|logro|Passing B2 is a great [achievement].||achieve → achievement|lorpena|
-B2|wf|independence|independencia|Teens want more [independence].||-ence (ez -ance)|independentzia|B2
+B2|wf|independence|independencia|Teens want more [independence].||-ence (not -ance)|independentzia|B2
 B1|wf|unemployment|desempleo|Youth [unemployment] is high.||un- + employ + -ment|langabezia|B1
-B2|wf|overestimate|sobrestimar|Don't [overestimate] your abilities.||over- = gehiegi|gehiegi baloratu|
-B2|wf|underpaid|mal pagado|Many young workers are [underpaid].||under- = gutxiegi|gaizki ordaindua|
+B2|wf|overestimate|sobrestimar|Don't [overestimate] your abilities.||over- = too much|gehiegi baloratu|
+B2|wf|underpaid|mal pagado|Many young workers are [underpaid].||under- = not enough|gaizki ordaindua|
 B2|wf|childhood|infancia|I had a happy [childhood].||-hood|haurtzaroa|
 B2|wf|freedom|libertad|[Freedom] of speech is essential.||free → freedom (-dom)|askatasuna|
 B2|wf|growth|crecimiento|Economic [growth] has slowed.||grow → growth|hazkundea|
@@ -643,7 +651,7 @@ B1|pv|wake up|despertarse|I [woke up] at seven.|||esnatu|B1
 B1|pv|get up|levantarse|I [get up] at 7:15.|||jaiki|B1
 B1|pv|put on|ponerse (ropa)|[Put on] your coat; it's cold.|||jantzi|B1
 B1|pv|turn down|bajar (volumen)|[Turn down] the music, please.|||(bolumena) jaitsi|B2
-B1|pv|look for|buscar|I'm [looking for] my keys.||look for (bilatu) / look up (hiztegian begiratu)|bilatu|B2
+B1|pv|look for|buscar|I'm [looking for] my keys.||look for (search) / look up (in a dictionary)|bilatu|B2
 B1|pv|look after|cuidar|I [look after] my little brother.|take care of||zaindu|B2
 B1|pv|find out|averiguar, enterarse|I [found out] the truth yesterday.|||jakin, konturatu|B2
 B1|pv|give back|devolver|[Give back] my charger!|||itzuli|B2
@@ -679,27 +687,27 @@ B2|pv|make up|inventarse|He [made up] an excuse.|invented||asmatu (aitzakia)|B2
 B2|pv|run into|encontrarse con (por casualidad)|I [ran into] my teacher at the supermarket.|met||ustekabean topatu|B2
 B2|pv|sort out|solucionar|We need to [sort out] this problem.|solve||konpondu|
 B2|pv|look into|investigar|The police are [looking into] the case.|investigating||ikertu|B2
-B1|coll|make a mistake|cometer un error|Everyone [makes mistakes].||MAKE, inoiz ez 'do'|akats bat egin|
-B1|coll|do homework|hacer los deberes|I [do my homework] after dinner.||DO, inoiz ez 'make'|etxeko lanak egin|
-B1|coll|make a decision|tomar una decisión|It's hard to [make a decision].||MAKE, ez 'take' (ingeles britainiarra)|erabaki bat hartu|
-B1|coll|take a photo|hacer una foto|Can you [take a photo] of us?||TAKE, inoiz ez 'make'|argazki bat atera|
-B1|coll|have a shower|ducharse|I [have a shower] every morning.||HAVE edo take, inoiz ez 'make'|dutxatu|
-B1|coll|pay attention|prestar atención|[Pay attention] in class.||PAY, inoiz ez 'lend'|arreta jarri|
-B1|coll|good at|bueno en|She's [good at] maths.||AT, inoiz ez 'in'|-n ona|B2
+B1|coll|make a mistake|cometer un error|Everyone [makes mistakes].||MAKE, never 'do'|akats bat egin|
+B1|coll|do homework|hacer los deberes|I [do my homework] after dinner.||DO, never 'make'|etxeko lanak egin|
+B1|coll|make a decision|tomar una decisión|It's hard to [make a decision].||MAKE, not 'take' (British English)|erabaki bat hartu|
+B1|coll|take a photo|hacer una foto|Can you [take a photo] of us?||TAKE, never 'make'|argazki bat atera|
+B1|coll|have a shower|ducharse|I [have a shower] every morning.||HAVE or take, never 'make'|dutxatu|
+B1|coll|pay attention|prestar atención|[Pay attention] in class.||PAY, never 'lend'|arreta jarri|
+B1|coll|good at|bueno en|She's [good at] maths.||AT, never 'in'|-n ona|B2
 B1|coll|interested in|interesado en|I'm [interested in] history.|||-n interesatuta|B2
-B1|coll|afraid of|miedo a|He's [afraid of] spiders.||OF, inoiz ez 'to'|-ri beldur|
-B1|coll|depend on|depender de|It [depends on] you.||ON, inoiz ez 'of'|-ren menpe egon|
-B1|coll|listen to|escuchar|[Listen to] me!||listen TO zerbait/norbait|entzun|B1
+B1|coll|afraid of|miedo a|He's [afraid of] spiders.||OF, never 'to'|-ri beldur|
+B1|coll|depend on|depender de|It [depends on] you.||ON, never 'of'|-ren menpe egon|
+B1|coll|listen to|escuchar|[Listen to] me!||listen TO something / someone|entzun|B1
 B1|coll|wait for|esperar a|I'm [waiting for] the bus.||wait FOR|itxaron|
-B1|coll|arrive in|llegar a (ciudad, país)|We [arrived in] London at noon.||arrive IN (hiria) / AT (leku zehatza), inoiz ez 'to'|iritsi (hiri, herrialde batera)|
-B1|coll|married to|casado con|She's [married to] a doctor.||TO, inoiz ez 'with'|-rekin ezkonduta|
+B1|coll|arrive in|llegar a (ciudad, país)|We [arrived in] London at noon.||arrive IN (a city) / AT (a place), never 'to'|iritsi (hiri, herrialde batera)|
+B1|coll|married to|casado con|She's [married to] a doctor.||TO, never 'with'|-rekin ezkonduta|
 B1|coll|tired of|harto de|I'm [tired of] waiting.|||-z nekatuta, aspertuta|
 B1|coll|go shopping|ir de compras|Let's [go shopping] on Saturday.|||erosketak egin|B1
 B1|coll|spend time|pasar tiempo|I [spend time] with my grandparents.|||denbora pasa|B1
 B1|coll|make friends|hacer amigos|It's easy to [make friends] at camp.|||lagunak egin|B2
 B2|coll|take into account|tener en cuenta|You must [take into account] the cost.|think about||kontuan hartu|
-B2|coll|make an effort|esforzarse|[Make an effort] to speak English.|Try|MAKE an effort, inoiz ez 'do'|ahalegina egin|B2
-B2|coll|do your best|hacer lo posible|Just [do your best].||DO, inoiz ez 'make'|ahal duzun onena egin|
+B2|coll|make an effort|esforzarse|[Make an effort] to speak English.|Try|MAKE an effort, never 'do'|ahalegina egin|B2
+B2|coll|do your best|hacer lo posible|Just [do your best].||DO, never 'make'|ahal duzun onena egin|
 B2|coll|take responsibility for|asumir la responsabilidad de|[Take responsibility for] your actions.|||-ren ardura hartu|
 B2|coll|play a role in|desempeñar un papel en|Social media [plays a role in] politics.|is important in||-n papera izan|
 B2|coll|reach an agreement|llegar a un acuerdo|They finally [reached an agreement].|agreed||akordio batera iritsi|
@@ -708,10 +716,10 @@ B2|coll|meet a deadline|cumplir un plazo|We have to [meet the deadline].|||epea 
 B2|coll|keep a promise|cumplir una promesa|Always [keep your promises].|||agindua bete|
 B2|coll|run a risk|correr un riesgo|You [run the risk] of failing.|||arriskua izan|
 B2|coll|capable of|capaz de|She's [capable of] anything.||OF + -ing|-tzeko gai|
-B2|coll|responsible for|responsable de|Who's [responsible for] this mess?||FOR, inoiz ez 'of'|-ren arduraduna|
+B2|coll|responsible for|responsable de|Who's [responsible for] this mess?||FOR, never 'of'|-ren arduraduna|
 B2|coll|aware of|consciente de|Are you [aware of] the risks?|||-z jabetuta|B2
-B2|coll|similar to|parecido a|My phone is [similar to] yours.||TO, inoiz ez 'than'|-ren antzekoa|
-B2|coll|different from|diferente de|Life here is [different from] life in Madrid.||FROM (UK), inoiz ez 'than'|-ren desberdina|
+B2|coll|similar to|parecido a|My phone is [similar to] yours.||TO, never 'than'|-ren antzekoa|
+B2|coll|different from|diferente de|Life here is [different from] life in Madrid.||FROM (UK), never 'than'|-ren desberdina|
 B2|coll|succeed in|tener éxito en|She [succeeded in] passing the exam.||IN + -ing|-n arrakasta izan, lortu|
 B2|coll|insist on|insistir en|He [insisted on] paying.||ON + -ing|tematu, insistitu|
 B2|coll|apologise for|disculparse por|I [apologise for] being late.|||barkamena eskatu -gatik|
@@ -719,21 +727,21 @@ B2|coll|complain about|quejarse de|They [complained about] the noise.|||kexatu|
 B1|ident|surname|apellido|My [surname] is Etxeberria.|||abizena|B1
 B1|ident|signature|firma|Put your [signature] at the bottom of the form.|||sinadura|B1
 B1|ident|date of birth|fecha de nacimiento|Write your [date of birth] here.|||jaiotze-data|B1
-B1|ident|be born|nacer|I [was born] in Pamplona in 2010.||Pasiboa: I WAS born, inoiz ez 'I born'|jaio|B1
+B1|ident|be born|nacer|I [was born] in Pamplona in 2010.||Passive: I WAS born, never 'I born'|jaio|B1
 B1|ident|marital status|estado civil|The form asks about your [marital status].|||egoera zibila|B1
 B1|ident|single|soltero/a|My uncle is still [single].|||ezkongabea|B1
 B1|ident|divorced|divorciado/a|Her parents are [divorced].|||dibortziatua|B1
-B1|ident|widow|viuda|She became a [widow] at forty.||widow (emakumea) / widower (gizona)|alarguna (emakumea)|B1
+B1|ident|widow|viuda|She became a [widow] at forty.||widow (a woman) / widower (a man)|alarguna (emakumea)|B1
 B1|ident|nationality|nacionalidad|What [nationality] is your new classmate?|||nazionalitatea|B1
 B1|ident|citizen|ciudadano/a|She is a Spanish [citizen].|||herritarra|B1
-B1|ident|foreigner|extranjero/a (persona)|Many [foreigners] visit Pamplona in July.||foreigner (pertsona) / foreign (adjektiboa)|atzerritarra|B1
+B1|ident|foreigner|extranjero/a (persona)|Many [foreigners] visit Pamplona in July.||foreigner (a person) / foreign (adjective)|atzerritarra|B1
 B1|ident|come from|ser de, venir de|Where do you [come from]?|||-koa izan|B1
 B1|ident|sibling|hermano/a|I have two [siblings].|||neba-arreba|B1
 B1|ident|good-looking|guapo/a|Her brother is very [good-looking].|||itxura onekoa|B1
-B1|ident|handsome|guapo (hombre)|He was tall and [handsome].||handsome gizonentzat erabiltzen da gehienbat|ederra (gizona)|B1
+B1|ident|handsome|guapo (hombre)|He was tall and [handsome].||handsome is mostly used for men|ederra (gizona)|B1
 B1|ident|bald|calvo|My grandfather is completely [bald].|||burusoila|B1
 B1|ident|fair-haired|rubio/a|She is [fair-haired] with blue eyes.|||ilehoria|B1
-B1|ident|slim|delgado/a|He's tall and [slim].||slim (positiboa) / thin (neutroa) / skinny (negatiboa)|lirain|B1
+B1|ident|slim|delgado/a|He's tall and [slim].||slim (positive) / thin (neutral) / skinny (negative)|lirain|B1
 B1|ident|lazy|vago/a|Don't be so [lazy]!|||alferra|B1
 B1|ident|generous|generoso/a|My aunt is very [generous].|||eskuzabala|B1
 B1|ident|unpleasant|desagradable|The waiter was really [unpleasant].|||desatsegina|B2
@@ -744,7 +752,7 @@ B1|ident|owner|dueño/a|The [owner] of the shop is very friendly.|||jabea|B1
 B2|ident|widowed|viudo/a (estado)|She has been [widowed] for ten years.|||alargundua|B2
 B2|ident|refugee|refugiado/a|The town welcomed fifty [refugees].|||errefuxiatua|B2
 B2|ident|asylum seeker|solicitante de asilo|[Asylum seekers] often wait months for an answer.|||asilo-eskatzailea|B2
-B2|ident|immigrant|inmigrante|Many [immigrants] work in agriculture.||immigrant (etorria) / emigrant (joana)|etorkina|B2
+B2|ident|immigrant|inmigrante|Many [immigrants] work in agriculture.||immigrant (comes in) / emigrant (goes out)|etorkina|B2
 B2|ident|stepfather|padrastro|My [stepfather] is a great cook.|||aitaordea|B2
 B2|ident|the in-laws|la familia política|We spend Christmas with [the in-laws].|||familia politikoa|B2
 B2|ident|an only child|hijo/a único/a|As [an only child], I never had to share.|||seme-alaba bakarra|B2
@@ -753,7 +761,7 @@ B2|ident|adopt|adoptar|They [adopted] a baby girl.|||adoptatu|B2
 B2|ident|orphan|huérfano/a|He became an [orphan] at the age of six.|||umezurtza|B2
 B2|ident|atheist|ateo/a|My cousin is an [atheist].|||ateoa|B2
 B2|ident|believe in|creer en|Do you [believe in] ghosts?||believe IN|-n sinetsi|B2
-B2|ident|curly|rizado|She has long [curly] hair.||Ordena: long curly hair (luzera, forma)|kizkurra|B2
+B2|ident|curly|rizado|She has long [curly] hair.||Order: long curly hair (length, then shape)|kizkurra|B2
 B2|ident|wavy|ondulado|He has short [wavy] hair.|||uhindua|B2
 B2|ident|straight|liso (pelo)|I've always had [straight] hair.|||leuna (ilea)|B2
 B2|ident|shoulder-length|por los hombros|She has [shoulder-length] hair.|||sorbaldaraino|B2
@@ -763,12 +771,12 @@ B2|ident|in his mid-thirties|de unos treinta y cinco años|The man is [in his mi
 B2|ident|reserved|reservado|She's quite [reserved] with strangers.|shy||zuhurra, isila|B2
 B2|ident|temp job|trabajo temporal|He's got a [temp job] for the summer.|||aldi baterako lana|B2
 B2|ident|civil servant|funcionario/a|My mother is a [civil servant].|||funtzionarioa|B2
-B1|familia|relative|pariente|All my [relatives] came to the wedding.||relative = senidea; parents = gurasoak|senidea|B1
+B1|familia|relative|pariente|All my [relatives] came to the wedding.||relative = senidea / pariente; parents = gurasoak / padres|senidea|B1
 B1|familia|cousin|primo/a|My [cousin] lives in Bilbao.|||lehengusua|B1
-B1|familia|niece|sobrina|My [niece] is three years old.||niece (neska) / nephew (mutila)|iloba (neska)|B1
+B1|familia|niece|sobrina|My [niece] is three years old.||niece (a girl) / nephew (a boy)|iloba (neska)|B1
 B1|familia|nephew|sobrino|My [nephew] loves football.|||iloba (mutila)|B1
 B1|familia|grandparents|abuelos|I visit my [grandparents] every Sunday.|||aiton-amonak|B1
-B1|familia|parents|padres|My [parents] work in Tafalla.||parents = gurasoak; relatives = senideak|gurasoak|B1
+B1|familia|parents|padres|My [parents] work in Tafalla.||parents = gurasoak / padres; relatives = senideak / parientes|gurasoak|B1
 B2|familia|caregiver|cuidador/a|Her grandmother needs a full-time [caregiver].|||zaintzailea|B2
 B2|familia|extended family|familia extensa|In summer the whole [extended family] meets in the village.|||familia zabala|B2
 B2|familia|nuclear family|familia nuclear|A [nuclear family] is just parents and children.|||familia nuklearra|B2
@@ -793,19 +801,19 @@ B2|familia|sense of humour|sentido del humor|I love his [sense of humour].||UK h
 B2|familia|temperament|temperamento|She has a calm [temperament].|||izaera|B2
 B2|familia|positive trait|rasgo positivo|Patience is a [positive trait].|||ezaugarri positiboa|B2
 B1|relaciones|acquaintance|conocido/a|He's not a friend, just an [acquaintance].|||ezaguna|B1
-B1|relaciones|stranger|desconocido/a|Don't talk to [strangers].||stranger = ezezaguna; 'extraño' (arraroa) = strange|ezezaguna|B1
+B1|relaciones|stranger|desconocido/a|Don't talk to [strangers].||stranger = ezezaguna / desconocido; 'extraño' = strange|ezezaguna|B1
 B1|relaciones|partner|pareja|She lives with her [partner].|||bikotekidea|B1
 B1|relaciones|invitation|invitación|Thanks for the [invitation]!|||gonbidapena|B1
 B1|relaciones|invite|invitar|We [invited] all our neighbours.|||gonbidatu|B1
 B1|relaciones|guest|invitado/a|We have [guests] for dinner tonight.|||gonbidatua|B1
-B1|relaciones|expect|esperar (prever)|We'll [expect] you at six.||expect (aurreikusi) / wait for (norbaiten zain egon)|zain egon|B1
+B1|relaciones|expect|esperar (prever)|We'll [expect] you at six.||expect (think it will happen) / wait for (stay until it happens)|zain egon|B1
 B1|relaciones|make an appointment|pedir cita|I need to [make an appointment] with the dentist.||MAKE an appointment|hitzordua eskatu|B1
 B1|relaciones|penfriend|amigo/a por correspondencia|I have a [penfriend] in Ireland.|||gutun-laguna|B1
 B1|relaciones|meeting|reunión|The [meeting] starts at five.|||bilera|B1
 B1|relaciones|receive|recibir|Did you [receive] my message?|||jaso|B1
 B1|relaciones|envelope|sobre|Put the letter in an [envelope].|||gutun-azala|B1
 B1|relaciones|stamp|sello|I need a [stamp] for this postcard.|||zigilua|B1
-B1|relaciones|party|fiesta|We're having a [party] on Friday.||HAVE a party, ez 'make'|festa|B1
+B1|relaciones|party|fiesta|We're having a [party] on Friday.||HAVE a party, not 'make'|festa|B1
 B1|relaciones|present|regalo|I bought her a birthday [present].|||oparia|B1
 B2|relaciones|classmate|compañero/a de clase|My [classmates] are really friendly.|||ikaskidea|B2
 B2|relaciones|flatmate|compañero/a de piso|My [flatmate] never does the dishes.|||pisukidea|B2
@@ -813,7 +821,7 @@ B2|relaciones|close friend|amigo/a íntimo/a|She's a [close friend] of mine.|||l
 B2|relaciones|relationship|relación|They have a very good [relationship].|||harremana|B2
 B2|relaciones|host|anfitrión/a|Our [host] cooked a wonderful meal.|||etxekoa, harrera egiten duena|B2
 B2|relaciones|welcome|dar la bienvenida|They [welcomed] us with a big smile.|||ongi etorria eman|B2
-B2|relaciones|have a date|tener una cita|I [have a date] on Friday.||date (hitzordu erromantikoa) / appointment (medikua...)|hitzordua izan|B2
+B2|relaciones|have a date|tener una cita|I [have a date] on Friday.||date (romantic) / appointment (doctor, dentist...)|hitzordua izan|B2
 B2|relaciones|poverty|pobreza|Many families live in [poverty].|||pobrezia|B2
 B2|relaciones|welfare|bienestar social|The government spends a lot on [welfare].|||ongizatea|B2
 B2|relaciones|social issue|problema social|Housing is a big [social issue].|||gizarte-arazoa|B2
@@ -821,23 +829,23 @@ B2|relaciones|addressee|destinatario/a|Write the [addressee]'s name clearly.|||h
 B1|relaciones|sender|remitente|The [sender] didn't sign the letter.|||igorlea|B1
 B2|relaciones|text message|mensaje de texto|She sent me a [text message].|||testu-mezua|B2
 B1|salud|sleepy|con sueño|I always feel [sleepy] after lunch.|||logura|B1
-B1|salud|thirsty|sediento|I'm really [thirsty].||I AM thirsty (ez 'I have thirst')|egarri|B1
+B1|salud|thirsty|sediento|I'm really [thirsty].||I AM thirsty (not 'I have thirst')|egarri|B1
 B1|salud|rest|descansar|The doctor told me to [rest].|||atseden hartu|B1
-B1|salud|headache|dolor de cabeza|I've got a terrible [headache].||HAVE A headache ('a'-rekin)|buruko mina|B1
+B1|salud|headache|dolor de cabeza|I've got a terrible [headache].||HAVE A headache (with 'a')|buruko mina|B1
 B1|salud|pain|dolor|I have a sharp [pain] in my back.|||mina|B1
-B1|salud|hurt|doler, hacer daño|My knee [hurts].||hurt (pertsonak) / damage (gauzak)|min egin|B1
+B1|salud|hurt|doler, hacer daño|My knee [hurts].||hurt (people) / damage (things)|min egin|B1
 B1|salud|dizzy|mareado/a|I feel [dizzy] when I stand up.|||zorabiatuta|B1
 B1|salud|fever|fiebre|She has a high [fever].|||sukarra|B1
 B1|salud|flu|gripe|Half the class has the [flu].|||gripea|B1
-B1|salud|disease|enfermedad|Diabetes is a common [disease].||disease (gaixotasun zehatza) / illness (gaixo egotea)|gaixotasuna|B1
+B1|salud|disease|enfermedad|Diabetes is a common [disease].||disease (a specific one) / illness (being ill)|gaixotasuna|B1
 B1|salud|fall ill|caer enfermo/a|He [fell ill] during the trip.|got sick||gaixotu|B1
-B1|salud|feel sick|tener náuseas|I [feel sick]; I ate too much.||UKn sick = goragalea|goragalea izan|B1
-B1|salud|have a cold|estar resfriado/a|I [have a cold].||have a cold, inoiz ez 'I'm constipated'|hotzeria izan|B1
+B1|salud|feel sick|tener náuseas|I [feel sick]; I ate too much.||In the UK, sick = about to vomit|goragalea izan|B1
+B1|salud|have a cold|estar resfriado/a|I [have a cold].||have a cold, never 'I'm constipated'|hotzeria izan|B1
 B1|salud|break a leg|romperse una pierna|She [broke her leg] skiing.|||hanka hautsi|B1
 B1|salud|burn|quemar(se)|I [burnt] my hand on the oven.|||erre|B1
 B1|salud|wound|herida|The [wound] needs cleaning.|||zauria|B1
 B1|salud|bandage|venda|The nurse put a [bandage] on my arm.|||benda|B1
-B1|salud|appointment|cita (médica)|I have a doctor's [appointment] at nine.||appointment (medikua) / date (erromantikoa)|hitzordua|B1
+B1|salud|appointment|cita (médica)|I have a doctor's [appointment] at nine.||appointment (doctor) / date (romantic)|hitzordua|B1
 B1|salud|chemist's|farmacia|You can buy it at the [chemist's].|||farmazia|B2
 B1|salud|prescription|receta médica|You need a [prescription] for this medicine.|||errezeta|B1
 B1|salud|pill|pastilla|Take two [pills] a day.|||pilula|B1
@@ -866,17 +874,17 @@ B2|salud|vaccine|vacuna|The [vaccine] is free for teenagers.|||txertoa|B2
 B2|salud|X-ray|radiografía|The [X-ray] showed a broken bone.|||erradiografia|B2
 B2|salud|GP|médico/a de cabecera|Make an appointment with your [GP].|||familiako medikua|B2
 B2|salud|chronic illness|enfermedad crónica|Asthma is a [chronic illness].|||gaixotasun kronikoa|B2
-B2|salud|injured|herido/a|Three people were [injured] in the accident.|hurt|injured (istripua) / wounded (arma)|zauritua|B2
+B2|salud|injured|herido/a|Three people were [injured] in the accident.|hurt|injured (accident) / wounded (weapon)|zauritua|B2
 B2|salud|pass away|fallecer|My grandfather [passed away] last year.|died||hil (eufemismoa)|B2
 B2|salud|take your pulse|tomar el pulso|The nurse [took my pulse].|||pultsua hartu|B2
 B1|salud|ward|planta (de hospital)|She's in the children's [ward].|||ospitaleko gela|B1
 B2|salud|medical insurance|seguro médico|Do you have [medical insurance]?|||osasun-asegurua|B2
 B1|diaria|leave the house|salir de casa|I [leave the house] at 7:45.|||etxetik irten|B1
-B1|diaria|come home|volver a casa|What time do you [come home]?||come home, 'to' gabe|etxera itzuli|B1
+B1|diaria|come home|volver a casa|What time do you [come home]?||No 'to': come home|etxera itzuli|B1
 B1|diaria|do the cooking|cocinar|My dad [does the cooking] at weekends.||DO the cooking|sukaldatu|B1
 B1|diaria|do the washing-up|fregar los platos|It's my turn to [do the washing-up].|||ontziak garbitu|B1
 B1|diaria|do the cleaning|hacer la limpieza|We [do the cleaning] on Saturdays.|||garbiketa egin|B1
-B1|diaria|do the housework|hacer las tareas de casa|Everyone should help [do the housework].||DO the housework (zenbakaitza)|etxeko lanak egin|B1
+B1|diaria|do the housework|hacer las tareas de casa|Everyone should help [do the housework].||DO the housework (uncountable)|etxeko lanak egin|B1
 B1|diaria|do the shopping|hacer la compra|My mum [does the shopping] on Fridays.|||erosketak egin|B1
 B1|diaria|get dressed|vestirse|I [get dressed] in five minutes.|||jantzi|B1
 B1|diaria|get undressed|desvestirse|He [got undressed] and went to bed.|||erantzi|B1
@@ -899,14 +907,14 @@ B1|trabajo|colleague|compañero/a de trabajo|My [colleagues] are very helpful.||
 B1|trabajo|canteen|comedor|We eat in the [canteen].|||jantokia|B1
 B1|trabajo|on strike|en huelga|The teachers are [on strike] today.||ON strike|greban|B1
 B1|trabajo|tax|impuesto|We all pay [taxes].|||zerga|B1
-B1|trabajo|earn|ganar (dinero)|She [earns] 1,500 euros a month.||earn (dirua) / win (saria)|irabazi (dirua)|B1
+B1|trabajo|earn|ganar (dinero)|She [earns] 1,500 euros a month.||earn (money) / win (a prize)|irabazi (dirua)|B1
 B1|trabajo|working hours|horario de trabajo|My [working hours] are nine to five.|||lanorduak|B1
 B1|trabajo|apply for|solicitar|I'm going to [apply for] a summer job.||apply FOR a job|eskatu (lanpostua)|B1
 B1|trabajo|qualify as|sacar el título de|She [qualified as] a nurse last year.|||-ko titulua lortu|B1
 B1|trabajo|company|empresa|He works for a big [company].|||enpresa|B1
 B1|trabajo|factory|fábrica|My uncle works in a car [factory].|||lantegia|B1
 B1|trabajo|office|oficina|She works in an [office] in the centre.|||bulegoa|B1
-B2|trabajo|salary|sueldo|Teachers' [salaries] are paid monthly.||salary (hilean, urtean) / wages (orduka, astean)|soldata|B2
+B2|trabajo|salary|sueldo|Teachers' [salaries] are paid monthly.||salary (monthly, yearly) / wages (hourly, weekly)|soldata|B2
 B2|trabajo|wages|salario (semanal)|Her [wages] are paid every Friday.|||alokairua|B2
 B2|trabajo|income|ingresos|Families with a low [income] get help.|||diru-sarrerak|B2
 B2|trabajo|pension|pensión|My grandparents live on a [pension].|||pentsioa|B2
@@ -930,18 +938,18 @@ B1|trabajo|prospects|perspectivas de futuro|Languages improve your job [prospect
 B2|trabajo|graduate|graduado/a|She's a law [graduate].|||graduatua|B2
 B2|trabajo|go on strike|ir a la huelga|The workers [went on strike].|||greba egin|B2
 B1|educacion|subject|asignatura|My favourite [subject] is history.|||ikasgaia|B1
-B1|educacion|lesson|clase (sesión)|We have three English [lessons] a week.||lesson (saioa) / classroom (gela)|eskola-saioa|B1
+B1|educacion|lesson|clase (sesión)|We have three English [lessons] a week.||lesson (the class) / classroom (the room)|eskola-saioa|B1
 B1|educacion|course|curso|I'm doing a summer [course] in Dublin.|||ikastaroa|B1
 B1|educacion|primary school|colegio de primaria|My sister is still at [primary school].|||lehen hezkuntzako eskola|B1
 B1|educacion|secondary school|instituto|I'm in my last year of [secondary school].|||bigarren hezkuntzako ikastetxea|B1
 B1|educacion|pupil|alumno/a|The school has 600 [pupils].|||ikaslea|B1
-B1|educacion|teach|enseñar|She [teaches] maths.||teach (irakatsi) / learn (ikasi)|irakatsi|B1
+B1|educacion|teach|enseñar|She [teaches] maths.||teach (the teacher) / learn (the student)|irakatsi|B1
 B1|educacion|pass an exam|aprobar un examen|I hope I [pass the exam].|||azterketa gainditu|B1
-B1|educacion|fail|suspender|He [failed] maths.||fail (suspenditu) / suspend (aldi baterako kanporatu)|suspenditu|B1
+B1|educacion|fail|suspender|He [failed] maths.||fail (an exam) / suspend (send home for a few days)|suspenditu|B1
 B1|educacion|certificate|certificado|You get a [certificate] at the end of the course.|||ziurtagiria|B1
 B1|educacion|entrance exam|examen de acceso|She passed the university [entrance exam].|||sarrera-azterketa|B1
 B1|educacion|take a course|hacer un curso|I'd like to [take a course] in photography.|||ikastaro bat egin|B1
-B1|educacion|lecture|clase magistral, conferencia|The [lecture] lasted two hours.||lecture = hitzaldia; 'lectura' = reading|hitzaldia|B1
+B1|educacion|lecture|clase magistral, conferencia|The [lecture] lasted two hours.||lecture = hitzaldia / clase magistral; 'lectura' = reading|hitzaldia|B1
 B2|educacion|boarding school|internado|He went to a [boarding school] in England.|||barnetegia|B2
 B2|educacion|state school|colegio público|I've always studied at a [state school].|||ikastetxe publikoa|B2
 B2|educacion|private school|colegio privado|[Private schools] can be very expensive.|||ikastetxe pribatua|B2
@@ -949,11 +957,11 @@ B2|educacion|nursery school|escuela infantil|My brother goes to [nursery school]
 B2|educacion|head teacher|director/a de colegio|The [head teacher] gave a speech.|||zuzendaria|B2
 B2|educacion|tutor|tutor/a|Talk to your [tutor] about it.|||tutorea|B2
 B2|educacion|term|trimestre|The second [term] starts in January.|||hiruhilekoa|B2
-B2|educacion|attend|asistir a|You must [attend] all your lessons.||attend (bertaratu) / assist (lagundu)|bertaratu|B2
+B2|educacion|attend|asistir a|You must [attend] all your lessons.||attend (go to) / assist (help)|bertaratu|B2
 B2|educacion|skip lessons|faltar a clase|He was caught [skipping lessons].|missing||klaseak saltatu|B2
 B2|educacion|cheat|copiar (en un examen)|She was caught [cheating] in the exam.|||tranpa egin|B2
 B2|educacion|resit|repetir (un examen)|I have to [resit] the exam in June.|||azterketa errepikatu|B2
-B2|educacion|revise|repasar (para un examen)|I need to [revise] for the test.||UKn revise = azterketarako errepasatu|errepasatu|B2
+B2|educacion|revise|repasar (para un examen)|I need to [revise] for the test.||In the UK, revise = study again before an exam|errepasatu|B2
 B2|educacion|take notes|tomar apuntes|[Take notes] during the lecture.|Write||apunteak hartu|B2
 B2|educacion|get high marks|sacar buenas notas|She always [gets high marks].|||nota onak atera|B2
 B2|educacion|discipline|disciplina|The school is famous for its [discipline].|||diziplina|B2
@@ -970,14 +978,14 @@ B1|vivienda|downstairs|abajo|The kitchen is [downstairs].|||beheko solairuan|B1
 B1|vivienda|basement|sótano|We keep our bikes in the [basement].|||sotoa|B1
 B1|vivienda|attic|desván|There are old toys in the [attic].|||ganbara|B1
 B1|vivienda|balcony|balcón|We have breakfast on the [balcony].|||balkoia|B1
-B1|vivienda|furniture|muebles|We bought new [furniture] for the living room.||Zenbakaitza: 'a piece of furniture', inoiz ez 'furnitures'|altzariak|B1
+B1|vivienda|furniture|muebles|We bought new [furniture] for the living room.||Uncountable: 'a piece of furniture', never 'furnitures'|altzariak|B1
 B1|vivienda|pillow|almohada|I can't sleep without my [pillow].|||burukoa|B1
 B1|vivienda|duvet|edredón|It's cold; I need a thicker [duvet].|||lumazko estalkia|B1
 B1|vivienda|heating|calefacción|Turn the [heating] on; it's freezing.|||berogailua|B1
 B1|vivienda|furnished|amueblado|We rented a [furnished] flat.|||altzariduna|B1
-B1|vivienda|rent|alquilar (como inquilino)|They [rent] a flat in Pamplona.||rent (maizterra) / let (jabea)|alokatu (maizter gisa)|B1
+B1|vivienda|rent|alquilar (como inquilino)|They [rent] a flat in Pamplona.||rent (the tenant) / let (the owner)|alokatu (maizter gisa)|B1
 B1|vivienda|for sale|en venta|The house next door is [for sale].|||salgai|B1
-B1|vivienda|cooker|cocina (aparato)|Don't leave anything on the [cooker].||cooker (tresna) / cook (sukaldaria)|sukalde-tresna|B1
+B1|vivienda|cooker|cocina (aparato)|Don't leave anything on the [cooker].||cooker (the machine) / cook (the person)|sukalde-tresna|B1
 B1|vivienda|washing machine|lavadora|The [washing machine] is broken.|||garbigailua|B1
 B1|vivienda|countryside|campo|I prefer living in the [countryside].|||landa|B1
 B1|vivienda|valley|valle|Their village is in a green [valley].|||harana|B1
@@ -996,41 +1004,41 @@ B1|vivienda|appliance|electrodoméstico|The kitchen has all the modern [applianc
 B2|vivienda|dishwasher|lavavajillas|Put the plates in the [dishwasher].|||ontzi-garbigailua|B2
 B2|vivienda|vacuum cleaner|aspiradora|I need the [vacuum cleaner] for the carpet.|||xurgagailua|B2
 B2|vivienda|deposit|fianza|We paid a [deposit] of two months' rent.|||fidantza|B2
-B2|vivienda|mortgage|hipoteca|They took out a [mortgage] to buy the house.||La 't' no se pronuncia / 't' ez da ahoskatzen|hipoteka|B2
-B1|vivienda|let|alquilar (como propietario)|They [let] their flat to students.||let (jabea) / rent (maizterra)|alokatu (jabe gisa)|B1
+B2|vivienda|mortgage|hipoteca|They took out a [mortgage] to buy the house.||The 't' is silent|hipoteka|B2
+B1|vivienda|let|alquilar (como propietario)|They [let] their flat to students.||let (the owner) / rent (the tenant)|alokatu (jabe gisa)|B1
 B2|vivienda|rural|rural|Many [rural] villages are losing people.|||landa-|B2
 B2|vivienda|urban|urbano|[Urban] areas are getting more crowded.|||hiriko|B2
 B2|vivienda|seaside|costa (de vacaciones)|We spent a week at the [seaside].|||itsasertza|B2
 B2|vivienda|hilly|con colinas|The north of Navarre is very [hilly].|||mendikatsua|B2
 B2|vivienda|kettle|hervidor|Put the [kettle] on and make some tea.|||ur-irakingailua|B2
-B2|vivienda|cutlery|cubiertos|The [cutlery] is in the top drawer.||Zenbakaitza|mahai-tresnak|B2
+B2|vivienda|cutlery|cubiertos|The [cutlery] is in the top drawer.||Uncountable|mahai-tresnak|B2
 B2|vivienda|dustbin|cubo de basura|Take the rubbish out to the [dustbin].|||zakarrontzia|B2
 B1|compras|customer|cliente|The [customer] is always right.|||bezeroa|B1
 B1|compras|department store|grandes almacenes|I bought it in a [department store].|||saltoki handia|B1
 B1|compras|shop assistant|dependiente/a|Ask the [shop assistant] for help.|||saltzailea|B1
 B1|compras|It's my turn|me toca a mí|Excuse me, [it's my turn].|||nire txanda da|B2
 B1|compras|wrap up|envolver|Could you [wrap it up]?|||bildu (oparia)|B1
-B1|compras|wear|llevar puesto|She always [wears] black.||wear (jantzita) / carry (eskuan)|jantzita eraman|B1
+B1|compras|wear|llevar puesto|She always [wears] black.||wear (on your body) / carry (in your hand)|jantzita eraman|B1
 B1|compras|take off|quitarse (ropa)|[Take off] your shoes, please.|||erantzi|B1
-B1|compras|wallet|cartera|I lost my [wallet] on the bus.||wallet (billeteak) / purse (txanponak)|diru-zorroa|B1
+B1|compras|wallet|cartera|I lost my [wallet] on the bus.||wallet (notes) / purse (coins)|diru-zorroa|B1
 B1|compras|purse|monedero|She put the coins in her [purse].|||moneta-zorroa|B1
-B1|compras|jewellery|joyas|She doesn't wear much [jewellery].||Zenbakaitza: 'a piece of jewellery'|bitxiak|B1
+B1|compras|jewellery|joyas|She doesn't wear much [jewellery].||Uncountable: 'a piece of jewellery'|bitxiak|B1
 B1|compras|discount|descuento|Students get a 10% [discount].|||deskontua|B1
 B1|compras|credit card|tarjeta de crédito|Can I pay by [credit card]?||PAY BY card|kreditu-txartela|B1
-B1|compras|coin|moneda|I need some [coins] for the machine.||coin (txanpona) / currency (dibisa)|txanpona|B1
+B1|compras|coin|moneda|I need some [coins] for the machine.||coin (the metal piece) / currency (euro, dollar...)|txanpona|B1
 B1|compras|spend|gastar|I [spent] all my money on clothes.||spend money ON something|gastatu|B1
 B1|compras|cash|efectivo|Do you want to pay in [cash]?||PAY IN cash|eskudirua|B1
 B1|compras|market|mercado|There's a street [market] on Saturdays.|||azoka|B1
 B2|compras|bargain|ganga, chollo|This jacket was a real [bargain].|||merkealdia|B2
 B2|compras|queue|cola, fila|There was a long [queue] at the checkout.|||ilara|B2
-B1|compras|receipt|ticket, recibo|Keep the [receipt] in case you want to return it.||'p' ez da ahoskatzen|tiketa|B1
+B1|compras|receipt|ticket, recibo|Keep the [receipt] in case you want to return it.||The 'p' is silent|tiketa|B1
 B2|compras|second-hand|de segunda mano|I buy most of my clothes [second-hand].|||bigarren eskukoa|B2
 B2|compras|shop window|escaparate|I saw a nice coat in the [shop window].|||erakusleihoa|B2
 B2|compras|window-shop|mirar escaparates|We went [window-shopping] all afternoon.|||erakusleihoei begira ibili|B2
 B2|compras|trolley|carro de la compra|Grab a [trolley] at the entrance.|||orga|B2
 B2|compras|changing room|probador|The [changing rooms] are at the back.|||probalekua|B2
 B2|compras|customer service|atención al cliente|I called [customer service] to complain.|||bezeroarentzako arreta|B2
-B2|compras|fit|quedar bien (de talla)|These jeans don't [fit] me.||fit (neurria) / suit (itxura)|ondo egon (neurria)|B2
+B2|compras|fit|quedar bien (de talla)|These jeans don't [fit] me.||fit (the size) / suit (the style)|ondo egon (neurria)|B2
 B2|compras|suit|sentar bien (estilo)|That colour really [suits] you.|||ondo geratu (itxura)|B2
 B2|compras|match|combinar con|Your shoes don't [match] your bag.|go with||bat etorri|B2
 B2|compras|in fashion|de moda|Wide jeans are [in fashion] again.|popular||modan|B2
@@ -1046,7 +1054,7 @@ B2|compras|woollen|de lana|My grandmother knitted me a [woollen] jumper.|||artil
 B2|compras|designer clothes|ropa de marca|[Designer clothes] are too expensive for me.|||marka-arropa|B2
 B2|compras|reduction|rebaja|There's a 30% [reduction] on all shoes.|discount||beherapena|B2
 B1|comida|snack|tentempié|I have a [snack] at eleven.|||mokadutxoa|B1
-B1|comida|dessert|postre|What's for [dessert]?||dessert (postrea) / desert (basamortua)|postrea|B1
+B1|comida|dessert|postre|What's for [dessert]?||dessert (after a meal) / desert (sand)|postrea|B1
 B1|comida|course|plato (de un menú)|The main [course] was fish.|||platera (menuan)|B1
 B1|comida|boiled|hervido|I'd like a [boiled] egg.|||egosia|B1
 B1|comida|fried|frito|[Fried] food isn't very healthy.|||frijitua|B1
@@ -1054,9 +1062,9 @@ B1|comida|grilled|a la plancha|I'll have the [grilled] chicken.|||plantxan egina
 B1|comida|roast|asado|We have [roast] chicken on Sundays.|||errea|B1
 B1|comida|slice|rebanada, loncha|Can I have a [slice] of bread?|||xerra|B1
 B1|comida|vegetables|verduras|You should eat more [vegetables].|||barazkiak|B1
-B1|comida|flour|harina|Mix the [flour] with two eggs.||'flower' bezala ahoskatzen da|irina|B1
+B1|comida|flour|harina|Mix the [flour] with two eggs.||Pronounced like 'flower'|irina|B1
 B1|comida|bill|cuenta (restaurante)|Could we have the [bill], please?||UK bill / US check|kontua|B1
-B1|comida|menu|carta|Can I see the [menu]?||menu = karta; 'menú del día' = set menu|karta|B1
+B1|comida|menu|carta|Can I see the [menu]?||menu = karta / carta; 'menú del día' = set menu|karta|B1
 B1|comida|tip|propina|We left a 10% [tip].|||eskupekoa|B1
 B1|comida|order|pedir (en un restaurante)|Are you ready to [order]?|||eskatu|B1
 B1|comida|waiter|camarero|The [waiter] brought the drinks.|||zerbitzaria|B1
@@ -1064,7 +1072,7 @@ B1|comida|take away|para llevar|Can I [take this away]?|||eraman (janaria)|B1
 B1|comida|serve|servir|Breakfast is [served] from seven to ten.|||zerbitzatu|B1
 B1|comida|poultry|aves (carne)|[Poultry] is cheaper than beef.|||hegaztiak|B1
 B1|comida|oil|aceite|Fry the onions in olive [oil].|||olioa|B1
-B2|comida|dish|plato (comida)|Paella is a typical Spanish [dish].||dish (janaria) / plate (objektua)|platera, janaria|B2
+B2|comida|dish|plato (comida)|Paella is a typical Spanish [dish].||dish (the food) / plate (the object)|platera, janaria|B2
 B1|comida|meal|comida (cada una)|Breakfast is the most important [meal] of the day.|||otordua|B1
 B2|comida|soft drink|refresco|They only sell [soft drinks] at the stadium.|||freskagarria|B2
 B2|comida|bake|hornear|We [baked] a cake for her birthday.|||labean egin|B2
@@ -1076,14 +1084,14 @@ B2|comida|eat in|comer en el local|Are you going to [eat in] or take away?|||ber
 B1|comida|self-service|autoservicio|It's a [self-service] restaurant.|||autozerbitzua|B1
 B1|comida|beverage|bebida (formal)|Hot [beverages] are served at the bar.|drinks||edaria|B1
 B1|servicios|account|cuenta (bancaria)|I opened an [account] at the bank.|||kontua (bankuan)|B1
-B1|servicios|borrow|pedir prestado|Can I [borrow] your pen?||borrow (maileguan hartu) / lend (utzi)|maileguan hartu|B1
-B1|servicios|lend|prestar|Could you [lend] me five euros?||lend (utzi) / borrow (maileguan hartu)|utzi, mailegatu|B1
+B1|servicios|borrow|pedir prestado|Can I [borrow] your pen?||borrow (take) / lend (give)|maileguan hartu|B1
+B1|servicios|lend|prestar|Could you [lend] me five euros?||lend (give) / borrow (take)|utzi, mailegatu|B1
 B1|servicios|repair|reparar|They [repaired] my bike in an hour.|fixed||konpondu|B1
 B1|servicios|engine|motor|The car's [engine] is making a strange noise.|||motorra|B1
 B1|servicios|brake|freno|The [brakes] don't work!|||balazta|B1
 B1|servicios|petrol station|gasolinera|Stop at the next [petrol station].||UK petrol / US gas|gasolindegia|B1
 B1|servicios|police station|comisaría|They took him to the [police station].|||polizia-etxea|B1
-B1|servicios|steal|robar (algo)|Someone [stole] my bike.||steal (zerbait) / rob (norbait, leku bat)|lapurtu|B1
+B1|servicios|steal|robar (algo)|Someone [stole] my bike.||steal (something) / rob (someone, a place)|lapurtu|B1
 B1|servicios|parcel|paquete|A [parcel] arrived for you this morning.|||paketea|B1
 B1|servicios|post office|oficina de correos|Is there a [post office] near here?|||posta-bulegoa|B1
 B1|servicios|out of order|averiado|The lift is [out of order].|||matxuratuta|B1
@@ -1096,7 +1104,7 @@ B2|servicios|interest rate|tipo de interés|The bank raised its [interest rates]
 B2|servicios|loan|préstamo|They got a [loan] to buy a car.|||mailegua|B2
 B2|servicios|invest|invertir|My parents [invested] in solar panels.|||inbertitu|B2
 B2|servicios|crime|delito, delincuencia|[Crime] has fallen in the city.|||delitua|B2
-B2|servicios|thief|ladrón/a|The [thief] ran away with her bag.||thief (lapurra) / theft (lapurreta)|lapurra|B2
+B2|servicios|thief|ladrón/a|The [thief] ran away with her bag.||thief (the person) / theft (the crime)|lapurra|B2
 B2|servicios|theft|robo|She reported the [theft] to the police.|||lapurreta|B2
 B2|servicios|report|denunciar|I [reported] the theft to the police.|||salatu|B2
 B2|servicios|embassy|embajada|Go to the [embassy] if you lose your passport.|||enbaxada|B2
@@ -1119,7 +1127,7 @@ B1|cultura|sculpture|escultura|There's a huge [sculpture] in the square.|||eskul
 B2|cultura|century|siglo|The castle was built in the 12th [century].||IN the 12th century|mendea|B2
 B2|cultura|decade|década|Prices have doubled in a [decade].|||hamarkada|B2
 B2|cultura|Middle Ages|Edad Media|Pamplona was an important city in the [Middle Ages].||THE Middle Ages|Erdi Aroa|B2
-B2|cultura|ancient|antiguo (de la Antigüedad)|We studied [ancient] Rome.||ancient (antzinakoa) / old (zaharra)|antzinako|B2
+B2|cultura|ancient|antiguo (de la Antigüedad)|We studied [ancient] Rome.||ancient (thousands of years) / old (just old)|antzinako|B2
 B2|cultura|kingdom|reino|Navarre was an independent [kingdom].|||erresuma|B2
 B2|cultura|empire|imperio|The Roman [Empire] was enormous.|||inperioa|B2
 B2|cultura|monarch|monarca|The [monarch] lived in the palace.|||monarka|B2
@@ -1135,7 +1143,7 @@ B2|cultura|civil rights|derechos civiles|Martin Luther King fought for [civil ri
 B2|cultura|protest|protestar|Thousands [protested] against the war.||protest AGAINST|protesta egin|B2
 B2|cultura|uprising|levantamiento|The [uprising] was quickly stopped.|||altxamendua|B2
 B2|cultura|masterpiece|obra maestra|Guernica is Picasso's [masterpiece].|||maisulana|B2
-B2|cultura|work of art|obra de arte|The museum has over 2,000 [works of art].||Plurala: WORKS of art|artelana|B2
+B2|cultura|work of art|obra de arte|The museum has over 2,000 [works of art].||Plural: WORKS of art|artelana|B2
 B2|cultura|ruins|ruinas|We visited the Roman [ruins].|||hondakinak, aztarnak|B2
 B2|cultura|monument|monumento|The [monument] remembers the victims.|||monumentua|B2
 B2|cultura|heritage|patrimonio|Basque is part of our cultural [heritage].|||ondarea|B2
@@ -1154,7 +1162,7 @@ B2|transporte|overtake|adelantar (un coche)|Don't [overtake] on a bend.|||aurrer
 B2|transporte|season ticket|abono|I have a [season ticket] for the bus.|||abonamendua|B2
 B2|transporte|hand luggage|equipaje de mano|You can take one piece of [hand luggage].|||eskuko ekipajea|B2
 B2|transporte|baggage reclaim|recogida de equipajes|We waited an hour at [baggage reclaim].|||ekipajea jasotzeko gunea|B2
-B1|transporte|customs|aduana|We went through [customs] quickly.||customs (aduana) / custom (ohitura)|aduana|B1
+B1|transporte|customs|aduana|We went through [customs] quickly.||customs (at the border) / custom (a tradition)|aduana|B1
 B2|transporte|departure lounge|sala de embarque|Wait in the [departure lounge].|||irteera-aretoa|B2
 B2|transporte|traffic light|semáforo|Stop at the [traffic lights].|||semaforoa|B2
 B2|transporte|lane|carril|The bus has its own [lane].|||erreia|B2
@@ -1166,7 +1174,7 @@ B1|viajes|bed and breakfast|alojamiento con desayuno|We stayed at a small [bed a
 B1|viajes|travel agency|agencia de viajes|We booked the trip at a [travel agency].|||bidaia-agentzia|B2
 B1|viajes|border|frontera|We crossed the [border] into France.|||muga|B1
 B1|viajes|visa|visado|You need a [visa] to visit some countries.|||bisa|B1
-B1|viajes|driving licence|carné de conducir|My brother just got his [driving licence].||UK licence (izena) / license (aditza)|gidabaimena|B1
+B1|viajes|driving licence|carné de conducir|My brother just got his [driving licence].||UK licence (noun) / license (verb)|gidabaimena|B1
 B1|viajes|tent|tienda de campaña|We slept in a [tent].|||kanpin-denda|B1
 B1|viajes|backpack|mochila|Pack a small [backpack] for the trip.|||motxila|B1
 B2|viajes|go on a cruise|hacer un crucero|My grandparents [went on a cruise].|||itsasontzi-bidaia egin|B2
@@ -1176,10 +1184,10 @@ B1|viajes|hire|alquilar (un coche)|We [hired] a car in Ireland.||UK: hire a car,
 B1|clima|fog|niebla|Drive slowly in the [fog].|||lainoa|B1
 B1|clima|frost|helada|There was [frost] on the car this morning.|||izotza|B1
 B1|clima|mild|templado|Winters are [mild] in the south.|||epela|B1
-B1|clima|lightning|relámpago, rayo|The tree was hit by [lightning].||Zenbakaitza: 'a flash of lightning'|tximista|B1
+B1|clima|lightning|relámpago, rayo|The tree was hit by [lightning].||Uncountable: 'a flash of lightning'|tximista|B1
 B1|clima|thunderstorm|tormenta eléctrica|There was a big [thunderstorm] last night.|||trumoi-ekaitza|B1
 B1|clima|freeze|helar(se)|The lake [froze] last winter.|||izoztu|B1
-B1|clima|shade|sombra|Let's sit in the [shade].||shade (eguzkirik gabeko lekua) / shadow (itzal-irudia)|itzala|B1
+B1|clima|shade|sombra|Let's sit in the [shade].||shade (out of the sun) / shadow (the dark shape)|itzala|B1
 B2|clima|blizzard|ventisca|The [blizzard] closed the roads.|||elur-ekaitza|B2
 B2|clima|smog|niebla tóxica|[Smog] covers the city in winter.|||smoga|B2
 B2|clima|hail|granizo|[Hail] damaged the crops.|||txingorra|B2
@@ -1198,12 +1206,12 @@ B2|lengua|attachment|archivo adjunto|I've sent the photo as an [attachment].|||e
 B2|lengua|attach|adjuntar|Please [attach] your CV to the email.|||erantsi|B2
 B2|lengua|spam|correo basura|Check your [spam] folder.|||spama|B2
 B2|lengua|interpreter|intérprete|The president spoke through an [interpreter].|||interpretea|B2
-B2|lengua|pronunciation|pronunciación|Her [pronunciation] is excellent.||Idazkera: pronunciation (ez 'pronounciation')|ahoskera|B2
+B2|lengua|pronunciation|pronunciación|Her [pronunciation] is excellent.||Spelling: pronunciation (not 'pronounciation')|ahoskera|B2
 B2|tech|upload|subir (un archivo)|[Upload] your homework to the platform.|||igo (fitxategia)|B2
 B2|tech|browser|navegador|Which [browser] do you use?|||nabigatzailea|B2
 B2|tech|laptop|portátil|I do my homework on a [laptop].|||ordenagailu eramangarria|B2
 B2|tech|printer|impresora|The [printer] has run out of ink.|||inprimagailua|B2
-B2|tech|software|software|You need to update the [software].||Zenbakaitza|softwarea|B2
+B2|tech|software|software|You need to update the [software].||Uncountable|softwarea|B2
 B2|tech|smartwatch|reloj inteligente|My [smartwatch] counts my steps.|||erloju adimenduna|B2
 B2|tech|gadget|aparato, artilugio|He loves the latest [gadgets].|||tramankulua|B2
 B2|tech|log out|cerrar sesión|Always [log out] on shared computers.|||saioa itxi|B2
@@ -1217,50 +1225,50 @@ B2|ocio|referee|árbitro/a|The [referee] gave him a red card.|||epailea|B2
 B2|ocio|score|marcar (un gol)|She [scored] two goals.|||gola sartu|B2
 B2|ocio|tournament|torneo|We won the school chess [tournament].|||txapelketa|B2
 B1|ocio|a draw|un empate|The match ended in [a draw].|||berdinketa|B1
-B2|ocio|beat|vencer (a alguien)|We [beat] them 3-0.||beat (aurkaria) / win (partida)|garaitu|B2
+B2|ocio|beat|vencer (a alguien)|We [beat] them 3-0.||beat (an opponent) / win (a match)|garaitu|B2
 B2|ocio|headline|titular|Did you see the [headline] today?|||izenburua|B2
 B2|ocio|broadcast|emitir|The match will be [broadcast] live.|||emititu|B2`;
 const TRAPS = [
-["B1","I am agree with you.","I agree with you.","'agree' aditza da jada: inoiz ez 'am agree'."],
-["B1","She is very sensible; she cries at every film.","She is very sensitive; she cries at every film.","sensitive = sentibera (sensible). sensible = zentzuduna (sensato)."],
-["B1","I'm embarrassed: I'm having a baby in May.","I'm pregnant: I'm having a baby in May.","embarrassed = lotsatuta (avergonzado). pregnant = haurdun (embarazada)."],
-["B1","Actually I live in Pamplona, but next year I'm moving.","Currently I live in Pamplona, but next year I'm moving.","actually = egia esan (en realidad). currently = gaur egun (actualmente)."],
-["B1","I bought a new novel in the library.","I bought a new novel in the bookshop.","library = liburutegia (biblioteca). bookshop = liburu-denda (librería)."],
-["B1","My parents don't let me assist to parties.","My parents don't let me go to parties.","assist = lagundu (ayudar). attend / go to = joan (asistir)."],
-["B1","People is very friendly here.","People are very friendly here.","people plurala da."],
-["B1","I have 16 years.","I am 16 years old.","Adina 'be' aditzarekin: I am 16."],
+["B1","I am agree with you.","I agree with you.","'agree' is already a verb: never 'am agree'."],
+["B1","She is very sensible; she cries at every film.","She is very sensitive; she cries at every film.","sensitive = sentibera / sensible. sensible = zentzuduna / sensato."],
+["B1","I'm embarrassed: I'm having a baby in May.","I'm pregnant: I'm having a baby in May.","embarrassed = lotsatuta / avergonzado. pregnant = haurdun / embarazada."],
+["B1","Actually I live in Pamplona, but next year I'm moving.","Currently I live in Pamplona, but next year I'm moving.","actually = egia esan / en realidad. currently = gaur egun / actualmente."],
+["B1","I bought a new novel in the library.","I bought a new novel in the bookshop.","library = liburutegia / biblioteca. bookshop = liburu-denda / librería."],
+["B1","My parents don't let me assist to parties.","My parents don't let me go to parties.","assist = lagundu / ayudar. attend or go to = joan / asistir."],
+["B1","People is very friendly here.","People are very friendly here.","people is plural."],
+["B1","I have 16 years.","I am 16 years old.","Age goes with 'be': I am 16."],
 ["B1","She explained me the problem.","She explained the problem to me.","explain something TO someone."],
-["B1","I'm boring in class.","I'm bored in class.","bored = aspertuta zaude. boring = zerbait aspergarria da."],
+["B1","I'm boring in class.","I'm bored in class.","bored = you feel it. boring = something makes you feel it."],
 ["B1","It depends of the weather.","It depends on the weather.","depend ON."],
-["B1","I want that you come.","I want you to come.","want + pertsona + to + aditza."],
-["B1","Hurry up or we'll lose the bus!","Hurry up or we'll miss the bus!","miss garraioarekin; lose objektuekin."],
-["B1","Can you borrow me your pen?","Can you lend me your pen?","lend = utzi (prestar). borrow = maileguan hartu (pedir prestado)."],
+["B1","I want that you come.","I want you to come.","want + person + to + verb."],
+["B1","Hurry up or we'll lose the bus!","Hurry up or we'll miss the bus!","miss transport; lose objects."],
+["B1","Can you borrow me your pen?","Can you lend me your pen?","lend = give (utzi / prestar). borrow = take (maileguan hartu / pedir prestado)."],
 ["B1","We made a party on Saturday.","We had a party on Saturday.","have / throw a party."],
 ["B1","I'm married with Ane.","I'm married to Ane.","married TO."],
-["B1","The informations are on the website.","The information is on the website.","information zenbakaitza da."],
-["B1","I'll call you when I will arrive.","I'll call you when I arrive.","'when'-en ondoren, etorkizunaz ari bazara: orainaldia."],
-["B1","Is very important to recycle.","It is very important to recycle.","'it' subjektua derrigorrezkoa da."],
-["B1","I go to the school by foot.","I go to school on foot.","ON foot; 'go to school' 'the' gabe."],
-["B2","Eventually I'll come to the party, if I have time.","Maybe I'll come to the party, if I have time.","eventually = azkenean (finalmente). 'Eventualmente' = maybe / possibly."],
-["B2","He finished the career of Medicine in 2020.","He finished his degree in Medicine in 2020.","career = ibilbide profesionala. Unibertsitateko karrera (carrera) = degree."],
-["B2","Put all the documents in the blue carpet.","Put all the documents in the blue folder.","carpet = alfonbra (alfombra). karpeta (carpeta) = folder."],
-["B2","The film was a big exit.","The film was a big success.","exit = irteera (salida). arrakasta (éxito) = success."],
-["B2","I'm constipated, I can't stop sneezing.","I've got a cold, I can't stop sneezing.","constipated = idorreria duena (estreñido). hotzeria (resfriado) = have a cold."],
-["B2","He's very educated: he always says thank you.","He's very polite: he always says thank you.","educated = ikasia (culto). hezia (educado) = polite."],
-["B2","We have to realise a project for Friday.","We have to carry out a project for Friday.","realise = konturatu (darse cuenta). burutu (realizar) = carry out."],
-["B2","Despite of the rain, we went out.","Despite the rain, we went out.","despite, inoiz ez 'despite of'."],
+["B1","The informations are on the website.","The information is on the website.","information is uncountable."],
+["B1","I'll call you when I will arrive.","I'll call you when I arrive.","After 'when' about the future: present tense."],
+["B1","Is very important to recycle.","It is very important to recycle.","The subject 'it' is compulsory."],
+["B1","I go to the school by foot.","I go to school on foot.","ON foot; 'go to school' without 'the'."],
+["B2","Eventually I'll come to the party, if I have time.","Maybe I'll come to the party, if I have time.","eventually = azkenean / finalmente. 'Eventualmente' = maybe / possibly."],
+["B2","He finished the career of Medicine in 2020.","He finished his degree in Medicine in 2020.","career = your professional life. University 'carrera' = degree."],
+["B2","Put all the documents in the blue carpet.","Put all the documents in the blue folder.","carpet = alfonbra / alfombra. 'carpeta' = folder."],
+["B2","The film was a big exit.","The film was a big success.","exit = irteera / salida. 'éxito' = success."],
+["B2","I'm constipated, I can't stop sneezing.","I've got a cold, I can't stop sneezing.","constipated = idorreria / estreñido. 'resfriado' = have a cold."],
+["B2","He's very educated: he always says thank you.","He's very polite: he always says thank you.","educated = ikasia / culto. 'educado' = polite."],
+["B2","We have to realise a project for Friday.","We have to carry out a project for Friday.","realise = konturatu / darse cuenta. 'realizar' = carry out / do."],
+["B2","Despite of the rain, we went out.","Despite the rain, we went out.","despite, never 'despite of'."],
 ["B2","I'm looking forward to see you.","I'm looking forward to seeing you.","look forward to + -ing."],
-["B2","Prices have raised a lot this year.","Prices have risen a lot this year.","rise (bere kabuz igo) / raise (zerbait igo)."],
-["B2","I have many homeworks today.","I have a lot of homework today.","homework zenbakaitza da."],
-["B2","We discussed about the problem.","We discussed the problem.","discuss, 'about' gabe."],
-["B2","Climate change is a very actual topic.","Climate change is a very current topic.","actual = benetakoa (real). Gaurkoa (actual) = current / topical."],
-["B2","She suggested me to study more.","She suggested that I study more.","suggest + that... / + -ing. Inoiz ez + pertsona + to."],
-["B2","If I would have time, I would help you.","If I had time, I would help you.","Bigarren baldintza: if + iragana."],
-["B2","My teacher is very simpatic.","My teacher is very nice.","'simpatic' ez da existitzen: nice / friendly. sympathetic = ulerkorra (comprensivo)."],
+["B2","Prices have raised a lot this year.","Prices have risen a lot this year.","rise (goes up by itself) / raise (you lift something)."],
+["B2","I have many homeworks today.","I have a lot of homework today.","homework is uncountable."],
+["B2","We discussed about the problem.","We discussed the problem.","discuss, without 'about'."],
+["B2","Climate change is a very actual topic.","Climate change is a very current topic.","actual = benetakoa / real. 'actual' = current / topical."],
+["B2","She suggested me to study more.","She suggested that I study more.","suggest + that... / + -ing. Never + person + to."],
+["B2","If I would have time, I would help you.","If I had time, I would help you.","Second conditional: if + past."],
+["B2","My teacher is very simpatic.","My teacher is very nice.","'simpatic' doesn't exist: nice / friendly. sympathetic = ulerkorra / comprensivo."],
 ["B2","You need to do an effort.","You need to make an effort.","MAKE an effort."],
-["B2","There were less people than last year.","There were fewer people than last year.","fewer zenbakarriekin; less zenbakaitzekin."],
-["B2","He's the responsible of the project.","He's the person in charge of the project.","responsible adjektiboa da: be responsible FOR / in charge of."],
-["B2","Since two years I study English.","I have been studying English for two years.","for + epea, present perfect-arekin."]
+["B2","There were less people than last year.","There were fewer people than last year.","fewer with countable nouns; less with uncountable nouns."],
+["B2","He's the responsible of the project.","He's the person in charge of the project.","responsible is an adjective: be responsible FOR / in charge of."],
+["B2","Since two years I study English.","I have been studying English for two years.","for + period of time, with the present perfect."]
 ];
 
 const GAPS = [
@@ -1338,23 +1346,36 @@ const SPEAKING = [
 {id:"s12",level:"B2",title:"Communication",qs:["Is body language more important than words?","Do online messages cause more misunderstandings than face-to-face conversations?","Should everyone learn at least two foreign languages at school?"],chunks:["To put it simply,","get the message across","It could be argued that","Moreover,","I couldn't agree more"]}
 ];
 
+const COLLS = [
+["___ a mistake","make"],["___ your homework","do"],["___ a photo","take"],["___ a shower","have|take"],["___ a decision","make"],
+["___ your best","do"],["___ an effort","make"],["___ a party","have"],["___ friends","make"],["___ the shopping","do"],
+["___ a break","take|have"],["___ a noise","make"],["___ the washing-up","do"],["___ money","make"],["___ exercise","do|take"],
+["___ a phone call","make"],["___ fun","have"],["___ a good time","have"],["___ part in a race","take"],["___ sense","make"],
+["___ damage","do"],["___ a complaint","make"],["___ business","do"],["___ a seat","take"],["___ a promise","make"],
+["___ a difference","make"],["___ research","do"],["___ lunch","have"],["___ a risk","take"],["___ progress","make"],
+["___ the cooking","do"],["___ me a favour","do"],["___ an appointment","make"],["___ care","take"],["___ a conversation","have"],
+["___ an argument","have"],["___ the bed","make"],["___ the housework","do"],["___ notes","take"],["___ a plan","make"],
+["___ breakfast","have"],["___ the ironing","do"],["___ an excuse","make"],["___ place (= happen)","take"],["___ a look","take|have"],
+["___ a suggestion","make"],["___ harm","do"],["___ a nap","have|take"],["___ a bath","have|take"],["___ advantage of","take"]
+];
+
 
 const BLOCKS = {
-  A:{name:"Ni eta nire jendea",col:"var(--bA)"}, B:{name:"Gorputza eta burua",col:"var(--bB)"},
-  C:{name:"Pantailak eta aisia",col:"var(--bC)"}, D:{name:"Planeta eta mugikortasuna",col:"var(--bD)"},
-  E:{name:"Ikasi eta lan egin",col:"var(--bE)"}, F:{name:"Eguneroko bizitza eta kultura",col:"var(--bF)"},
-  T:{name:"Tresna-kutxa",col:"var(--bT)"}
+  A:{name:"Me and my people",col:"var(--bA)"}, B:{name:"Body and mind",col:"var(--bB)"},
+  C:{name:"Screens and free time",col:"var(--bC)"}, D:{name:"Planet and getting around",col:"var(--bD)"},
+  E:{name:"Study and work",col:"var(--bE)"}, F:{name:"Everyday life and culture",col:"var(--bF)"},
+  T:{name:"Toolbox",col:"var(--bT)"}
 };
 const AREAS = [
-  ["ident","A","Identifikazio pertsonala"],["familia","A","Familia eta lagunak"],["relaciones","A","Giza eta gizarte harremanak"],
-  ["salud","B","Osasuna eta zainketa fisikoak"],["diaria","B","Eguneroko jarduerak"],
-  ["tech","C","Zientzia eta teknologia"],["ocio","C","Aisialdia eta denbora librea"],["lengua","C","Hizkuntza eta komunikazioa"],
-  ["clima","D","Klima eta ingurune naturala"],["transporte","D","Garraioa"],["viajes","D","Bidaiak eta oporrak"],
-  ["educacion","E","Hezkuntza eta ikasketak"],["trabajo","E","Lana eta lanbideak"],
-  ["vivienda","F","Etxebizitza, etxea eta ingurunea"],["compras","F","Erosketak eta merkataritza"],["comida","F","Elikadura eta jatetxeak"],
-  ["servicios","F","Ondasunak eta zerbitzuak"],["cultura","F","Historia eta kultura"],
-  ["conn","T","Loturak"],["opin","T","Iritzia eta ñabardura"],["func","T","Funtzioak: emaila, mediazioa, ahozkoa"],
-  ["wf","T","Hitzen eraketa"],["pv","T","Phrasal verbs"],["coll","T","Kolokazioak eta preposizioak"]
+  ["ident","A","Personal identification"],["familia","A","Family and friends"],["relaciones","A","Human and social relations"],
+  ["salud","B","Health and body care"],["diaria","B","Daily life"],
+  ["tech","C","Science and technology"],["ocio","C","Free time and leisure"],["lengua","C","Language and communication"],
+  ["clima","D","Climate and the natural world"],["transporte","D","Transport"],["viajes","D","Travel and holidays"],
+  ["educacion","E","Education and study"],["trabajo","E","Work and jobs"],
+  ["vivienda","F","Housing, home and surroundings"],["compras","F","Shopping"],["comida","F","Food and eating out"],
+  ["servicios","F","Goods and services"],["cultura","F","History and culture"],
+  ["conn","T","Linking words"],["opin","T","Opinion and nuance"],["func","T","Functions: email, mediation, speaking"],
+  ["wf","T","Word formation"],["pv","T","Phrasal verbs"],["coll","T","Collocations and prepositions"]
 ].map(([id,block,name])=>({id,block,name}));
 const AREA = Object.fromEntries(AREAS.map(a=>[a.id,a]));
 
@@ -1397,7 +1418,7 @@ function gloss(it){return it.eu&&it.es?`${it.eu} · ${it.es}`:(it.eu||it.es)}
 let S, MEM=null;
 function today(){const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function addDays(ds,n){const [y,m,d]=ds.split("-").map(Number);const t=new Date(y,m-1,d+n);return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")}
-function fresh(){return {v:2,route:null,levelUp:false,newPerDay:NEW_DEFAULT,items:{},days:{},mocks:[],med:[],speak:0,traps:{n:0,ok:0},diag:null,created:today()}}
+function fresh(){return {v:2,name:"",games:{},wotd:{},route:null,levelUp:false,newPerDay:NEW_DEFAULT,items:{},days:{},mocks:[],med:[],speak:0,traps:{n:0,ok:0},diag:null,created:today()}}
 function load(){try{const r=localStorage.getItem(STORE_KEY);S=r?JSON.parse(r):fresh()}catch(e){S=MEM||fresh()} S=Object.assign(fresh(),S)}
 function save(){try{localStorage.setItem(STORE_KEY,JSON.stringify(S))}catch(e){MEM=S}}
 function st(id){return S.items[id]||{b:0}}
@@ -1472,13 +1493,13 @@ function wc(t){return (t.trim().match(/\S+/g)||[]).length}
 function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1800)}
 function pct(x){return Math.round(x*100)}
 function $(s){return document.querySelector(s)}
-function boxLabel(b){return ["Berria","Ikasten","Testuinguruan","Gogoratzen","Idazten","Erabiltzen","Menperatuta"][b]||""}
-function inDays(n){return n===1?"bihar":`${n} egun barru`}
+function boxLabel(b){return ["New","Learning","In context","Recall","Writing","Using","Mastered"][b]||""}
+function inDays(n){return n===1?"tomorrow":`in ${n} days`}
 let VOICE=null, UTT=null;
 function pickVoice(){try{const vs=speechSynthesis.getVoices();
   return vs.find(v=>/en[-_]GB/i.test(v.lang)&&/google|natural|neural|enhanced|premium/i.test(v.name))||vs.find(v=>/en[-_]GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null}catch(e){return null}}
-function say(t){
-  if(!canSpeak){toast("Nabigatzaile honek ez du audiorik onartzen");return}
+function say(t,manual){
+  if(!canSpeak){if(manual)toast("This browser can't play audio");return}
   const syn=window.speechSynthesis;
   const speakNow=()=>{
     try{
@@ -1487,17 +1508,17 @@ function say(t){
       VOICE=VOICE||pickVoice();if(VOICE)UTT.voice=VOICE;
       let started=false;
       UTT.onstart=()=>{started=true};
-      UTT.onerror=e=>{if(e.error!=="interrupted"&&e.error!=="canceled")toast("Ezin izan da audioa erreproduzitu")};
+      UTT.onerror=e=>{if(e.error!=="interrupted"&&e.error!=="canceled")toast("Couldn't play the audio")};
       syn.resume();syn.speak(UTT);
-      setTimeout(()=>{if(!started&&!syn.speaking)toast(pickVoice()?"Audioa ez da abiatu: igo bolumena edo desaktibatu modu isila":"Gailu honek ez du ingelesezko ahotsik. Probatu Chrome edo Safarirekin.")},1800);
-    }catch(e){toast("Ezin izan da audioa erreproduzitu")}
+      setTimeout(()=>{if(manual&&!started&&!syn.speaking)toast(pickVoice()?"The audio didn't start: turn the volume up or switch off silent mode":"This device has no English voice. Try Chrome or Safari.")},1800);
+    }catch(e){toast("Couldn't play the audio")}
   };
   // Chrome: cancel() eta speak() jarraian deitzean, esaldia isilean galtzen da
   if(syn.speaking||syn.pending){syn.cancel();setTimeout(speakNow,80)}else speakNow();
 }
 const canSpeak=("speechSynthesis" in window);
-function spk(t){return canSpeak?`<button class="spk" data-say="${esc(t)}" aria-label="Entzun">🔊</button>`:""}
-document.addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b){e.preventDefault();say(b.dataset.say)}});
+function spk(t){return canSpeak?`<button class="spk" data-say="${esc(t)}" aria-label="Listen">🔊</button>`:""}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b){e.preventDefault();say(b.dataset.say,true)}});
 
 /* ======================= METRICS ======================= */
 function areaMastery(aid){
@@ -1513,109 +1534,117 @@ function weekDays(){const out=[];for(let i=6;i>=0;i--){const d=addDays(today(),-
 
 /* ======================= ROUTER ======================= */
 let TAB="home";
-function go(t){TAB=t;render()}
+function go(t){TAB=t;stopGames();render()}
 document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)go(b.dataset.t)});
 function shell(html,tabs=true){
   document.getElementById("app").innerHTML=html;
   const tb=document.getElementById("tabs");tb.style.display=tabs?"flex":"none";
-  tb.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t===TAB));
+  tb.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t===TAB||(TAB!=="progress"&&TAB!=="settings"&&b.dataset.t==="home")));
   window.scrollTo(0,0);
 }
 function render(){
   if(!S.route) return viewOnboard();
-  ({home:viewHome,practice:viewPractice,progress:viewProgress,settings:viewSettings}[TAB]||viewHome)();
+  ({home:viewHome,learn:viewLearn,practice:viewPractice,play:viewPlay,progress:viewProgress,settings:viewSettings}[TAB]||viewHome)();
 }
 function header(){return `<div class="top"><div class="row" style="gap:10px"><img src="${LOGO}" alt="Iparralde DBHI" style="height:34px;width:auto"><div class="brand">Lexi<b>kon</b></div></div><span class="pill">${S.route}${S.route==="B1"&&S.levelUp?" +B2":""}</span></div>`}
+function backBar(label,to){return `<div class="top"><button class="x" id="back" aria-label="Back">←</button><span class="pill soft">${label}</span></div>`}
+function bindBack(fn){$("#back").onclick=fn}
+function levels(){return S.route==="B1"&&S.levelUp?["B1","B2"]:(S.route==="B2"?["B2"]:["B1"])}
+const SECT={learn:{name:"Learn",col:"#534AB7",bg:"#EEEDFE",ink:"#3C3489",ic:"📘",sub:"New words and reviews"},
+  practice:{name:"Practice",col:"#993C1D",bg:"#FAECE7",ink:"#712B13",ic:"🎯",sub:"Exam format: Gap 20, mediation, speaking"},
+  play:{name:"Play",col:"#854F0B",bg:"#FAEEDA",ink:"#633806",ic:"🎮",sub:"Mini-games with your words"}};
 
 /* ======================= ONBOARDING ======================= */
 function viewOnboard(sel){
+  const nm=(document.getElementById("nm")||{}).value??(S.name||"");
   shell(`<div class="wrap onb">
     <div class="row" style="gap:14px;align-items:center"><img src="${LOGO}" alt="Iparralde DBHI" style="height:64px;width:auto"><div class="brand" style="font-size:1.6rem">Lexi<b>kon</b></div></div>
-    <h1 style="margin:10px 0 8px">EOIko azterketarako hiztegia.</h1>
-    <p class="mut">Bost minutu egunean. Hitzak ahazteko zorian zaudenean itzultzen dira. Zein mailatara aurkezten zara?</p>
-    <button class="route ${sel==="B1"?"on":""}" data-r="B1"><b>B1</b><br><span class="mut small">Erdi-maila. Segurtasunez komunikatzeko oinarri sendoa.</span></button>
-    <button class="route ${sel==="B2"?"on":""}" data-r="B2"><b>B2</b><br><span class="mut small">Erdi-goi maila. B1eko diagnostiko azkar batekin hasiko zara, hutsuneak betetzeko.</span></button>
-    <button class="btn" id="go" ${sel?"":"disabled"}>Hasi</button>
-    <p class="mut small" style="margin-top:14px">Zure aurrerapena mugikor honetan bakarrik gordetzen da. Ez dago konturik ez datu pertsonalik.</p>
+    <h1 style="margin:14px 0 8px">Your vocabulary for the EOI exam.</h1>
+    <p class="mut">Five minutes a day. Words come back just before you forget them.</p>
+    <label class="small mut" style="display:block;margin-top:16px">What should we call you? (optional, it stays on this phone)</label>
+    <input class="inp" id="nm" maxlength="20" placeholder="Your name or nickname" value="${esc(nm)}" style="margin-top:6px">
+    <p class="small mut" style="margin-top:14px">Which exam are you taking?</p>
+    <button class="route ${sel==="B1"?"on":""}" data-r="B1"><b>B1</b><br><span class="mut small">Intermediate. A solid base to communicate with confidence.</span></button>
+    <button class="route ${sel==="B2"?"on":""}" data-r="B2"><b>B2</b><br><span class="mut small">Upper intermediate. You'll start with a quick B1 check to fill the gaps.</span></button>
+    <button class="btn" id="go" ${sel?"":"disabled"}>Start</button>
+    <p class="mut small" style="margin-top:14px">Your progress is saved only on this phone. No accounts, no personal data.</p>
   </div>`,false);
   document.querySelectorAll(".route").forEach(b=>b.onclick=()=>viewOnboard(b.dataset.r));
-  $("#go").onclick=()=>{S.route=sel;save();if(sel==="B2"&&!S.diag)startDiag();else go("home")};
+  $("#go").onclick=()=>{S.name=$("#nm").value.trim().slice(0,20);S.route=sel;save();if(sel==="B2"&&!S.diag)startDiag();else go("home")};
 }
 
 /* ======================= DIAGNOSTIC (B2) ======================= */
 function startDiag(){
   const qs=sample(ITEMS.filter(i=>i.level==="B1"),24);
   let k=0;const fails=[],known=[];
-  shell(`<div class="wrap"><h2>B1eko diagnostiko azkarra</h2><p class="mut">B1eko 24 hitz. Huts egiten dituzunak zure sortan sartuko dira oinarri gisa. Ez badakizu, sakatu «Ez dakit»: ez asmatu zoriz.</p><button class="btn" id="s">Goazen</button><button class="btn ghost" id="skip">Diagnostikoa saltatu</button></div>`,false);
+  shell(`<div class="wrap"><h2>Quick B1 check</h2><p class="mut">24 B1 words. The ones you miss go into your deck as a base. If you don't know, tap "I don't know": don't guess.</p><button class="btn" id="s">Let's go</button><button class="btn ghost" id="skip">Skip the check</button></div>`,false);
   $("#skip").onclick=()=>{S.diag={done:today(),fails:[]};save();go("home")};
   $("#s").onclick=step;
   function step(){
     if(k>=qs.length){
       known.forEach(id=>{S.items[id]={b:3,c:1,w:0,d:addDays(today(),4),l:today()}});
       S.diag={done:today(),fails};save();
-      shell(`<div class="wrap"><h2>Diagnostikoa eginda</h2><div class="card"><div class="stat"><div><div class="n">${known.length}</div><div class="l">badakizkizu</div></div><div><div class="n">${fails.length}</div><div class="l">indartzeko</div></div></div></div><p class="mut">Huts egin dituzunak lehenik agertuko dira zure saioetan, B2koekin batera.</p><button class="btn" id="h">Nire egunera</button></div>`,false);
+      shell(`<div class="wrap"><h2>Check done</h2><div class="card"><div class="stat"><div><div class="n">${known.length}</div><div class="l">you know</div></div><div><div class="n">${fails.length}</div><div class="l">to work on</div></div></div></div><p class="mut">The ones you missed will come first in your sessions, together with the B2 words.</p><button class="btn" id="h">Go to my day</button></div>`,false);
       $("#h").onclick=()=>go("home");return;
     }
     const it=qs[k];const opts=shuffleInPlace([gloss(it),...distractorsFor(it,3).map(gloss)]);
     shell(`<div class="wrap"><div class="ex-top"><div class="bar"><i style="width:${pct(k/qs.length)}%"></i></div><span class="small mut">${k+1}/${qs.length}</span></div>
-      <div class="kind">Zer esan nahi du?</div><div class="prompt">${esc(it.lemma)}</div><div class="sent mut">${esc(it.plain)}</div>
+      <div class="kind">What does it mean?</div><div class="prompt">${esc(it.lemma)}</div><div class="sent mut">${esc(it.plain)}</div>
       ${opts.map(o=>`<button class="opt" data-o="${esc(o)}">${esc(o)}</button>`).join("")}
-      <button class="opt" data-o="__no" style="text-align:center;color:var(--mut)">Ez dakit</button></div>`,false);
+      <button class="opt" data-o="__no" style="text-align:center;color:var(--mut)">I don't know</button></div>`,false);
     document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{(b.dataset.o===gloss(it)?known:fails).push(it.id);k++;step()});
   }
 }
-function distractorsFor(it,n){
-  let c=ITEMS.filter(x=>x.area===it.area&&x.id!==it.id&&gloss(x)!==gloss(it));
-  return sample(c,n);
-}
+function distractorsFor(it,n){return sample(ITEMS.filter(x=>x.area===it.area&&x.id!==it.id&&gloss(x)!==gloss(it)),n)}
 
 /* ======================= HOME ======================= */
-function viewHome(){
-  const p=plan(),c=counts(),dr=S.days[today()],wk=weekDays(),act=wk.filter(d=>d.on).length;
-  const done=dr&&dr.done, total=p.due.length+p.nw.length;
-  const dn=["Ig","Al","Ar","Az","Og","Or","La"];
-  shell(`<div class="wrap">${header()}
-  <div class="card hero">
-    <div class="small" style="opacity:.75">${done?"Gaurko saioa eginda":"Zure gaurko saioa"}</div>
-    ${done?`<h2 style="margin-top:6px">Eginda. Itzuli bihar. ✓</h2><p class="small" style="opacity:.8">Gehiago nahi baduzu, «Landu» atalean modu gehiago dituzu.</p>`:
-     total?`<div class="row" style="align-items:flex-end;gap:14px;margin-top:6px"><div class="big">${total}</div><div style="padding-bottom:6px">${p.nw.length} hitz berri<br>${p.due.length} errepaso</div></div>`:
-     `<h2 style="margin-top:6px">Gaur ez dago ezer zain</h2><p class="small" style="opacity:.8">Tokatzen zitzaizun guztia errepasatu duzu.</p>`}
-    <div class="week">${wk.map(d=>`<div class="d ${d.on?"on":""} ${d.d===today()?"today":""}"><i></i>${dn[new Date(d.d+"T12:00").getDay()]}</div>`).join("")}</div>
-    <div class="small" style="opacity:.8;margin-top:6px">${act}/7 egun aste honetan · helburua: 5</div>
-    ${!done&&total?`<button class="btn" id="start">Hasi · ~${Math.max(4,Math.round(p.due.length*0.35+p.nw.length*0.9))} min</button>`:""}
-  </div>
-  <div class="stat"><div><div class="n">${c.seen}</div><div class="l">ikusiak</div></div><div><div class="n">${c.prod}</div><div class="l">ekoizten dituzu</div></div><div><div class="n">${c.mast}</div><div class="l">menperatuta</div></div></div>
-  <div class="blk mut" style="margin-top:18px">Azterketarako entrenamendua</div>
-  <div class="grid2">
-    <button class="tile" data-m="gap"><span class="ic">▦</span><div><b>Gap 20</b><small>Reading simulakroa</small></div></button>
-    <button class="tile" data-m="upgrade"><span class="ic">⇧</span><div><b>Upgrade</b><small>Igo zure esaldia B2ra</small></div></button>
-    <button class="tile" data-m="med"><span class="ic">⇄</span><div><b>Mediation</b><small>Gaztelaniatik ingelesera</small></div></button>
-    <button class="tile" data-m="speak"><span class="ic">◉</span><div><b>Speaking</b><small>Kronometroarekin</small></div></button>
-  </div></div>`);
-  if($("#start"))$("#start").onclick=()=>startSession(p.due,p.nw,"daily");
-  document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>openMode(b.dataset.m));
+function dailyDone(){const dr=S.days[today()];return !!(dr&&dr.done)}
+function playUnlocked(){const p=plan();return dailyDone()||(p.due.length+p.nw.length===0)}
+function lastDays(arr,n){const lim=addDays(today(),-n);return arr.filter(x=>x.date>lim)}
+function nextStep(){
+  const p=plan(),total=p.due.length+p.nw.length;
+  if(!dailyDone()&&total>0) return {txt:`${p.nw.length} new words and ${p.due.length} reviews`,meta:`~${Math.max(4,Math.round(p.due.length*0.35+p.nw.length*0.9))} min`,btn:"Start today's session",act:()=>startSession(p.due,p.nw,"daily"),tag:"Learn"};
+  if(!lastDays(S.mocks,7).length) return {txt:"You haven't done a Gap 20 this week",meta:"Exam reading task · 7 gaps",btn:"Do a Gap 20",act:viewGapList,tag:"Practice"};
+  if(!lastDays(S.med,7).length) return {txt:"Time for a mediation task",meta:"20% of the exam",btn:"Do a mediation",act:viewMedList,tag:"Practice"};
+  const w=S.wotd&&S.wotd[today()];
+  if(!(w&&w.done)) return {txt:"Your Word of the Day is waiting",meta:"Six tries",btn:"Play Word of the Day",act:startWotd,tag:"Play"};
+  return {txt:"All done for today. Well done!",meta:"Beat your record in Word Rain?",btn:"Play Word Rain",act:startRain,tag:"Play"};
 }
-function openMode(m){({gap:viewGapList,upgrade:startUpgrade,med:viewMedList,speak:viewSpeakList,trap:startTraps}[m])()}
+function viewHome(){
+  const wk=weekDays(),act=wk.filter(d=>d.on).length,ns=nextStep(),locked=!playUnlocked();
+  const hi=S.name?`Hi, ${esc(S.name)}!`:"Hi there!";
+  shell(`<div class="wrap">${header()}
+    <h1 style="font-size:2rem;margin:4px 0 2px">${hi}</h1>
+    <p class="mut small" style="margin-bottom:12px">${act}/7 days this week · goal: 5</p>
+    <div class="card hero">
+      <div class="small" style="opacity:.75">Your next step · ${ns.tag}</div>
+      <h2 style="margin:6px 0 2px">${ns.txt}</h2>
+      <div class="small" style="opacity:.8">${ns.meta}</div>
+      <button class="btn" id="ns">${ns.btn}</button>
+    </div>
+    ${["learn","practice","play"].map(k=>{const c=SECT[k];const lk=k==="play"&&locked;return `<button class="door" data-d="${k}" style="background:${c.bg}"><span class="dic">${lk?"🔒":c.ic}</span><span><b style="color:${c.ink}">${c.name}</b><small style="color:${c.col}">${lk?"Finish today's session to unlock":c.sub}</small></span><span style="color:${c.col}">›</span></button>`}).join("")}
+  </div>`);
+  $("#ns").onclick=ns.act;
+  document.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>go(b.dataset.d));
+}
 
-/* ======================= PRACTICE ======================= */
-function viewPractice(){
-  const blocks=["C","D","T","A","B","E","F"];
-  const lv=levels();
-  shell(`<div class="wrap">${header()}<h2>Landu</h2>
-  <div class="grid2">
-    <button class="tile" data-m="gap"><span class="ic">▦</span><div><b>Gap 20</b><small>${GAPS.filter(g=>lv.includes(g.level)).length} azterketa-testu</small></div></button>
-    <button class="tile" data-m="upgrade"><span class="ic">⇧</span><div><b>Upgrade</b><small>Aberastasun lexikoa</small></div></button>
-    <button class="tile" data-m="med"><span class="ic">⇄</span><div><b>Mediation</b><small>${MEDIATIONS.filter(g=>lv.includes(g.level)).length} ataza</small></div></button>
-    <button class="tile" data-m="speak"><span class="ic">◉</span><div><b>Speaking</b><small>${SPEAKING.filter(g=>lv.includes(g.level)).length} gai</small></div></button>
-    <button class="tile" data-m="trap" style="grid-column:span 2"><span class="ic">⚠</span><div><b>Trap Hunter</b><small>Lagun faltsuak eta ohiko akatsak</small></div></button>
-  </div>
-  <div class="blk mut" style="margin-top:18px">Arloka landu</div>
-  <div class="card">${blocks.map(bk=>{
-    return `<div class="blk" style="color:${BLOCKS[bk].col}">${bk==="T"?"":bk+" · "}${BLOCKS[bk].name}</div>`+AREAS.filter(a=>a.block===bk).map(a=>{
+/* ======================= LEARN ======================= */
+function viewLearn(){
+  const p=plan(),c=counts(),done=dailyDone(),total=p.due.length+p.nw.length;
+  const blocks=["A","B","C","D","E","F","T"];
+  shell(`<div class="wrap">${backBar("Learn")}
+   <div class="card hero" style="background:#3C3489">
+    <div class="small" style="opacity:.75">${done?"Today's session is done":"Today's session"}</div>
+    ${done?`<h2 style="margin-top:6px">Done. Come back tomorrow ✓</h2>`:total?`<div class="row" style="align-items:flex-end;gap:14px;margin-top:6px"><div class="big">${total}</div><div style="padding-bottom:6px">${p.nw.length} new words<br>${p.due.length} reviews</div></div><button class="btn" id="start">Start</button>`:`<h2 style="margin-top:6px">Nothing due today</h2>`}
+   </div>
+   <div class="stat"><div><div class="n">${c.seen}</div><div class="l">seen</div></div><div><div class="n">${c.prod}</div><div class="l">you can write</div></div><div><div class="n">${c.mast}</div><div class="l">mastered</div></div></div>
+   <div class="blk mut" style="margin-top:18px">Practise by topic</div>
+   <div class="card">${blocks.map(bk=>`<div class="blk" style="color:${BLOCKS[bk].col}">${bk==="T"?"":bk+" · "}${BLOCKS[bk].name}</div>`+AREAS.filter(a=>a.block===bk).map(a=>{
       const n=pool().filter(i=>i.area===a.id).length;const m=areaMastery(a.id);
-      return `<button class="area ${n?"":"off"}" data-a="${a.id}" ${n?"":"disabled"}><span class="nm">${a.name}</span>${n?`<span class="bar"><i style="width:${pct(m)}%;background:${BLOCKS[bk].col}"></i></span><span class="pc">%${pct(m)}</span>`:`<span class="pc" style="width:auto">laster</span>`}</button>`}).join("")
-  }).join("")}</div></div>`);
-  document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>openMode(b.dataset.m));
+      return `<button class="area ${n?"":"off"}" data-a="${a.id}" ${n?"":"disabled"}><span class="nm">${a.name}</span>${n?`<span class="bar"><i style="width:${pct(m)}%;background:${BLOCKS[bk].col}"></i></span><span class="pc">%${pct(m)}</span>`:`<span class="pc" style="width:auto">—</span>`}</button>`}).join("")).join("")}</div>
+  </div>`);
+  bindBack(()=>go("home"));
+  if($("#start"))$("#start").onclick=()=>startSession(p.due,p.nw,"daily");
   document.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{
     const aid=b.dataset.a,t=today();const its=pool().filter(i=>i.area===aid);
     const due=its.filter(i=>{const s=S.items[i.id];return s&&s.b>0&&s.d<=t});
@@ -1624,15 +1653,224 @@ function viewPractice(){
     startSession([...due,...rest].slice(0,8),nw,"area",AREA[aid].name);
   });
 }
-function levels(){return S.route==="B1"&&S.levelUp?["B1","B2"]:(S.route==="B2"?["B2"]:["B1"])}
+
+/* ======================= PRACTICE ======================= */
+function viewPractice(){
+  const lv=levels();
+  const tiles=[["gap","▦","Gap 20",`Exam reading task · ${GAPS.filter(g=>lv.includes(g.level)).length} texts`],
+    ["med","⇄","Mediation",`From Spanish to English · ${MEDIATIONS.filter(g=>lv.includes(g.level)).length} tasks`],
+    ["speak","◉","Speaking",`Timed monologue · ${SPEAKING.filter(g=>lv.includes(g.level)).length} topics`],
+    ["upgrade","⇧","Upgrade","Make your sentences sound B2"]];
+  shell(`<div class="wrap">${backBar("Practice")}
+   <h2>Train for the exam</h2><p class="mut small" style="margin-bottom:12px">The same tasks you'll find in the EOI exam.</p>
+   ${tiles.map(([k,ic,t,s])=>`<button class="door" data-m="${k}" style="background:${SECT.practice.bg}"><span class="dic">${ic}</span><span><b style="color:${SECT.practice.ink}">${t}</b><small style="color:${SECT.practice.col}">${s}</small></span><span style="color:${SECT.practice.col}">›</span></button>`).join("")}
+  </div>`);
+  bindBack(()=>go("home"));
+  document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>({gap:viewGapList,med:viewMedList,speak:viewSpeakList,upgrade:startUpgrade}[b.dataset.m])());
+}
+
+/* ======================= PLAY ======================= */
+function seenItems(){return pool().filter(i=>(st(i.id).b||0)>=1)}
+function viewPlay(){
+  if(!playUnlocked()){
+    shell(`<div class="wrap">${backBar("Play")}
+      <div class="card" style="text-align:center;padding:28px 18px"><div style="font-size:3rem">🔒</div><h2>Play is locked</h2><p class="mut">Finish today's Learn session to unlock the games.</p><button class="btn" id="go">Go to today's session</button></div></div>`);
+    bindBack(()=>go("home"));const p=plan();$("#go").onclick=()=>startSession(p.due,p.nw,"daily");return;
+  }
+  const g=S.games||{};const w=S.wotd&&S.wotd[today()];
+  const tiles=[["wotd","🟩","Word of the Day",w&&w.done?(w.win?"Solved today ✓":"Try again tomorrow"):"A new word every day · six tries"],
+    ["rain","🌧","Word Rain",`Type the words before they fall · best: ${g.rain||0}`],
+    ["makedo","⚡","Make or Do?",`Make, do, take or have? 60 seconds · best: ${g.makedo||0}`],
+    ["trap","⚠","Trap Hunter","False friends and typical mistakes"]];
+  shell(`<div class="wrap">${backBar("Play")}
+   <h2>Play with your words</h2><p class="mut small" style="margin-bottom:12px">The games only use words you've already learnt.</p>
+   ${tiles.map(([k,ic,t,s])=>`<button class="door" data-g="${k}" style="background:${SECT.play.bg}"><span class="dic">${ic}</span><span><b style="color:${SECT.play.ink}">${t}</b><small style="color:${SECT.play.col}">${s}</small></span><span style="color:${SECT.play.col}">›</span></button>`).join("")}
+  </div>`);
+  bindBack(()=>go("home"));
+  document.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>({wotd:startWotd,rain:startRain,makedo:startMakeDo,trap:startTraps}[b.dataset.g])());
+}
+function setBest(k,v){S.games=S.games||{};const nb=v>(S.games[k]||0);if(nb)S.games[k]=v;save();return nb}
+
+/* ---------- Word Rain ---------- */
+let RAIN=null;
+function stopGames(){if(RAIN){RAIN.stop=true;cancelAnimationFrame(RAIN.raf);RAIN=null}if(MD&&MD.tmr){clearInterval(MD.tmr);MD=null}}
+function startRain(){
+  stopGames();
+  const words=seenItems();
+  if(words.length<6){toast("Learn a few more words first");return}
+  shell(`<div class="wrap" style="padding-bottom:8px">
+    <div class="row" style="justify-content:space-between;margin-bottom:8px"><button class="x" id="back" aria-label="Back">←</button><b id="sc">0</b><span id="lv">❤️❤️❤️</span></div>
+    <input class="inp" id="in" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Type in English" style="margin:0 0 6px">
+    <div class="small mut" id="msg" style="min-height:20px;margin-bottom:6px"></div>
+    <div id="field" style="position:relative;height:min(42vh,340px);background:#EAF1F6;border-radius:16px;overflow:hidden;border:1px solid var(--line)">
+      <div style="position:absolute;left:0;right:0;bottom:0;height:6px;background:#c8413a;opacity:.5"></div>
+      <div id="ready" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px"><div style="font-size:2.4rem">🌧</div><b style="font-size:1.2rem;margin:6px 0">Word Rain</b><span class="small mut">Meanings fall from the sky. Type the English word before it hits the ground. Three lives.</span><button class="btn" id="go" style="width:auto;padding:12px 28px">Start</button></div>
+    </div>
+    </div>`,false);
+  $("#back").onclick=()=>{stopGames();go("play")};
+  $("#go").onclick=()=>{$("#ready").remove();run()};
+  function run(){
+    const field=$("#field"),H=field.clientHeight;
+    RAIN={drops:[],score:0,lives:3,t0:performance.now(),last:performance.now(),nextSpawn:0,missed:[],caught:0,stop:false,raf:0};
+    const inp=$("#in");inp.focus();
+    const spawn=now=>{
+      const used=new Set(RAIN.drops.map(d=>d.it.id));const cand=words.filter(w=>!used.has(w.id));const it=cand[Math.floor(Math.random()*cand.length)];if(!it)return;
+      const el=document.createElement("div");
+      el.style.cssText="position:absolute;max-width:62%;background:#fff;border:1.5px solid #16302b;border-radius:12px;padding:6px 10px;font-size:.9rem;line-height:1.2;box-shadow:0 2px 0 #16302b22";
+      el.innerHTML=`<b>${esc(it.eu)}</b><br><span class="small mut">${esc(it.es)}</span>`;
+      field.appendChild(el);
+      el.style.left=Math.round(Math.random()*(field.clientWidth-el.offsetWidth-8)+4)+"px";
+      const elapsed=(now-RAIN.t0)/1000;
+      RAIN.drops.push({it,el,y:-el.offsetHeight,v:(H+60)/Math.max(4.5,10-elapsed/12)});
+    };
+    const loop=now=>{
+      if(!RAIN||RAIN.stop)return;
+      const dt=Math.min(0.05,(now-RAIN.last)/1000);RAIN.last=now;
+      const elapsed=(now-RAIN.t0)/1000;
+      if(now>=RAIN.nextSpawn){spawn(now);RAIN.nextSpawn=now+Math.max(1300,3200-elapsed*25)}
+      for(const d of RAIN.drops.slice()){
+        d.y+=d.v*dt;d.el.style.top=d.y+"px";
+        if(d.y+d.el.offsetHeight>=H-6){
+          RAIN.drops=RAIN.drops.filter(x=>x!==d);d.el.remove();RAIN.lives--;RAIN.missed.push(d.it);
+          $("#lv").textContent="❤️".repeat(Math.max(0,RAIN.lives))+"🤍".repeat(3-Math.max(0,RAIN.lives));
+          $("#msg").innerHTML=`Missed: <b>${esc(d.it.lemma)}</b> = ${esc(gloss(d.it))}`;
+          if(RAIN.lives<=0) return end();
+        }
+      }
+      RAIN.raf=requestAnimationFrame(loop);
+    };
+    const tryCatch=(strict)=>{
+      const v=inp.value.trim();if(!v)return false;
+      const order=RAIN.drops.slice().sort((a,b)=>b.y-a.y);
+      for(const d of order){const r=matchAns(v,[d.it.lemma,d.it.target]);
+        if(r==="exact"||(!strict&&r)){
+          RAIN.drops=RAIN.drops.filter(x=>x!==d);d.el.style.transition="transform .2s, opacity .2s";d.el.style.transform="scale(1.3)";d.el.style.opacity="0";setTimeout(()=>d.el.remove(),200);
+          RAIN.caught++;RAIN.score+=10+Math.floor((performance.now()-RAIN.t0)/10000)*2;$("#sc").textContent=RAIN.score;inp.value="";
+          $("#msg").innerHTML=`<span style="color:var(--ok)">✓ ${esc(d.it.lemma)}</span>`;return true}}
+      return false;
+    };
+    inp.oninput=()=>tryCatch(true);
+    inp.onkeydown=e=>{if(e.key==="Enter"){if(!tryCatch(false)){inp.classList.add("shake");setTimeout(()=>inp.classList.remove("shake"),300)}}};
+    RAIN.raf=requestAnimationFrame(loop);
+    function end(){
+      const sc=RAIN.score,missed=RAIN.missed.slice(),caught=RAIN.caught;RAIN.stop=true;RAIN=null;
+      const nb=setBest("rain",sc);
+      shell(`<div class="wrap"><div class="card hero" style="margin-top:20px;background:#633806"><div class="small" style="opacity:.75">Word Rain</div><h2 style="margin-top:6px">${sc} points${nb?" · new record! 🏆":""}</h2><p style="opacity:.85">${caught} words caught · best: ${S.games.rain}</p></div>
+        ${missed.length?`<div class="card"><h3>Words that got away</h3>${missed.map(it=>`<div class="row" style="justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)"><span><b>${esc(it.lemma)}</b><br><span class="small mut">${esc(gloss(it))}</span></span>${spk(it.lemma)}</div>`).join("")}</div>`:""}
+        <button class="btn" id="a">Play again</button><button class="btn ghost" id="h">Back to Play</button></div>`,false);
+      $("#a").onclick=startRain;$("#h").onclick=()=>go("play");
+    }
+  }
+}
+
+/* ---------- Word of the Day ---------- */
+function hashStr(s){let h=0;for(const c of s)h=(h*31+c.charCodeAt(0))>>>0;return h}
+function startWotd(){
+  S.wotd=S.wotd||{};let w=S.wotd[today()];
+  if(!w){
+    let cand=seenItems().filter(i=>/^[a-z]{4,7}$/i.test(i.lemma));
+    if(cand.length<5) cand=pool().filter(i=>/^[a-z]{4,7}$/i.test(i.lemma)&&i.level==="B1");
+    if(!cand.length){toast("Learn a few more words first");return}
+    cand.sort((a,b)=>a.id.localeCompare(b.id));
+    const it=cand[hashStr(today()+S.created)%cand.length];
+    w=S.wotd[today()]={id:it.id,g:[],done:false,win:false,hint:false};
+    const keys=Object.keys(S.wotd).sort();while(keys.length>30)delete S.wotd[keys.shift()];
+    save();
+  }
+  renderWotd();
+}
+function scoreGuess(guess,ans){
+  const res=Array(ans.length).fill("x"),pool={};
+  for(let i=0;i<ans.length;i++){if(guess[i]===ans[i])res[i]="g";else pool[ans[i]]=(pool[ans[i]]||0)+1}
+  for(let i=0;i<ans.length;i++){if(res[i]!=="g"&&pool[guess[i]]){res[i]="y";pool[guess[i]]--}}
+  return res;
+}
+function renderWotd(){
+  const w=S.wotd[today()],it=BYID[w.id];if(!it){delete S.wotd[today()];return startWotd()}
+  const ans=it.lemma.toLowerCase(),L=ans.length;
+  const col={g:"#2f8f5b",y:"#d9a420",x:"#8a948f"};
+  const rows=[];for(let r=0;r<6;r++){const g=w.g[r];const sc=g?scoreGuess(g,ans):null;
+    rows.push(`<div style="display:grid;grid-template-columns:repeat(${L},1fr);gap:6px;margin-bottom:6px">${Array.from({length:L},(_,i)=>`<div style="aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1.4rem;text-transform:uppercase;border-radius:8px;${g?`background:${col[sc[i]]};color:#fff`:"border:2px solid var(--line);background:var(--card)"}">${g?esc(g[i]):""}</div>`).join("")}</div>`)}
+  const hintBtn=!w.done&&!w.hint?`<button class="small mut" id="hint" style="text-decoration:underline;margin-top:8px">Show me the meaning</button>`:"";
+  shell(`<div class="wrap">${backBar("Word of the Day")}
+    <p class="small mut" style="margin-bottom:10px">Guess the ${L}-letter word from your deck. Green: right place. Yellow: wrong place. Grey: not in the word.</p>
+    <div style="max-width:${Math.min(360,L*58)}px;margin:0 auto">${rows.join("")}</div>
+    ${w.hint||w.done?`<div class="card" style="margin-top:8px"><div class="small mut">Meaning</div><b>${esc(gloss(it))}</b></div>`:hintBtn}
+    ${w.done?`<div class="fb ${w.win?"ok":"no"}"><b>${w.win?`Solved in ${w.g.length}! 🎉`:"Not this time"}</b><div class="row" style="justify-content:space-between">The word was <b style="display:inline;flex:1;margin-left:6px">${esc(it.lemma)}</b>${spk(it.lemma)}</div><span class="small">${hl(it)}</span><div class="small" style="margin-top:6px">A new word tomorrow.</div></div><button class="btn ghost" id="h">Back to Play</button>`:
+      `<input class="inp" id="in" maxlength="${L}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${L} letters" style="text-transform:uppercase;letter-spacing:.3em;text-align:center"><div class="small" id="err" style="color:var(--bad);min-height:18px;margin-top:4px"></div><button class="btn dark" id="chk">Check</button>`}
+  </div>`);
+  bindBack(()=>go("play"));
+  if($("#h"))$("#h").onclick=()=>go("play");
+  if($("#hint"))$("#hint").onclick=()=>{w.hint=true;save();renderWotd()};
+  if($("#chk")){
+    const inp=$("#in");setTimeout(()=>inp.focus(),60);
+    const sub=()=>{const g=inp.value.trim().toLowerCase();
+      if(!/^[a-z]+$/.test(g)||g.length!==L){$("#err").textContent=`Type exactly ${L} letters`;return}
+      w.g.push(g);if(g===ans){w.done=true;w.win=true;S.games=S.games||{};S.games.wotdWins=(S.games.wotdWins||0)+1}else if(w.g.length>=6){w.done=true}
+      save();renderWotd()};
+    $("#chk").onclick=sub;inp.onkeydown=e=>{if(e.key==="Enter")sub()};inp.oninput=()=>{$("#err").textContent=""};
+  }
+}
+
+/* ---------- Make or Do? ---------- */
+let MD=null;
+function startMakeDo(){
+  stopGames();
+  const deck=shuffleInPlace(COLLS.slice());let i=0,score=0,streak=0,left=60;const wrong=[];
+  shell(`<div class="wrap">${backBar("Make or Do?")}
+    <div class="card" style="text-align:center;padding:26px 16px"><div style="font-size:2.4rem">⚡</div><h2>Make, do, take or have?</h2><p class="mut">60 seconds. Choose the right verb as fast as you can. Three in a row gives you bonus points.</p><button class="btn" id="go">Start</button></div></div>`,false);
+  bindBack(()=>{stopGames();go("play")});
+  $("#go").onclick=()=>{MD={tmr:setInterval(()=>{left--;const t=$("#tm");if(t)t.textContent=left+"s";if(left<=0)end()},1000)};card()};
+  function card(){
+    if(!MD)return;
+    const [ph,ok]=deck[i%deck.length];const okS=ok.split("|");
+    shell(`<div class="wrap"><div class="row" style="justify-content:space-between;margin-bottom:14px"><button class="x" id="back" aria-label="Back">←</button><b id="tm">${left}s</b><b>${score} pts${streak>=3?" 🔥":""}</b></div>
+      <div class="card" style="text-align:center;padding:34px 12px"><div class="prompt" style="font-size:2rem">${esc(ph)}</div></div>
+      <div class="grid2">${["make","do","take","have"].map(v=>`<button class="opt" data-v="${v}" style="text-align:center;font-size:1.25rem;font-weight:600;padding:18px">${v}</button>`).join("")}</div></div>`,false);
+    $("#back").onclick=()=>{stopGames();go("play")};
+    document.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{
+      if(!MD)return;const r=okS.includes(b.dataset.v);
+      document.querySelectorAll("[data-v]").forEach(x=>{x.disabled=true;if(okS.includes(x.dataset.v))x.classList.add("ok");else if(x===b)x.classList.add("no")});
+      if(r){streak++;score+=streak>=3?2:1}else{streak=0;wrong.push([ph,okS.join(" / ")])}
+      i++;setTimeout(card,r?250:900);
+    });
+  }
+  function end(){
+    if(!MD)return;clearInterval(MD.tmr);MD=null;
+    const nb=setBest("makedo",score);
+    shell(`<div class="wrap"><div class="card hero" style="margin-top:20px;background:#633806"><div class="small" style="opacity:.75">Make or Do?</div><h2 style="margin-top:6px">${score} points${nb?" · new record! 🏆":""}</h2><p style="opacity:.85">Best: ${S.games.makedo}</p></div>
+      ${wrong.length?`<div class="card"><h3>Review these</h3>${wrong.map(([p,a])=>`<div style="padding:5px 0;border-bottom:1px solid var(--line)">${esc(p.replace("___",a.toUpperCase()))}</div>`).join("")}</div>`:""}
+      <button class="btn" id="a">Play again</button><button class="btn ghost" id="h">Back to Play</button></div>`,false);
+    $("#a").onclick=startMakeDo;$("#h").onclick=()=>go("play");
+  }
+}
+
+/* ---------- Trap Hunter ---------- */
+function startTraps(){
+  const lv=S.route==="B2"||S.levelUp?["B1","B2"]:["B1"];
+  const list=sample(TRAPS.filter(t=>lv.includes(t[0])),10);let k=0,ok=0;
+  step();
+  function step(){
+    if(k>=list.length){S.traps.n+=list.length;S.traps.ok+=ok;setBest("trap",ok);
+      shell(`<div class="wrap"><div class="card hero" style="margin-top:20px;background:#633806"><div class="small" style="opacity:.75">Trap Hunter</div><h2 style="margin-top:6px">${ok}/${list.length} traps avoided</h2><p style="opacity:.85">These are the mistakes that cost the most marks in the EOI exam.</p></div><button class="btn" id="a">Another round</button><button class="btn ghost" id="h">Back to Play</button></div>`,false);
+      $("#a").onclick=startTraps;$("#h").onclick=()=>go("play");return}
+    const [lvl,bad,good,why]=list[k];const opts=shuffleInPlace([good,bad]);
+    shell(`<div class="wrap"><div class="ex-top"><button class="x" id="quit">✕</button><div class="bar"><i style="width:${pct(k/list.length)}%"></i></div><span class="small mut">${k+1}/${list.length}</span></div>
+      <div class="kind">Trap Hunter · which one is correct?</div>${opts.map(o=>`<button class="opt" data-o="${esc(o)}" style="font-size:1.08rem">${esc(o)}</button>`).join("")}<div id="fb"></div></div>`,false);
+    $("#quit").onclick=()=>go("play");
+    document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if($("#nx"))return;const r=b.dataset.o===good;if(r)ok++;
+      document.querySelectorAll(".opt").forEach(o=>{o.classList.add(o.dataset.o===good?"ok":"no");o.disabled=true});
+      $("#fb").innerHTML=`<div class="fb ${r?"ok":"no"}"><b>${r?"Trap avoided!":"You fell into it"}</b>${esc(why)}</div><button class="btn" id="nx">Next</button>`;
+      $("#nx").onclick=()=>{k++;step()}});
+  }
+}
 
 /* ======================= SESSION ENGINE =======================
-   Hitz berriak: 4ko taldeetan aurkezten dira. Talde baten lehen proba (euskara/gaztelania → ingelesa, pista batekin)
-   hurrengo taldearen ondoren dator; bigarren proba (hutsunea testuinguruan, pistarik gabe) saioaren amaieran.
-   Bi probak gainditzen badira, hitza 2. kutxara doa; bestela, 1.era (bihar itzultzen da). */
+   New words: shown in groups of 4. First test (translation → English, with initials) comes after the next group;
+   second test (gap in context, no hint) at the end of the session. Both right → box 2; otherwise box 1 (back tomorrow). */
 let SES=null;
 function startSession(due,nw,mode,label){
-  if(!due.length&&!nw.length){toast("Ez dago itemik hemen");return}
+  if(!due.length&&!nw.length){toast("Nothing to study here right now");return}
   const rev=due.map(it=>({id:it.id,t:"review"}));
   const groups=[];for(let i=0;i<nw.length;i+=GROUP)groups.push(nw.slice(i,i+GROUP));
   const q=[];
@@ -1651,54 +1889,55 @@ function nextEx(){
   if(SES.i>=SES.queue.length) return endSession();
   const q=SES.queue[SES.i];const it=BYID[q.id];
   if(q.t==="intro") return renderIntro(it);
+  if(q.t==="retry2"){q.t="retry_last";return renderEx(it,"recallhint",q)}
   const kind=q.t==="learn1"?"recallhint":q.t==="learn2"?"gaptype":q.t==="retry"?"recallhint":q.t==="upgrade"?"upgrade":kindFor(it);
   renderEx(it,kind,q);
 }
 function topBar(){const n=SES.queue.length;return `<div class="ex-top"><button class="x" id="quit">✕</button><div class="bar"><i style="width:${pct(SES.i/n)}%"></i></div><span class="small mut">${Math.min(SES.i+1,n)}/${n}</span></div>`}
-function bindQuit(){$("#quit").onclick=()=>{if(confirm("Irten? Egindakoa gordeta dago."))go(TAB)}}
+function bindQuit(){$("#quit").onclick=()=>{if(confirm("Leave? Everything you've done is saved."))go("home")}}
 function hl(it){return esc(it.example).replace(/\[(.+?)\]/,"<u>$1</u>")}
 function renderIntro(it){
   const nth=SES.queue.slice(0,SES.i+1).filter(x=>x.t==="intro").length;
   shell(`<div class="wrap">${topBar()}
-    <div class="kind">Hitz berria · ${nth}/${SES.nNew}</div>
+    <div class="kind">New word · ${nth}/${SES.nNew}</div>
     <div class="card"><span class="tag">${it.level}</span>${it.ofi?`<span class="tag ofi">EOIDNA ${it.ofi}</span>`:""}<span class="tag">${AREA[it.area].name}</span>
     <div class="row" style="margin-top:10px;justify-content:space-between"><div class="intro-lemma">${esc(it.lemma)}</div>${spk(it.lemma)}</div>
     <div style="font-size:1.1rem;margin-top:6px"><b style="font-weight:600">${esc(it.eu)}</b></div>
     <div class="mut">${esc(it.es)}</div>
     <div class="row" style="justify-content:space-between;align-items:flex-start"><div class="sent">${hl(it)}</div>${spk(it.plain)}</div>
     ${it.trap?`<div class="trap">⚠ ${esc(it.trap)}</div>`:""}
-    ${it.upgrade?`<div class="small mut" style="margin-top:8px">Oinarrizkoagoa den hau ordezkatzen du: <i>${esc(it.upgrade)}</i></div>`:""}
+    ${it.upgrade?`<div class="small mut" style="margin-top:8px">A better way to say: <i>${esc(it.upgrade)}</i></div>`:""}
     </div>
-    <p class="small mut">Irakurri ozen, entzun eta saiatu gogoratzen. Laster idatzi beharko duzu, pistarik gabe.</p>
-    <button class="btn dark" id="ok">Hurrengoa</button></div>`,false);
+    <p class="small mut">Say it out loud, listen and try to remember it. You'll have to write it soon, with no help.</p>
+    <button class="btn dark" id="ok">Next</button></div>`,false);
   bindQuit();$("#ok").onclick=()=>{SES.i++;nextEx()};
 }
 function renderEx(it,kind,q){
   const gapSent=esc(it.example).replace(/\[(.+?)\]/,'<span class="gapline">&nbsp;</span>');
   const isLearn=q.t==="learn1"||q.t==="learn2";
-  const tagNew=isLearn?`<span class="tag" style="background:#fdf3de">hitz berria</span>`:"";
+  const tagNew=isLearn?`<span class="tag" style="background:#fdf3de">new word</span>`:"";
   let body="",targets;
   if(kind==="recallhint"||kind==="recall"){
-    body=`<div class="kind">Nola esaten da ingelesez? ${tagNew}</div><div class="prompt">${esc(it.eu)}</div><div class="mut">${esc(it.es)}</div>
-      ${kind==="recallhint"?`<div class="hint" style="font-size:1.1rem;margin-top:8px">${esc(hintOf(it.lemma))}</div>`:`<button class="small mut" id="ctx" style="margin-top:6px;text-decoration:underline">Pista bat</button><div id="ctxv"></div>`}`;
+    body=`<div class="kind">How do you say it in English? ${tagNew}</div><div class="prompt">${esc(it.eu)}</div><div class="mut">${esc(it.es)}</div>
+      ${kind==="recallhint"?`<div class="hint" style="font-size:1.1rem;margin-top:8px">${esc(hintOf(it.lemma))}</div>`:`<button class="small mut" id="ctx" style="margin-top:6px;text-decoration:underline">Give me a hint</button><div id="ctxv"></div>`}`;
     targets=[it.lemma,it.target];
   }else if(kind==="gaptype"){
-    body=`<div class="kind">Idatzi falta dena ${tagNew}</div><div class="sent" style="font-size:1.2rem">${gapSent}</div><div class="mut small">(${esc(gloss(it))})</div>`;
+    body=`<div class="kind">Write the missing words ${tagNew}</div><div class="sent" style="font-size:1.2rem">${gapSent}</div><div class="mut small">(${esc(gloss(it))})</div>`;
     targets=[it.target];
   }else if(kind==="upgrade"){
     const base=esc(it.example).replace(/\[(.+?)\]/,`<u>${esc(it.upgrade)}</u>`);
-    body=`<div class="kind">Upgrade · igo maila</div><div class="sent" style="font-size:1.15rem">${base}</div><p class="mut small">Aldatu azpimarratutakoa adierazpen zehatzago batekin. Pista: <b>${esc(gloss(it))}</b> · ${esc(hintOf(it.target))}</p>`;
+    body=`<div class="kind">Upgrade · level up</div><div class="sent" style="font-size:1.15rem">${base}</div><p class="mut small">Replace the underlined words with a more precise expression. Hint: <b>${esc(gloss(it))}</b> · ${esc(hintOf(it.target))}</p>`;
     targets=[it.target,it.lemma];
   }
   shell(`<div class="wrap">${topBar()}${body}
-    <input class="inp" id="in" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Idatzi ingelesez">
-    <button class="btn dark" id="chk">Egiaztatu</button>
-    <button class="btn ghost" id="idk" style="margin-top:8px">Ez dakit</button>
+    <input class="inp" id="in" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Type in English">
+    <button class="btn dark" id="chk">Check</button>
+    <button class="btn ghost" id="idk" style="margin-top:8px">I don't know</button>
     <div id="fb"></div></div>`,false);
   bindQuit();
   if($("#ctx"))$("#ctx").onclick=()=>{$("#ctxv").innerHTML=`<div class="hint">${esc(hintOf(it.lemma))}</div>`;$("#ctx").remove()};
   const inp=$("#in");setTimeout(()=>inp.focus(),60);
-  const check=(giveUp)=>{
+  const check=giveUp=>{
     if($("#nx"))return; if(!giveUp&&!inp.value.trim())return;
     let r=false;
     if(!giveUp){r=matchAns(inp.value,targets);if(!r&&kind==="upgrade"&&usesChunk(inp.value,it.target))r="typo"}
@@ -1712,40 +1951,37 @@ function renderEx(it,kind,q){
     if(q.t==="review"||q.t==="upgrade"){
       const s=applyResult(it,ok);SES.answered++;if(ok){SES.ok++;SES.ups++}
       if(!ok) SES.queue.push({id:it.id,t:"retry"});
-      info=ok?`Hurrengo errepasoa: <b style="display:inline">${inDays(INTERVALS[s.b])}</b> · ${boxLabel(s.b)}`:`Saioaren amaieran berriro agertuko da, eta bihar ere bai.`;
+      info=ok?`Next review: <b style="display:inline">${inDays(INTERVALS[s.b])}</b> · ${boxLabel(s.b)}`:"You'll see it again at the end of this session, and tomorrow.";
     }else if(q.t==="learn1"){
       SES.learn[it.id]=ok?1:0;SES.answered++;if(ok)SES.ok++;
-      info=ok?"Saioaren amaieran berriro probatuko duzu, testuinguruan.":"Ez kezkatu: saioaren amaieran berriro probatuko duzu.";
+      info=ok?"You'll test it again at the end of the session, in context.":"Don't worry: you'll try again at the end of the session.";
     }else if(q.t==="learn2"){
       const sc=(SES.learn[it.id]||0)+(ok?1:0);const s=applyNew(it,sc);SES.answered++;if(ok)SES.ok++;if(sc===2)SES.ups++;
-      info=`Hurrengo errepasoa: <b style="display:inline">${inDays(INTERVALS[s.b])}</b>`;
-    }else if(q.t==="retry"){info="Saio honetan berriro."; if(!ok) SES.queue.push({id:it.id,t:"retry2"})}
+      info=`Next review: <b style="display:inline">${inDays(INTERVALS[s.b])}</b>`;
+    }else if(q.t==="retry"){info="One more time in this session."; if(!ok) SES.queue.push({id:it.id,t:"retry2"})}
     const sol=kind==="gaptype"||kind==="upgrade"?it.target:it.lemma;
-    $("#fb").innerHTML=`<div class="fb ${ok?"ok":"no"}"><b>${ok?(typo?"Ia-ia! (begiratu ortografia)":"Ondo!"):"Ez da hori"}</b>
-      ${!ok||typo?`<div class="row" style="justify-content:space-between">Erantzuna: <b style="display:inline;flex:1;margin-left:6px">${esc(sol)}</b>${spk(sol)}</div>`:""}
+    $("#fb").innerHTML=`<div class="fb ${ok?"ok":"no"}"><b>${ok?(typo?"Almost! (check the spelling)":"Well done!"):"Not quite"}</b>
+      ${!ok||typo?`<div class="row" style="justify-content:space-between">Answer: <b style="display:inline;flex:1;margin-left:6px">${esc(sol)}</b>${spk(sol)}</div>`:""}
       <span class="small">${hl(it)}</span><div class="small" style="margin-top:6px">${info}</div></div>
       ${it.trap&&!ok?`<div class="trap">⚠ ${esc(it.trap)}</div>`:""}
-      <button class="btn" id="nx">Hurrengoa</button>`;
+      <button class="btn" id="nx">Next</button>`;
     $("#nx").onclick=()=>{SES.i++;nextEx()};$("#nx").scrollIntoView({behavior:"smooth",block:"center"});
     if(ok&&canSpeak)say(sol);
   }
 }
-// retry2: azken aukera, aukera anitzik gabe baina pistarekin
-const _nextEx0=nextEx;
-nextEx=function(){
-  if(SES&&SES.i<SES.queue.length&&SES.queue[SES.i].t==="retry2"){const q=SES.queue[SES.i];q.t="retry_last";return renderEx(BYID[q.id],"recallhint",q)}
-  return _nextEx0();
-};
 function endSession(){
-  const dr=dayRec();if(SES.mode==="daily")dr.done=true;save();
+  const dr=dayRec();const wasDone=dr.done;if(SES.mode==="daily")dr.done=true;save();
   const mins=Math.max(1,Math.round((Date.now()-SES.start)/60000));const c=counts();
-  shell(`<div class="wrap"><div class="card hero" style="margin-top:20px"><div class="small" style="opacity:.75">${SES.mode==="daily"?"Eguneko saioa":esc(SES.label||"Praktika")}</div>
-    <h2 style="margin-top:6px">%${SES.answered?pct(SES.ok/SES.answered):0} lehen aldian</h2>
-    <p style="opacity:.85">${SES.ok}/${SES.answered} zuzen · ${mins} min · ${SES.ups} hitzek maila igo dute</p></div>
-    <div class="stat"><div><div class="n">${c.prod}</div><div class="l">ekoizten dituzu</div></div><div><div class="n">${c.mast}</div><div class="l">menperatuta</div></div></div>
-    ${SES.mode==="daily"?`<p class="mut" style="margin-top:12px">Huts egindakoak bihar itzuliko dira. Asmatutakoak, geroago. Horrela funtzionatzen du memoriak.</p>`:""}
-    <button class="btn" id="h">Itzuli</button></div>`,false);
-  $("#h").onclick=()=>go(SES.mode==="area"?"practice":"home");
+  const unlocked=SES.mode==="daily"&&!wasDone;
+  shell(`<div class="wrap"><div class="card hero" style="margin-top:20px"><div class="small" style="opacity:.75">${SES.mode==="daily"?"Today's session":esc(SES.label||"Practice")}</div>
+    <h2 style="margin-top:6px">${SES.answered?pct(SES.ok/SES.answered):0}% right first time</h2>
+    <p style="opacity:.85">${SES.ok}/${SES.answered} correct · ${mins} min · ${SES.ups} words moved up</p></div>
+    <div class="stat"><div><div class="n">${c.prod}</div><div class="l">you can write</div></div><div><div class="n">${c.mast}</div><div class="l">mastered</div></div></div>
+    ${SES.mode==="daily"?`<p class="mut" style="margin-top:12px">What you missed comes back tomorrow. What you got right, later. That's how memory works.</p>`:""}
+    ${unlocked?`<div class="card" style="background:${SECT.play.bg};margin-top:12px"><b style="color:${SECT.play.ink}">🎮 Play is unlocked!</b><div class="small" style="color:${SECT.play.col}">Your Word of the Day is waiting.</div></div><button class="btn" id="pl" style="background:#854F0B">Go to Play</button>`:""}
+    <button class="btn ${unlocked?"ghost":""}" id="h">Back home</button></div>`,false);
+  $("#h").onclick=()=>go(SES.mode==="area"?"learn":"home");
+  if($("#pl"))$("#pl").onclick=()=>go("play");
 }
 
 /* ======================= UPGRADE ======================= */
@@ -1753,39 +1989,19 @@ function startUpgrade(){
   const cands=pool().filter(i=>i.upgrade);
   const seen=cands.filter(i=>(st(i.id).b||0)>=1);
   const list=sample(seen.length>=6?seen:cands,8);
-  if(!list.length){toast("Oraindik ez dago upgrade itemik");return}
+  if(!list.length){toast("No upgrade items yet");return}
   SES={mode:"upgrade",label:"Upgrade",queue:list.map(it=>({id:it.id,t:"upgrade"})),i:0,ok:0,answered:0,ups:0,start:Date.now(),learn:{},nNew:0};
   nextEx();
-}
-
-/* ======================= TRAP HUNTER ======================= */
-function startTraps(){
-  const lv=S.route==="B2"||S.levelUp?["B1","B2"]:["B1"];
-  const list=sample(TRAPS.filter(t=>lv.includes(t[0])),10);let k=0,ok=0;
-  step();
-  function step(){
-    if(k>=list.length){S.traps.n+=list.length;S.traps.ok+=ok;save();
-      shell(`<div class="wrap"><div class="card hero" style="margin-top:20px"><div class="small" style="opacity:.75">Trap Hunter</div><h2 style="margin-top:6px">${ok}/${list.length} tranpa saihestuta</h2><p style="opacity:.85">Akats hauek dira EOIko zuzentasun linguistikoan gehien zigortzen direnak.</p></div><button class="btn" id="a">Beste txanda bat</button><button class="btn ghost" id="h">Itzuli</button></div>`,false);
-      $("#a").onclick=startTraps;$("#h").onclick=()=>go("practice");return}
-    const [lvl,bad,good,why]=list[k];const opts=shuffleInPlace([good,bad]);
-    shell(`<div class="wrap"><div class="ex-top"><button class="x" id="quit">✕</button><div class="bar"><i style="width:${pct(k/list.length)}%"></i></div><span class="small mut">${k+1}/${list.length}</span></div>
-      <div class="kind">Trap Hunter · zein da zuzena?</div>${opts.map(o=>`<button class="opt" data-o="${esc(o)}" style="font-size:1.08rem">${esc(o)}</button>`).join("")}<div id="fb"></div></div>`,false);
-    $("#quit").onclick=()=>go("practice");
-    document.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if($("#nx"))return;const r=b.dataset.o===good;if(r)ok++;
-      document.querySelectorAll(".opt").forEach(o=>{o.classList.add(o.dataset.o===good?"ok":"no");o.disabled=true});
-      $("#fb").innerHTML=`<div class="fb ${r?"ok":"no"}"><b>${r?"Tranpa saihestuta!":"Erori zara"}</b>${esc(why)}</div><button class="btn" id="nx">Hurrengoa</button>`;
-      $("#nx").onclick=()=>{k++;step()}});
-  }
 }
 
 /* ======================= GAP 20 ======================= */
 function viewGapList(){
   const gs=GAPS.filter(g=>levels().includes(g.level));
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">Gap 20</span></div>
-   <h2>Simulakroa: 7 hutsune, 20 aukera</h2><p class="mut small">EOIko irakurmen-ataza bezala: aukera bakoitza behin bakarrik erabiltzen da, eta 13 soberan daude.</p>
-   ${gs.map(g=>{const last=S.mocks.filter(m=>m.id===g.id).slice(-1)[0];return `<button class="area" data-g="${g.id}"><span class="nm"><b>${esc(g.title)}</b><br><span class="small mut">${g.level}${last?` · azkena: %${last.score}`:" · egin gabe"}</span></span><span>›</span></button>`}).join("")}
+  shell(`<div class="wrap">${backBar("Gap 20")}
+   <h2>Mock task: 7 gaps, 20 options</h2><p class="mut small">Like the EOI reading task: each option can be used only once, and 13 are left over.</p>
+   ${gs.map(g=>{const last=S.mocks.filter(m=>m.id===g.id).slice(-1)[0];return `<button class="area" data-g="${g.id}"><span class="nm"><b>${esc(g.title)}</b><br><span class="small mut">${g.level}${last?` · last time: ${last.score}%`:" · not done yet"}</span></span><span>›</span></button>`}).join("")}
   </div>`);
-  $("#b").onclick=()=>go(TAB);
+  bindBack(()=>go("practice"));
   document.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>runGap(GAPS.find(g=>g.id===b.dataset.g)));
 }
 function runGap(g){
@@ -1793,98 +2009,98 @@ function runGap(g){
   const opts=shuffleInPlace([...answers,...g.extra]).slice(0,20).sort((a,b)=>a.localeCompare(b));
   const L="ABCDEFGHIJKLMNOPQRST";
   let n=0;const html=esc(g.text).replace(/\{(.+?)\}/g,()=>{n++;return `<b>${n}</b> <select data-k="${n-1}"><option value="">—</option>${opts.map((o,i)=>`<option value="${esc(o)}">${L[i]}</option>`).join("")}</select>`});
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">${g.level} · Gap 20</span></div>
+  shell(`<div class="wrap">${backBar(g.level+" · Gap 20")}
    <h2>${esc(g.title)}</h2>
-   <div class="card"><div class="small mut">Aukerak</div><div class="bank">${opts.map((o,i)=>`<span><b>${L[i]}</b> ${esc(o)}</span>`).join("")}</div></div>
-   <div class="card gaptext">${html}</div><div id="fb"></div><button class="btn" id="chk">Zuzendu</button></div>`,false);
-  $("#b").onclick=viewGapList;
+   <div class="card"><div class="small mut">Options</div><div class="bank">${opts.map((o,i)=>`<span><b>${L[i]}</b> ${esc(o)}</span>`).join("")}</div></div>
+   <div class="card gaptext">${html}</div><div id="fb"></div><button class="btn" id="chk">Check my answers</button></div>`,false);
+  bindBack(viewGapList);
   const sels=[...document.querySelectorAll("select")];
   sels.forEach(s=>s.onchange=()=>{const v=s.value;sels.forEach(o=>{if(o!==s&&o.value===v&&v)o.value=""})});
   $("#chk").onclick=()=>{
     let ok=0;sels.forEach(s=>{const r=s.value===answers[+s.dataset.k];if(r)ok++;s.classList.add(r?"ok":"no");s.disabled=true});
     const score=pct(ok/answers.length);S.mocks.push({id:g.id,level:g.level,score,date:today()});save();
-    $("#fb").innerHTML=`<div class="fb ${score>=65?"ok":"no"}"><b>${ok}/${answers.length} · %${score}</b>${score>=65?"EOIk eskatzen duen %65etik gora.":score>=50?"%50aren (atal bakoitzeko gutxienekoa) eta %65aren (gainditzeko) artean.":"%50etik behera: errepasatu eta saiatu berriro."}<div class="small" style="margin-top:8px">Soluzioak: ${answers.map((a,i)=>`<b style="display:inline">${i+1}</b> ${esc(a)}`).join(" · ")}</div></div>`;
-    $("#chk").textContent="Itzuli";$("#chk").onclick=viewGapList;
+    $("#fb").innerHTML=`<div class="fb ${score>=65?"ok":"no"}"><b>${ok}/${answers.length} · ${score}%</b>${score>=65?"Above the 65% you need to pass the EOI exam.":score>=50?"Between 50% (minimum per part) and 65% (pass mark).":"Below 50%: review and try again."}<div class="small" style="margin-top:8px">Answers: ${answers.map((a,i)=>`<b style="display:inline">${i+1}</b> ${esc(a)}`).join(" · ")}</div></div>`;
+    $("#chk").textContent="Back";$("#chk").onclick=viewGapList;
   };
 }
 
 /* ======================= MEDIATION ======================= */
 function viewMedList(){
   const ms=MEDIATIONS.filter(m=>levels().includes(m.level));
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">Mediation</span></div>
-   <h2>Gaztelaniatik ingelesera</h2><p class="mut small">EOIn mediazioak readingak bezainbeste balio du: %20. Ez da itzultzea: garrantzitsuena transmititzea da, irakurtzen duenari egokituta.</p>
-   ${ms.map(m=>{const d=S.med.filter(x=>x.id===m.id).length;return `<button class="area" data-m="${m.id}"><span class="nm"><b>${esc(m.title)}</b><br><span class="small mut">${m.level} · ${m.words[0]}-${m.words[1]} hitz${d?` · ${d} aldiz eginda`:""}</span></span><span>›</span></button>`}).join("")}
+  shell(`<div class="wrap">${backBar("Mediation")}
+   <h2>From Spanish to English</h2><p class="mut small">In the EOI exam, mediation is worth as much as reading: 20%. Don't translate: pass on what matters, adapted to your reader.</p>
+   ${ms.map(m=>{const d=S.med.filter(x=>x.id===m.id).length;return `<button class="area" data-m="${m.id}"><span class="nm"><b>${esc(m.title)}</b><br><span class="small mut">${m.level} · ${m.words[0]}-${m.words[1]} words${d?` · done ${d}×`:""}</span></span><span>›</span></button>`}).join("")}
   </div>`);
-  $("#b").onclick=()=>go(TAB);
+  bindBack(()=>go("practice"));
   document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>runMed(MEDIATIONS.find(m=>m.id===b.dataset.m)));
 }
 function runMed(m){
   const key="lexikon-draft-"+m.id;let draft="";try{draft=localStorage.getItem(key)||""}catch(e){}
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">${m.level} · Mediation</span></div>
+  shell(`<div class="wrap">${backBar(m.level+" · Mediation")}
    <h2>${esc(m.title)}</h2><div class="src">${esc(m.source)}</div>
    <p style="margin-top:12px"><b>${esc(m.task)}</b></p>
-   <div class="small mut" style="margin-top:8px">Erabili 3 adierazpen hauek:</div><div class="chips">${m.chunks.map(c=>`<span class="chip" data-c="${esc(c)}">${esc(c)}</span>`).join("")}</div>
+   <div class="small mut" style="margin-top:8px">Use these 3 expressions:</div><div class="chips">${m.chunks.map(c=>`<span class="chip" data-c="${esc(c)}">${esc(c)}</span>`).join("")}</div>
    <textarea class="inp" id="tx" placeholder="Write here...">${esc(draft)}</textarea>
-   <div class="small mut" id="wc"></div><div id="fb"></div><button class="btn" id="chk">Egiaztatu</button></div>`,false);
-  $("#b").onclick=viewMedList;
-  const tx=$("#tx"),upd=()=>{const n=wc(tx.value);$("#wc").textContent=`${n} hitz (helburua: ${m.words[0]}-${m.words[1]})`;
+   <div class="small mut" id="wc"></div><div id="fb"></div><button class="btn" id="chk">Check</button></div>`,false);
+  bindBack(viewMedList);
+  const tx=$("#tx"),upd=()=>{const n=wc(tx.value);$("#wc").textContent=`${n} words (target: ${m.words[0]}-${m.words[1]})`;
     document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("hit",usesChunk(tx.value,c.dataset.c)));try{localStorage.setItem(key,tx.value)}catch(e){}};
   tx.oninput=upd;upd();
   $("#chk").onclick=()=>{
-    if(wc(tx.value)<10){toast("Idatzi pixka bat gehiago lehenik");return}
+    if(wc(tx.value)<10){toast("Write a bit more first");return}
     const used=m.chunks.filter(c=>usesChunk(tx.value,c));const n=wc(tx.value);
     document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("miss",!used.includes(c.dataset.c)));
     const inRange=n>=m.words[0]&&n<=m.words[1]*1.1;
-    $("#fb").innerHTML=`<div class="fb ${used.length===3&&inRange?"ok":"no"}"><b>${used.length}/3 adierazpen · ${n} hitz</b>${inRange?"Luzera egokia.":n<m.words[0]?"Laburregia: azterketan zigortzen da.":"Luzeegia: azterketan zigortzen da."}</div>
-      <div class="blk mut" style="margin-top:14px">Erantzun eredua</div><div class="model">${esc(m.model)}</div>
-      <div class="blk mut" style="margin-top:14px">Autoebaluatu zintzotasunez</div>
-      <label class="check"><input type="checkbox" class="sa"> Ideia nagusi guztiak transmititu ditut (ez gehiago, ez gutxiago).</label>
-      <label class="check"><input type="checkbox" class="sa"> Informazioa irakurleari eta haren beharrari egokitu diot.</label>
-      <label class="check"><input type="checkbox" class="sa"> Neure hitzak erabili ditut; ez dut esaldiz esaldi itzuli.</label>
-      <button class="btn dark" id="sv">Gorde eta amaitu</button>`;
+    $("#fb").innerHTML=`<div class="fb ${used.length===3&&inRange?"ok":"no"}"><b>${used.length}/3 expressions · ${n} words</b>${inRange?"Good length.":n<m.words[0]?"Too short: that loses marks in the exam.":"Too long: that loses marks in the exam."}</div>
+      <div class="blk mut" style="margin-top:14px">Model answer</div><div class="model">${esc(m.model)}</div>
+      <div class="blk mut" style="margin-top:14px">Be honest with yourself</div>
+      <label class="check"><input type="checkbox" class="sa"> I passed on all the key ideas (no more, no less).</label>
+      <label class="check"><input type="checkbox" class="sa"> I adapted the information to my reader and what they need.</label>
+      <label class="check"><input type="checkbox" class="sa"> I used my own words; I didn't translate sentence by sentence.</label>
+      <button class="btn dark" id="sv">Save and finish</button>`;
     $("#chk").remove();
     $("#sv").onclick=()=>{const sa=[...document.querySelectorAll(".sa")].filter(x=>x.checked).length;
-      S.med.push({id:m.id,date:today(),chunks:used.length,self:sa,words:n});save();try{localStorage.removeItem(key)}catch(e){}toast("Gordeta");viewMedList()};
+      S.med.push({id:m.id,date:today(),chunks:used.length,self:sa,words:n});save();try{localStorage.removeItem(key)}catch(e){}toast("Saved");viewMedList()};
   };
 }
 
 /* ======================= SPEAKING ======================= */
 function viewSpeakList(){
   const ss=SPEAKING.filter(s=>levels().includes(s.level));
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">Speaking</span></div>
-   <h2>Bakarrizketa kronometroarekin</h2><p class="mut small">EOIko ahozko ekoizpena bezala: minutu bat prestatzeko eta ${S.route==="B2"?"3-4":"2-3"} minutu hitz egiteko, 3 galderaren inguruan. Ahal baduzu, grabatu zure burua eta entzun.</p>
+  shell(`<div class="wrap">${backBar("Speaking")}
+   <h2>Timed monologue</h2><p class="mut small">Like the EOI speaking test: 1 minute to prepare and ${S.route==="B2"?"3-4":"2-3"} minutes to talk about 3 questions. If you can, record yourself and listen.</p>
    ${ss.map(s=>`<button class="area" data-s="${s.id}"><span class="nm"><b>${esc(s.title)}</b><br><span class="small mut">${s.level}</span></span><span>›</span></button>`).join("")}</div>`);
-  $("#b").onclick=()=>go(TAB);
+  bindBack(()=>go("practice"));
   document.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>runSpeak(SPEAKING.find(s=>s.id===b.dataset.s)));
 }
 let TMR=null,REC=null,CUR_SPEAK=null;
 function runSpeak(s){
   clearInterval(TMR);CUR_SPEAK=s;
   const talk=s.level==="B2"?210:150;
-  shell(`<div class="wrap"><div class="top"><button class="x" id="b">←</button><span class="pill soft">${s.level} · Speaking</span></div>
+  shell(`<div class="wrap">${backBar(s.level+" · Speaking")}
    <h2>${esc(s.title)}</h2><div class="card"><ol style="padding-left:20px">${s.qs.map(q=>`<li style="margin:4px 0">${esc(q)}</li>`).join("")}</ol></div>
-   <div class="small mut">Saiatu hauek erabiltzen:</div><div class="chips">${s.chunks.map(c=>`<span class="chip">${esc(c)}</span>`).join("")}</div>
-   <div class="kind" id="ph" style="text-align:center;margin-top:18px">Prestaketa</div><div class="timer" id="tm">1:00</div>
-   <button class="btn" id="go">Hasi prestatzen</button>
-   <label class="check" style="justify-content:center"><input type="checkbox" id="rec"> Grabatu hitz egiten dudan bitartean</label>
+   <div class="small mut">Try to use:</div><div class="chips">${s.chunks.map(c=>`<span class="chip">${esc(c)}</span>`).join("")}</div>
+   <div class="kind" id="ph" style="text-align:center;margin-top:18px">Preparation</div><div class="timer" id="tm">1:00</div>
+   <button class="btn" id="go">Start preparing</button>
+   <label class="check" style="justify-content:center"><input type="checkbox" id="rec"> Record me while I talk</label>
    <div id="pl"></div></div>`,false);
-  $("#b").onclick=()=>{clearInterval(TMR);stopRec();viewSpeakList()};
+  bindBack(()=>{clearInterval(TMR);stopRec();viewSpeakList()});
   const fmt=t=>Math.floor(t/60)+":"+String(t%60).padStart(2,"0");
   let phase=0,t=60;
-  $("#go").onclick=()=>{if(phase===0){phase=1;$("#go").textContent="Joan zuzenean hitz egitera";run()}else t=0};
+  $("#go").onclick=()=>{if(phase===0){phase=1;$("#go").textContent="Skip to speaking";run()}else t=0};
   function run(){clearInterval(TMR);TMR=setInterval(()=>{t--;$("#tm").textContent=fmt(Math.max(0,t));
     if(t<=0){clearInterval(TMR);
-      if(phase===1){phase=2;t=talk;$("#ph").textContent="Hitz egin!";$("#tm").textContent=fmt(t);$("#go").textContent="Amaitu";if($("#rec").checked)startRec();run()}
-      else{phase=3;$("#ph").textContent="Denbora amaitu da";$("#go").style.display="none";stopRec();S.speak++;dayRec();save();
-        if(!$("#rec").checked){$("#pl").innerHTML=`<p class="mut small" style="text-align:center">Gutxienez 3 adierazpen erabili dituzu? 3 galderei erantzun diezu?</p><button class="btn ghost" id="again">Errepikatu</button>`;$("#again").onclick=()=>runSpeak(s)}}}
+      if(phase===1){phase=2;t=talk;$("#ph").textContent="Speak!";$("#tm").textContent=fmt(t);$("#go").textContent="Finish";if($("#rec").checked)startRec();run()}
+      else{phase=3;$("#ph").textContent="Time's up";$("#go").style.display="none";stopRec();S.speak++;dayRec();save();
+        if(!$("#rec").checked){$("#pl").innerHTML=`<p class="mut small" style="text-align:center">Did you use at least 3 of the expressions? Did you answer all 3 questions?</p><button class="btn ghost" id="again">Try again</button>`;$("#again").onclick=()=>runSpeak(s)}}}
   },1000)}
 }
 async function startRec(){
   try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const ch=[];REC=new MediaRecorder(stream);
     REC.ondataavailable=e=>ch.push(e.data);
     REC.onstop=()=>{stream.getTracks().forEach(t=>t.stop());const url=URL.createObjectURL(new Blob(ch,{type:REC.mimeType||"audio/webm"}));
-      if($("#pl")){$("#pl").innerHTML=`<div class="card" style="margin-top:12px"><div class="small mut">Entzun zure burua. Gaztelaniaz ez dakien batek ulertuko zintuzke?</div><audio controls src="${url}" style="width:100%;margin-top:8px"></audio></div><button class="btn ghost" id="again">Errepikatu</button>`;$("#again").onclick=()=>runSpeak(CUR_SPEAK)}};
-    REC.start()}catch(e){toast("Ezin izan da mikrofonoa erabili")}
+      if($("#pl")){$("#pl").innerHTML=`<div class="card" style="margin-top:12px"><div class="small mut">Listen to yourself. Would someone who doesn't speak Spanish understand you?</div><audio controls src="${url}" style="width:100%;margin-top:8px"></audio></div><button class="btn ghost" id="again">Try again</button>`;$("#again").onclick=()=>runSpeak(CUR_SPEAK)}};
+    REC.start()}catch(e){toast("Couldn't use the microphone")}
 }
 function stopRec(){try{if(REC&&REC.state!=="inactive")REC.stop()}catch(e){}}
 
@@ -1894,23 +2110,24 @@ function viewProgress(){
   const mocks=S.mocks.slice(-12);
   const days=[];for(let i=13;i>=0;i--){const d=addDays(today(),-i);days.push({d,n:(S.days[d]||{}).n||0})}
   const dmx=Math.max(5,...days.map(d=>d.n));
-  const blocks=["C","D","T","A","B","E","F"];
-  shell(`<div class="wrap">${header()}<h2>Zure aurrerapena</h2>
-   <div class="stat"><div><div class="n">${c.seen}</div><div class="l">${c.total}tik ikusiak</div></div><div><div class="n">${c.prod}</div><div class="l">ekoizten dituzu</div></div><div><div class="n">${c.mast}</div><div class="l">menperatuta</div></div></div>
-   <div class="card" style="margin-top:12px"><h3>Menperatze-eskailera</h3><p class="small mut">Hitz bakoitzak maila bat igotzen du asmatzen duzunean, eta jaitsi egiten da huts egiten duzunean. Helburua: eskuinera eramatea.</p>
+  const blocks=["A","B","C","D","E","F","T"];const g=S.games||{};
+  shell(`<div class="wrap">${header()}<h2>Your progress</h2>
+   <div class="stat"><div><div class="n">${c.seen}</div><div class="l">of ${c.total} seen</div></div><div><div class="n">${c.prod}</div><div class="l">you can write</div></div><div><div class="n">${c.mast}</div><div class="l">mastered</div></div></div>
+   <div class="card" style="margin-top:12px"><h3>Mastery ladder</h3><p class="small mut">Each word goes up a step when you get it right and down when you miss it. The goal: move them all to the right.</p>
     <div class="ladder">${[1,2,3,4,5,6].map(b=>`<div><b>${c.box[b]}</b><i style="height:${Math.max(3,c.box[b]/mx*90)}px;opacity:${.35+b*.11}"></i>${boxLabel(b)}</div>`).join("")}</div></div>
-   <div class="card"><h3>Gap 20 simulakroak</h3>${mocks.length?chartMocks(mocks):`<p class="empty">Oraindik ez duzu simulakrorik egin.</p>`}</div>
-   <div class="card"><h3>Azken 14 egunak</h3><svg viewBox="0 0 280 70" width="100%" style="margin-top:8px">${days.map((d,i)=>{const h=d.n/dmx*55;return `<rect x="${i*20+3}" y="${60-h}" width="14" height="${Math.max(h,1.5)}" rx="3" fill="${d.n?"#16302b":"#e4dccb"}"/>`}).join("")}<text x="0" y="69" font-size="7" fill="#7a8b87">duela 14 egun</text><text x="280" y="69" font-size="7" fill="#7a8b87" text-anchor="end">gaur</text></svg>
-    <p class="small mut">Erantzunak eguneko · Mediazioak: ${S.med.length} · Speaking: ${S.speak} · Saihestutako tranpak: ${S.traps.ok}/${S.traps.n}</p></div>
-   <div class="card"><h3>Arloen mapa</h3>${blocks.map(bk=>`<div class="blk" style="color:${BLOCKS[bk].col}">${BLOCKS[bk].name}</div>`+AREAS.filter(a=>a.block===bk).map(a=>{const m=areaMastery(a.id);return `<div class="area ${m===null?"off":""}"><span class="nm">${a.name}</span>${m===null?`<span class="pc" style="width:auto">laster</span>`:`<span class="bar"><i style="width:${pct(m)}%;background:${BLOCKS[bk].col}"></i></span><span class="pc">%${pct(m)}</span>`}</div>`}).join("")).join("")}</div>
+   <div class="card"><h3>Gap 20 mock tasks</h3>${mocks.length?chartMocks(mocks):`<p class="empty">You haven't done a mock task yet.</p>`}</div>
+   <div class="card"><h3>Last 14 days</h3><svg viewBox="0 0 280 70" width="100%" style="margin-top:8px">${days.map((d,i)=>{const h=d.n/dmx*55;return `<rect x="${i*20+3}" y="${60-h}" width="14" height="${Math.max(h,1.5)}" rx="3" fill="${d.n?"#16302b":"#e4dccb"}"/>`}).join("")}<text x="0" y="69" font-size="7" fill="#7a8b87">14 days ago</text><text x="280" y="69" font-size="7" fill="#7a8b87" text-anchor="end">today</text></svg>
+    <p class="small mut">Answers per day · Mediations: ${S.med.length} · Speaking: ${S.speak}</p></div>
+   <div class="card"><h3>Games</h3><p class="small">Word Rain record: <b>${g.rain||0}</b> · Make or Do? record: <b>${g.makedo||0}</b> · Words of the Day solved: <b>${g.wotdWins||0}</b> · Traps avoided: <b>${S.traps.ok}/${S.traps.n}</b></p></div>
+   <div class="card"><h3>Topic map</h3>${blocks.map(bk=>`<div class="blk" style="color:${BLOCKS[bk].col}">${BLOCKS[bk].name}</div>`+AREAS.filter(a=>a.block===bk).map(a=>{const m=areaMastery(a.id);return `<div class="area ${m===null?"off":""}"><span class="nm">${a.name}</span>${m===null?`<span class="pc" style="width:auto">—</span>`:`<span class="bar"><i style="width:${pct(m)}%;background:${BLOCKS[bk].col}"></i></span><span class="pc">%${pct(m)}</span>`}</div>`}).join("")).join("")}</div>
   </div>`);
 }
 function chartMocks(ms){
   const W=280,H=120,px=i=>ms.length===1?W/2:10+i*(W-20)/(ms.length-1),py=v=>H-12-(v/100)*(H-24);
   const pts=ms.map((m,i)=>`${px(i)},${py(m.score)}`).join(" ");
   return `<svg viewBox="0 0 ${W} ${H}" width="100%" style="margin-top:8px">
-   <line x1="0" x2="${W}" y1="${py(65)}" y2="${py(65)}" stroke="#2f8f5b" stroke-dasharray="4 3"/><text x="2" y="${py(65)-3}" font-size="8" fill="#2f8f5b">%65 gainditua</text>
-   <line x1="0" x2="${W}" y1="${py(50)}" y2="${py(50)}" stroke="#c8413a" stroke-dasharray="4 3"/><text x="2" y="${py(50)+10}" font-size="8" fill="#c8413a">%50 gutxienekoa</text>
+   <line x1="0" x2="${W}" y1="${py(65)}" y2="${py(65)}" stroke="#2f8f5b" stroke-dasharray="4 3"/><text x="2" y="${py(65)-3}" font-size="8" fill="#2f8f5b">65% pass</text>
+   <line x1="0" x2="${W}" y1="${py(50)}" y2="${py(50)}" stroke="#c8413a" stroke-dasharray="4 3"/><text x="2" y="${py(50)+10}" font-size="8" fill="#c8413a">50% minimum</text>
    <polyline points="${pts}" fill="none" stroke="#16302b" stroke-width="2.5" stroke-linejoin="round"/>
    ${ms.map((m,i)=>`<circle cx="${px(i)}" cy="${py(m.score)}" r="4" fill="#e2573b"/><text x="${px(i)}" y="${py(m.score)-8}" font-size="8" text-anchor="middle" fill="#16302b">${m.score}</text>`).join("")}
   </svg>`;
@@ -1918,35 +2135,39 @@ function chartMocks(ms){
 
 /* ======================= SETTINGS ======================= */
 function viewSettings(){
-  shell(`<div class="wrap">${header()}<h2>Ezarpenak</h2>
-   <div class="card"><div class="small mut" style="margin-bottom:8px">Azterketaren maila</div>
+  shell(`<div class="wrap">${header()}<h2>Settings</h2>
+   <div class="card"><div class="small mut" style="margin-bottom:6px">Your name or nickname</div>
+    <div class="row"><input class="inp" id="nm" maxlength="20" value="${esc(S.name||"")}" placeholder="Optional" style="margin-top:0"><button class="btn dark" id="svn" style="width:auto;margin-top:0;padding:14px">Save</button></div></div>
+   <div class="card"><div class="small mut" style="margin-bottom:8px">Exam level</div>
     <div class="seg"><button data-r="B1" class="${S.route==="B1"?"on":""}">B1</button><button data-r="B2" class="${S.route==="B2"?"on":""}">B2</button></div>
-    ${S.route==="B1"?`<div class="sw"><span>Level up: gehitu B2ko hitzak<br><span class="small mut">B1 erraz doanarentzat</span></span><input type="checkbox" id="lu" ${S.levelUp?"checked":""} style="width:24px;height:24px;accent-color:var(--acc)"></div>`:""}
+    ${S.route==="B1"?`<div class="sw"><span>Level up: add B2 words<br><span class="small mut">For when B1 feels easy</span></span><input type="checkbox" id="lu" ${S.levelUp?"checked":""} style="width:24px;height:24px;accent-color:var(--acc)"></div>`:""}
    </div>
-   <div class="card"><div class="sw"><span>EOIDNAren programazioko hitzak soilik<br><span class="small mut">Ofizialki zerrendatutako hiztegia bakarrik (${ITEMS.filter(i=>i.ofi).length} item)</span></span><input type="checkbox" id="of" ${S.onlyOfi?"checked":""} style="width:24px;height:24px;accent-color:var(--acc)"></div></div>
-   <div class="card"><div class="small mut" style="margin-bottom:8px">Hitz berriak egunean</div>
+   <div class="card"><div class="sw"><span>Only EOIDNA syllabus words<br><span class="small mut">Just the official word lists (${ITEMS.filter(i=>i.ofi).length} items)</span></span><input type="checkbox" id="of" ${S.onlyOfi?"checked":""} style="width:24px;height:24px;accent-color:var(--acc)"></div></div>
+   <div class="card"><div class="small mut" style="margin-bottom:8px">New words per day</div>
     <div class="seg">${[4,8,12].map(n=>`<button data-n="${n}" class="${S.newPerDay===n?"on":""}">${n}</button>`).join("")}</div>
-    <p class="small mut" style="margin-top:8px">Gehiago ez da hobea: egunean 8rekin, hiruhileko batean zure maila osoa ikusten duzu.</p></div>
-   <div class="card"><h3>Segurtasun-kopia</h3><p class="small mut">Zure aurrerapena nabigatzaile honetan bakarrik dago. Datuak ezabatzen badituzu edo mugikorrez aldatzen baduzu, galdu egingo duzu. Kopiatu kode hau eta gorde (adibidez, bidali zeure buruari emailez).</p>
-    <button class="btn ghost" id="ex">Kopiatu nire kodea</button>
-    <textarea class="inp" id="imp" placeholder="Itsatsi hemen kode bat berreskuratzeko" style="min-height:70px"></textarea>
-    <button class="btn dark" id="im">Berreskuratu</button></div>
-   <div class="card"><h3>Nola instalatu</h3><p class="small">Mugikorrean, ireki nabigatzailearen menua eta aukeratu <b>«Gehitu hasierako pantailan»</b>. Aplikazio bat bezala irekiko da.</p></div>
-   <button class="btn ghost" id="rs" style="border-color:var(--bad);color:var(--bad)">Dena ezabatu eta hutsetik hasi</button>
-   <p class="small mut" style="margin-top:14px;text-align:center">${ITEMS.length} item · ${TRAPS.length} tranpa · ${GAPS.length} simulakro</p>
+    <p class="small mut" style="margin-top:8px">More isn't better: with 8 a day you'll see your whole level in a term.</p></div>
+   <div class="card"><h3>Backup</h3><p class="small mut">Your progress lives only in this browser. If you clear your data or change phones, you'll lose it. Copy this code and keep it somewhere safe (for example, email it to yourself).</p>
+    <button class="btn ghost" id="ex">Copy my code</button>
+    <textarea class="inp" id="imp" placeholder="Paste a code here to restore your progress" style="min-height:70px"></textarea>
+    <button class="btn dark" id="im">Restore</button></div>
+   <div class="card"><h3>Install it on your phone</h3><p class="small"><b>Android:</b> Chrome menu ⋮ → <b>Install app</b>.<br><b>iPhone:</b> open it in Safari → Share □↑ → <b>Add to Home Screen</b>.</p></div>
+   <button class="btn ghost" id="rs" style="border-color:var(--bad);color:var(--bad)">Delete everything and start again</button>
+   <p class="small mut" style="margin-top:14px;text-align:center">${ITEMS.length} items · ${TRAPS.length} traps · ${GAPS.length} mock tasks</p>
   </div>`);
+  $("#svn").onclick=()=>{S.name=$("#nm").value.trim().slice(0,20);save();toast("Saved")};
   document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{if(b.dataset.r===S.route)return;S.route=b.dataset.r;save();if(S.route==="B2"&&!S.diag)startDiag();else viewSettings()});
   document.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{S.newPerDay=+b.dataset.n;save();viewSettings()});
-  $("#of").onchange=e=>{S.onlyOfi=e.target.checked;save();toast(S.onlyOfi?"Programazio ofiziala soilik":"Hiztegi osoa")};
-  if($("#lu"))$("#lu").onchange=e=>{S.levelUp=e.target.checked;save();toast(S.levelUp?"B2 aktibatuta":"B1 bakarrik")};
+  $("#of").onchange=e=>{S.onlyOfi=e.target.checked;save();toast(S.onlyOfi?"Official syllabus only":"All words")};
+  if($("#lu"))$("#lu").onchange=e=>{S.levelUp=e.target.checked;save();toast(S.levelUp?"B2 words added":"B1 only")};
   $("#ex").onclick=async()=>{const code="LXK1:"+btoa(unescape(encodeURIComponent(JSON.stringify(S))));
-    try{await navigator.clipboard.writeText(code);toast("Kodea kopiatuta")}catch(e){$("#imp").value=code;toast("Kopiatu laukiko kodea")}};
-  $("#im").onclick=()=>{const v=$("#imp").value.trim();try{if(!v.startsWith("LXK1:"))throw 0;const o=JSON.parse(decodeURIComponent(escape(atob(v.slice(5)))));if(!o.items)throw 0;S=Object.assign(fresh(),o);save();toast("Aurrerapena berreskuratuta");go("home")}catch(e){toast("Kode baliogabea")}};
-  $("#rs").onclick=()=>{if(confirm("Ziur zaude? Zure aurrerapen guztia ezabatuko da.")){S=fresh();save();go("home")}};
+    try{await navigator.clipboard.writeText(code);toast("Code copied")}catch(e){$("#imp").value=code;toast("Copy the code in the box")}};
+  $("#im").onclick=()=>{const v=$("#imp").value.trim();try{if(!v.startsWith("LXK1:"))throw 0;const o=JSON.parse(decodeURIComponent(escape(atob(v.slice(5)))));if(!o.items)throw 0;S=Object.assign(fresh(),o);save();toast("Progress restored");go("home")}catch(e){toast("That code isn't valid")}};
+  $("#rs").onclick=()=>{if(confirm("Are you sure? All your progress will be deleted.")){S=fresh();save();go("home")}};
 }
 
 /* ======================= BOOT ======================= */
 (async function boot(){
+  document.getElementById("tabs").innerHTML=`<button data-t="home"><span>⌂</span>Home</button><button data-t="progress"><span>▲</span>Progress</button><button data-t="settings"><span>⚙</span>Settings</button>`;
   setItems(parseRaw(RAW_ITEMS));
   load();
   if(SHEET_CSV_URL){

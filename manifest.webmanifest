@@ -1,8 +1,8 @@
 {
   "name": "Lexikon · Iparralde DBHI",
   "short_name": "Lexikon",
-  "description": "EOIDNAko B1/B2 azterketarako hiztegia",
-  "lang": "eu",
+  "description": "Vocabulary for the EOIDNA B1/B2 exam",
+  "lang": "en",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
