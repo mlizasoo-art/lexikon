@@ -1532,7 +1532,7 @@ function counts(){
   p.forEach(i=>{const b=st(i.id).b||0;box[b]++;if(b>0)seen++;if(b>=3)prod++;if(b>=6)mast++});
   return {total:p.length,seen,prod,mast,box};
 }
-function weekDays(){const out=[];for(let i=6;i>=0;i--){const d=addDays(today(),-i);const r=S.days[d];out.push({d,on:!!(r&&r.n>0)})}return out}
+function weekDays(){const out=[];for(let i=6;i>=0;i--){const d=addDays(today(),-i);const r=S.days[d];out.push({d,on:!!(r&&(r.n>0||r.done))})}return out}
 
 /* ======================= ROUTER ======================= */
 let TAB="home";
@@ -1955,10 +1955,10 @@ function renderEx(it,kind,q){
       if(!ok) SES.queue.push({id:it.id,t:"retry"});
       info=ok?`Next review: <b style="display:inline">${inDays(INTERVALS[s.b])}</b> · ${boxLabel(s.b)}`:"You'll see it again at the end of this session, and tomorrow.";
     }else if(q.t==="learn1"){
-      SES.learn[it.id]=ok?1:0;SES.answered++;if(ok)SES.ok++;
+      SES.learn[it.id]=ok?1:0;SES.answered++;if(ok)SES.ok++;{const dr=dayRec();dr.n++;if(ok)dr.ok++;save()}
       info=ok?"You'll test it again at the end of the session, in context.":"Don't worry: you'll try again at the end of the session.";
     }else if(q.t==="learn2"){
-      const sc=(SES.learn[it.id]||0)+(ok?1:0);const s=applyNew(it,sc);SES.answered++;if(ok)SES.ok++;if(sc===2)SES.ups++;
+      const sc=(SES.learn[it.id]||0)+(ok?1:0);const s=applyNew(it,sc);SES.answered++;if(ok)SES.ok++;if(sc===2)SES.ups++;{const dr=dayRec();dr.n++;if(ok)dr.ok++;save()}
       info=`Next review: <b style="display:inline">${inDays(INTERVALS[s.b])}</b>`;
     }else if(q.t==="retry"){info="One more time in this session."; if(!ok) SES.queue.push({id:it.id,t:"retry2"})}
     const sol=kind==="gaptype"||kind==="upgrade"?it.target:it.lemma;
@@ -2211,7 +2211,7 @@ async function jsonp(action,data){
   }
 }
 function syncPayload(){
-  const c=counts();const days=Object.keys(S.days).filter(d=>S.days[d].n>0).sort();
+  const c=counts();const days=Object.keys(S.days).filter(d=>S.days[d].n>0||S.days[d].done).sort();
   const m=S.mocks;const g=S.games||{};
   return {code:S.classCode,level:S.route,lastActive:days[days.length-1]||"",days7:weekDays().filter(d=>d.on).length,daysTotal:days.length,
     sessions:Object.values(S.days).filter(d=>d.done).length,seen:c.seen,writing:c.prod,mastered:c.mast,total:c.total,
