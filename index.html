@@ -2165,7 +2165,7 @@ function viewSettings(){
     msg.style.color="var(--mut)";msg.textContent="Checking…";
     jsonp("check",{code:v}).then(r=>{if(r&&r.ok){S.classCode=v;S.classGroup=r.group||"";S.lastSync=0;save();maybeSync(true).then(()=>{toast("Connected to your class");viewSettings()})}
       else{msg.style.color="var(--bad)";msg.textContent="That code doesn't exist. Check it with your teacher."}})
-    .catch(()=>{msg.style.color="var(--bad)";msg.textContent="No connection. Try again later."})};
+    .catch(()=>{msg.style.color="var(--bad)";msg.innerHTML="No connection. Try again later.<br><span class=\"mut\" style=\"font-size:.75rem\">Detail: "+esc(LAST_NET_ERR)+"</span>"})};
   $("#svn").onclick=()=>{S.name=$("#nm").value.trim().slice(0,20);save();toast("Saved")};
   document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{if(b.dataset.r===S.route)return;S.route=b.dataset.r;save();if(S.route==="B2"&&!S.diag)startDiag();else viewSettings()});
   document.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{S.newPerDay=+b.dataset.n;save();viewSettings()});
@@ -2180,17 +2180,35 @@ function viewSettings(){
 
 /* ======================= CLASS SYNC (opcional) =======================
    Solo se envía: el código de clase y datos agregados. Nunca nombres ni textos escritos. */
-let JSONP_N=0;
-function jsonp(action,data){
+let JSONP_N=0, LAST_NET_ERR="";
+function jsonpRaw(action,data){
   return new Promise((resolve,reject)=>{
     const cb="__lxk"+(++JSONP_N);const sc=document.createElement("script");
-    const t=setTimeout(()=>{cleanup();reject(new Error("timeout"))},15000);
+    const t=setTimeout(()=>{cleanup();reject(new Error("jsonp-timeout"))},15000);
     function cleanup(){clearTimeout(t);try{delete window[cb]}catch(e){window[cb]=undefined}sc.remove()}
     window[cb]=r=>{cleanup();resolve(r)};
-    sc.onerror=()=>{cleanup();reject(new Error("network"))};
+    sc.onerror=()=>{cleanup();reject(new Error("jsonp-blocked"))};
     sc.src=CLASS_ENDPOINT+"?callback="+cb+"&a="+action+"&d="+encodeURIComponent(JSON.stringify(data));
     document.head.appendChild(sc);
   });
+}
+async function fetchRaw(action,data){
+  const ctl=new AbortController();const t=setTimeout(()=>ctl.abort(),15000);
+  try{
+    const r=await fetch(CLASS_ENDPOINT+"?a="+action+"&d="+encodeURIComponent(JSON.stringify(data)),{method:"GET",redirect:"follow",signal:ctl.signal,credentials:"omit"});
+    const txt=await r.text();
+    if(!r.ok) throw new Error("http-"+r.status);
+    if(/^\s*</.test(txt)) throw new Error(/accounts\.google|ServiceLogin|signin/i.test(txt)?"login-page":"html-page");
+    return JSON.parse(txt.replace(/^[^({]*\(|\)\s*;?\s*$/g,""));
+  }finally{clearTimeout(t)}
+}
+// Primero una petición web normal; si falla, JSONP. Guarda la causa para mostrarla.
+async function jsonp(action,data){
+  try{return await fetchRaw(action,data)}
+  catch(e1){
+    try{return await jsonpRaw(action,data)}
+    catch(e2){LAST_NET_ERR=(e1.name==="AbortError"?"timeout":(e1.message||"fetch"))+" / "+e2.message;throw new Error(LAST_NET_ERR)}
+  }
 }
 function syncPayload(){
   const c=counts();const days=Object.keys(S.days).filter(d=>S.days[d].n>0).sort();
